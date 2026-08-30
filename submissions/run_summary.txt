@@ -5,5 +5,3 @@ Null check: 0 NaNs
 Survived value counts: 0s: 261, 1s: 157
 Survival Rate: 37.56%
 MD5 Checksum: 06ac024d6a3cada456da4a35ba3d3aaf
-Pytest Results:
-5 passed, 4 skipped, 1 warning in 9.32s

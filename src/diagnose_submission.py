@@ -39,11 +39,11 @@ def check_submission():
 
     # 5. Checksum calculation
     with open(latest_file, "rb") as f:
-        file_hash = hashlib.md5(f.read()).hexdigest()
+        file_hash = hashlib.md5(f.read(), usedforsecurity=False).hexdigest()  # NOSONAR
     print(f"\nMD5 Checksum:\n{file_hash}")
 
     # Write summary for persistent artifact later
-    with open("submissions/run_summary.txt", "w") as f:
+    with open("submissions/run_summary.txt", "w", encoding="utf-8") as f:
         f.write(f"Diagnostics for: {latest_file.name}\n")
         f.write(f"Row count: {total_rows}\n")
         f.write(f"PassengerId range: {min_id} - {max_id}\n")
