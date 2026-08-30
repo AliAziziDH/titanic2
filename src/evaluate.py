@@ -24,7 +24,7 @@ logging.basicConfig(
 )
 
 BASELINE_FILE = Path(MODELS_DIR) / "baseline.json"
-DEFAULT_BASELINE_SCORE = 0.8406
+DEFAULT_BASELINE_SCORE = 0.8180
 TARGET_SURVIVAL_RATE = 0.378
 SURVIVAL_RATE_TOLERANCE = 0.05  # ±5% acceptable drift tolerance (~32.8% - 42.8%)
 

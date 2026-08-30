@@ -7,7 +7,7 @@ class ConfidentSinkhornAllocator:
         self.max_iter = max_iter
         self.confidence_threshold = confidence_threshold
 
-    def fit_allocate(self, test_probs, survivor_prior=0.3838):
+    def fit_allocate(self, test_probs, survivor_prior=0.3838, top_pct=0.25):
         """
         Allocates labels strictly satisfying marginal distribution constraints
         using entropy-regularized Optimal Transport (Sinkhorn-Knopp).
@@ -38,9 +38,21 @@ class ConfidentSinkhornAllocator:
         soft_labels = P / P.sum(axis=1, keepdims=True)
         pseudo_probs = soft_labels[:, 1]
 
-        # Extract only high-confidence allocations
-        high_conf_idx = np.where((pseudo_probs >= self.confidence_threshold) |
-                                 (pseudo_probs <= (1.0 - self.confidence_threshold)))[0]
+        # Confidence metric: distance to decision boundary (0.5)
+        confidence_metric = np.abs(pseudo_probs - 0.5)
+        
+        # Initial mask based on threshold
+        high_conf_mask = (pseudo_probs >= self.confidence_threshold) | (pseudo_probs <= (1.0 - self.confidence_threshold))
+        high_conf_idx = np.where(high_conf_mask)[0]
+
+        # Cap pseudo-labels to top_pct of total test samples (e.g. top 25%) to curb confirmation bias
+        if top_pct is not None and top_pct > 0:
+            max_samples = int(np.floor(N * top_pct))
+            if len(high_conf_idx) > max_samples:
+                # Rank indices by confidence metric descending
+                ranked_candidates = np.argsort(-confidence_metric[high_conf_idx])
+                high_conf_idx = high_conf_idx[ranked_candidates[:max_samples]]
+
         pseudo_labels = (pseudo_probs >= 0.5).astype(int)
 
         return high_conf_idx, pseudo_labels

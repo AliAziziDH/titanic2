@@ -1,5 +1,13 @@
 """Central configuration for the Titanic project."""
 
+import os
+# Prevent macOS OpenMP / Intel MKL multi-runtime collision segmentation faults
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
+os.environ["NUMEXPR_NUM_THREADS"] = "1"
+
 import logging
 from pathlib import Path
 from typing import Optional

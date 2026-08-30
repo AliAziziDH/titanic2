@@ -9,14 +9,19 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from imblearn.pipeline import Pipeline as ImbPipeline
-from imblearn.combine import SMOTEENN
+try:
+    from imblearn.pipeline import Pipeline as ImbPipeline
+    from imblearn.combine import SMOTEENN
+except ImportError:
+    from sklearn.pipeline import Pipeline as ImbPipeline
+    SMOTEENN = None
 
 from sklearn.base import clone
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.pipeline import Pipeline, FeatureUnion, make_pipeline
@@ -24,7 +29,14 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler, FunctionTransfo
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.model_selection import cross_val_predict
 
-from gplearn.genetic import SymbolicTransformer
+try:
+    from gplearn.genetic import SymbolicTransformer
+    from gplearn.functions import make_function
+    gp_tanh = make_function(function=np.tanh, name='tanh', arity=1)
+except ImportError:
+    SymbolicTransformer = None
+    make_function = None
+    gp_tanh = None
 # from tabpfn import TabPFNClassifier
 
 from src.config import (
@@ -37,7 +49,7 @@ from src.config import (
     SUBMISSIONS_DIR,
     TARGET_COLUMN,
 )
-from src.features import save_engineered_data
+from src.features import save_engineered_data, FoldLocalGroupFeatures
 
 LOGGER = logging.getLogger("titanic.modeling")
 MODEL_DIR = Path(MODELS_DIR)
@@ -45,7 +57,7 @@ CV_RESULTS_PATH = Path(EXPERIMENTS_DIR) / "cv_results.json"
 
 NUMERICAL_FEATURES = [
     "Age", "SibSp", "Parch", "Family_Size", "Ticket_Frequency", "AdjFare", "Title_Encoded", "Deck_Encoded",
-    "GP_LogFare_Per_Class", "GP_Family_Vulnerability", "GP_Fare_Class_Synergy",
+    "Demographic_Prior", "GP_LogFare_Per_Class", "GP_Family_Vulnerability", "GP_Fare_Class_Synergy",
 ]
 CATEGORICAL_FEATURES = [
     "Sex", "Embarked", "Deck", "Deck_Group", "Family_Name", "Last_Name", "Family_Size_Category", "Ticket_Prefix",
@@ -63,6 +75,8 @@ class WCGSurvivalEncoder(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
         if y is None or 'Last_Name' not in X or 'AdjFare' not in X or 'Ticket' not in X:
             return self
+        if not X.index.is_unique:
+            raise ValueError("WCGSurvivalEncoder requires a unique index for leakage-safe self-exclusion")
 
         df = X.copy()
         df['Survived'] = y
@@ -257,7 +271,7 @@ class PipelineWrapper(BaseEstimator, TransformerMixin):
         return self.pipe.fit_transform(X, y)
 
 
-def build_meta_features(preprocessor):
+def build_meta_features(preprocessor, seed=RANDOM_STATE):
     symbolic = SymbolicTransformer(
         population_size=100,
         hall_of_fame=20,
@@ -268,9 +282,9 @@ def build_meta_features(preprocessor):
         const_range=(-1.0, 1.0),
         init_depth=(2, 4),
         init_method='half and half',
-        function_set=['add', 'sub', 'mul', 'div', 'sqrt'],
+        function_set=['add', 'sub', 'mul', 'div', 'sqrt', gp_tanh],
         metric='pearson',
-        parsimony_coefficient=0.01,
+        parsimony_coefficient=0.05,
         p_crossover=0.7,
         p_subtree_mutation=0.1,
         p_hoist_mutation=0.05,
@@ -281,7 +295,7 @@ def build_meta_features(preprocessor):
         low_memory=False,
         n_jobs=1,
         verbose=0,
-        random_state=RANDOM_STATE
+        random_state=seed
     )
 
     from sklearn.compose import ColumnTransformer
@@ -346,8 +360,10 @@ def build_preprocessor(frame: pd.DataFrame) -> ColumnTransformer:
     ).set_output(transform="pandas")
 
 
-def _optional_models() -> Dict[str, Any]:
+def _optional_models(seed=None) -> Dict[str, Any]:
     """Return available optional gradient-boosting estimators with safe CPU defaults."""
+    if seed is None:
+        seed = RANDOM_STATE
     models: Dict[str, Any] = {}
     try:
         from catboost import CatBoostClassifier
@@ -355,7 +371,7 @@ def _optional_models() -> Dict[str, Any]:
         models["CatBoost"] = CatBoostClassifier(
             iterations=500, learning_rate=0.05, depth=4,
             l2_leaf_reg=50.0, subsample=0.7,
-            random_seed=RANDOM_STATE, verbose=False, task_type="CPU",
+            random_seed=seed, verbose=False, task_type="CPU",
         )
     except ImportError:
         LOGGER.warning("CatBoost is unavailable; skipping it")
@@ -365,7 +381,7 @@ def _optional_models() -> Dict[str, Any]:
         models["XGBoost"] = XGBClassifier(
             n_estimators=500, learning_rate=0.05, max_depth=4,
             reg_lambda=50.0, subsample=0.7, colsample_bytree=0.7,
-            random_state=RANDOM_STATE, tree_method="hist", eval_metric="logloss",
+            random_state=seed, tree_method="hist", eval_metric="logloss",
         )
     except ImportError:
         LOGGER.warning("XGBoost is unavailable; skipping it")
@@ -376,7 +392,9 @@ def _optional_models() -> Dict[str, Any]:
         params.update({
             "device": "cpu", "verbosity": -1,
             "max_depth": 4, "reg_lambda": 50.0,
-            "subsample": 0.7, "colsample_bytree": 0.7
+            "subsample": 0.7, "colsample_bytree": 0.7,
+            "n_jobs": 1,
+            "random_state": seed,
         })
         models["LightGBM"] = LGBMClassifier(**params)
     except ImportError:
@@ -384,11 +402,17 @@ def _optional_models() -> Dict[str, Any]:
     return models
 
 
-def default_models() -> Dict[str, Any]:
+def default_models(seed=None) -> Dict[str, Any]:
     """Return the configured model candidates."""
-    models = _optional_models()
+    if seed is None:
+        seed = RANDOM_STATE
+    models = _optional_models(seed=seed)
     models["RandomForest"] = RandomForestClassifier(
-        n_estimators=500, max_depth=10, random_state=RANDOM_STATE, n_jobs=-1,
+        n_estimators=500, max_depth=10, random_state=seed, n_jobs=-1,
+    )
+    models["MLP"] = MLPClassifier(
+        hidden_layer_sizes=(32,), alpha=0.1, early_stopping=True,
+        random_state=seed, max_iter=500,
     )
     return models
 
@@ -449,15 +473,21 @@ def evaluate_model(
     """Evaluate a model with preprocessing fitted separately on each fold."""
     scores = {"accuracy": [], "roc_auc": [], "f1_macro": []}
     for fold, (fit_idx, validation_idx) in enumerate(cv_strategy.split(X_train, y_train), start=1):
-        pipeline = ImbPipeline([
-            ("wcg_encoder", WCGSurvivalEncoder()),
-            ("age_imputer", AgeImputer(random_state=RANDOM_STATE)),
-            ("meta_features", build_meta_features(build_preprocessor(X_train))),
-            ("model", clone(model)),
-        ])
-
         X_fold_train = X_train.iloc[fit_idx]
         y_fold_train = y_train.iloc[fit_idx]
+
+        # Build a temporary fold-local feature frame to derive the correct
+        # column set for build_preprocessor (so ColumnTransformer column lists
+        # reflect the post-transform schema rather than the raw CSV schema).
+        _probe = FoldLocalGroupFeatures().fit(X_fold_train).transform(X_fold_train.copy())
+
+        pipeline = ImbPipeline([
+            ("fold_features", FoldLocalGroupFeatures()),  # step 0: fold-local, no leakage
+            ("wcg_encoder", WCGSurvivalEncoder()),
+            ("age_imputer", AgeImputer(random_state=RANDOM_STATE)),
+            ("meta_features", build_meta_features(build_preprocessor(_probe))),
+            ("model", clone(model)),
+        ])
 
         # Determine if model supports sample weights and apply IPW
         # CatBoost, XGBoost, LightGBM, and RandomForest generally do.
@@ -474,6 +504,7 @@ def evaluate_model(
         scores["roc_auc"].append(roc_auc_score(y_train.iloc[validation_idx], probabilities))
         scores["f1_macro"].append(f1_score(y_train.iloc[validation_idx], predictions, average="macro"))
         LOGGER.debug("%s fold %d complete", model_name, fold)
+
     result = {
         "model": model_name,
         "metrics": {
@@ -522,33 +553,43 @@ def run_modeling_pipeline() -> pd.DataFrame:
     CV_RESULTS_PATH.write_text(json.dumps(results, indent=2), encoding="utf-8")
     best = _select_best(results)
 
-    # Train and save ALL individual models so final_submission.py can load them
-    models_dict = default_models()
-
+    # Train and save ALL individual models across 10 seeds so final_submission.py can load them
     supported_models = ['CatBoost', 'XGBoost', 'RandomForest', 'LightGBM']
+    SEEDS = [42, 101, 202, 303, 404, 505, 606, 707, 808, 909]
 
-    for name, model in models_dict.items():
-        pipeline = ImbPipeline([
-            ("wcg_encoder", WCGSurvivalEncoder()),
-            ("age_imputer", AgeImputer(random_state=RANDOM_STATE)),
-            ("meta_features", build_meta_features(build_preprocessor(X_train))),
-            ("model", model),
-        ])
+    # Probe frame: apply FoldLocalGroupFeatures to full X_train once to derive
+    # correct column set for build_preprocessor in final (non-CV) pipelines.
+    _full_probe = FoldLocalGroupFeatures().fit(X_train).transform(X_train.copy())
 
-        if name in supported_models:
-            weights = compute_ipw_weights(X_train)
-            pipeline.fit(X_train, y_train, model__sample_weight=weights)
-        else:
-            pipeline.fit(X_train, y_train)
+    for seed in SEEDS:
+        models_dict = default_models(seed=seed)
+        for name, model in models_dict.items():
+            pipeline = ImbPipeline([
+                ("fold_features", FoldLocalGroupFeatures()),  # step 0: fold-local
+                ("wcg_encoder", WCGSurvivalEncoder()),
+                ("age_imputer", AgeImputer(random_state=seed)),
+                ("meta_features", build_meta_features(build_preprocessor(_full_probe), seed=seed)),
+                ("model", model),
+            ])
 
-        joblib.dump(pipeline, MODEL_DIR / f"{name.lower()}_final.joblib")
+            if name in supported_models:
+                weights = compute_ipw_weights(X_train)
+                pipeline.fit(X_train, y_train, model__sample_weight=weights)
+            else:
+                pipeline.fit(X_train, y_train)
 
-    # The rest proceeds as before for the "best" model logic
-    best_model = models_dict[best["model"]]
+            joblib.dump(pipeline, MODEL_DIR / f"{name.lower()}_seed_{seed}.joblib")
+            if seed == 42:
+                joblib.dump(pipeline, MODEL_DIR / f"{name.lower()}_final.joblib")
+
+    # The rest proceeds as before for the "best" model logic using seed 42
+    best_models_dict = default_models(seed=RANDOM_STATE)
+    best_model = best_models_dict[best["model"]]
     final_pipeline = ImbPipeline([
+        ("fold_features", FoldLocalGroupFeatures()),  # step 0: fold-local
         ("wcg_encoder", WCGSurvivalEncoder()),
         ("age_imputer", AgeImputer(random_state=RANDOM_STATE)),
-        ("meta_features", build_meta_features(build_preprocessor(X_train))),
+        ("meta_features", build_meta_features(build_preprocessor(_full_probe), seed=RANDOM_STATE)),
         ("model", best_model),
     ])
 
@@ -558,6 +599,7 @@ def run_modeling_pipeline() -> pd.DataFrame:
     else:
         final_pipeline.fit(X_train, y_train)
     test_predictions = final_pipeline.predict(X_test).astype(int)
+
     submission = pd.DataFrame({"PassengerId": test["PassengerId"], TARGET_COLUMN: test_predictions})
     submission_path = Path(SUBMISSIONS_DIR) / "submission_modeling.csv"
     submission.to_csv(submission_path, index=False)

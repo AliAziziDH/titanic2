@@ -1,35 +1,40 @@
 {
-  "generated_at": "2026-08-16T14:07:35.082819+00:00",
+  "generated_at": "2026-08-30T12:51:32.828652+00:00",
   "scores": {
     "CatBoost": {
-      "accuracy": 0.8260226392986421,
-      "roc_auc": 0.8838441525937711
+      "accuracy": 0.8252693909149876,
+      "roc_auc": 0.8843061916236439
     },
     "XGBoost": {
-      "accuracy": 0.8286401774318416,
-      "roc_auc": 0.8847514991298282
+      "accuracy": 0.8275144895696023,
+      "roc_auc": 0.8854963108643391
     },
     "LightGBM": {
-      "accuracy": 0.8331345594543134,
-      "roc_auc": 0.8789391101232652
+      "accuracy": 0.82901889398029,
+      "roc_auc": 0.8815463955825649
     },
     "RandomForest": {
-      "accuracy": 0.8226727763480007,
-      "roc_auc": 0.8793305956631
+      "accuracy": 0.820419308266901,
+      "roc_auc": 0.8807122273913494
+    },
+    "MLP": {
+      "accuracy": 0.7949992676751826,
+      "roc_auc": 0.8530565278776171
     },
     "Stacking": {
-      "accuracy": 0.8327721661054994,
-      "roc_auc": 0.8848384622759083
+      "accuracy": 0.8237934904601572,
+      "roc_auc": 0.8869821791881038
     }
   },
   "submissions": {
-    "CatBoost": "/app/submissions/submission_catboost.csv",
-    "XGBoost": "/app/submissions/submission_xgboost.csv",
-    "LightGBM": "/app/submissions/submission_lightgbm.csv",
-    "RandomForest": "/app/submissions/submission_randomforest.csv",
-    "Stacking": "/app/submissions/submission_stacking.csv",
-    "WeightedEnsemble": "/app/submissions/submission_weighted_ensemble.csv",
-    "MajorityVote": "/app/submissions/submission_majority_vote.csv"
+    "CatBoost": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_catboost.csv",
+    "XGBoost": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_xgboost.csv",
+    "LightGBM": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_lightgbm.csv",
+    "RandomForest": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_randomforest.csv",
+    "Stacking": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_stacking.csv",
+    "WeightedEnsemble": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_weighted_ensemble.csv",
+    "MajorityVote": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_majority_vote.csv"
   },
-  "rows": 418
+  "rows": 418,
+  "optimal_threshold": 0.42541806020066886
 }

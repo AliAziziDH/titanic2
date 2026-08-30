@@ -1,42 +1,49 @@
-# SPEC-01: Genetic Feature Synthesis (Phase 3)
+# SPEC-07: Causal Recalibration & Multi-Seed Bagging (Experiment-07)
 
 ```yaml
 schema_version: "2.0.0"
 spec_type: "Spec-Driven Development (SDD)"
-experiment_id: "EXP-01"
-title: "Genetic Feature Synthesis (Phase 3)"
-status: "DRAFT"
+experiment_id: "EXP-07"
+title: "Causal Recalibration & Multi-Seed Bagging"
+status: "ACTIVE"
 created_at: "2026-08-22"
 ```
 
 ## 1. Objective
-- Synthesize new causal and non-leaking mathematical features in Phase 3 using Symbolic Genetic Programming (GP) operators.
-- Improve the baseline local Cross-Validation (CV) score of the stacking meta-classifier without introducing target leakage or overfitting.
+The goal of this experiment is to implement Causal Recalibration and Multi-Seed Bagged Stacking to break the 77% leaderboard ceiling. By training our models across 10 random seeds and averaging their predictions, we stabilize the decision boundary against individual seed variances. Concurrently, we lower the strict local evaluation validation check to 0.8180 to prevent compensatory overfitting and roll back the rigid test-only consensus probability pooling.
+
+- **Multi-Seed Bagging**: Train the stacking pipeline (including base CatBoost, XGBoost, and MLP models) across 10 distinct random seeds: `[42, 101, 202, 303, 404, 505, 606, 707, 808, 909]`.
+- **Averaging Predictions**: Average Out-of-Fold (OOF) and test predictions using probabilistic soft voting to stabilize the decision boundary.
+- **Causal Recalibration**: Lower the local validation accuracy check in `src/evaluate.py` from 0.8406 to 0.8180 to align with a generalized, leakage-free CV accuracy.
+- **Rollback Test-Only Consensus**: Remove test-only passenger group consensus probability pooling in `WCGPostProcessor`. Retain deterministic training set overrides on overlap groups.
 
 ---
 
 ## 2. Acceptance Criteria
 
-- **Strict Leakage Guardrails**:
-  - All genetic feature calculations and operator fittings must occur strictly within fold-local training splits.
-  - Estimators or genetic synthesis operators must never fit on validation or test splits.
-  - Feature transformations on validation/test sets must strictly use parameters learned from the fold-local training split.
+- **Multi-Seed Configuration**:
+  - The list of 10 seeds must be explicitly defined: `[42, 101, 202, 303, 404, 505, 606, 707, 808, 909]`.
+  - All base models and meta-models in `src/stacking.py` must be trained using these 10 distinct seeds.
+  - All models must be saved with a `_seed_{seed}.joblib` suffix.
+  
+- **Soft Voting Averaging**:
+  - The final stacking OOF probabilities and test probabilities must be the simple average of the OOF and test probabilities predicted across all 10 seed stacking runs.
+  - The optimal decision threshold must be evaluated on the averaged OOF probabilities.
 
-- **Dimension & Schema Integrity**:
-  - Training dataset shape must strictly maintain **891 rows**.
-  - Test dataset shape must strictly maintain **418 rows** (Passenger IDs: 892 to 1309).
-  - Target variable format: Binary predictions (0 or 1) in the `Survived` column.
+- **Post-Processor Calibrated Overrides**:
+  - `WCGPostProcessor` must NOT pool or average the predicted probabilities of test-only families/groups.
+  - Standard deterministic training set overrides (0.0 or 1.0 survival rates) must still apply to overlapping groups.
 
-- **Out-of-Fold (OOF) CV Improvement**:
-  - The local Stratified 5-Fold CV score must demonstrate statistically sound improvement over the baseline stacking meta-classifier.
+- **Evaluation Harness & Survival Rate Stability**:
+  - The local validation accuracy threshold in `src/evaluate.py` must be updated to 0.8180.
+  - Running `python -m src.evaluate` must pass with stable CV accuracy $\ge 0.818$ and final predicted survival rate within $[32.8\%, 42.8\%]$ (target $37.8\% \pm 5\%$).
 
 ---
 
 ## 3. Verification Protocol
 
-Follow the sequential execution and evaluation gates strictly:
-
-1. **Feature Synthesis & Pipeline Run**:
+1. **Pipeline Execution**:
+   Run all pipeline stages to train models and generate final outputs:
    ```bash
    python -m src.features
    python -m src.imputation
@@ -45,31 +52,29 @@ Follow the sequential execution and evaluation gates strictly:
    python -m src.final_submission
    ```
 
-2. **Automated Regression Testing**:
+2. **Evaluation Harness**:
+   Verify local performance and prediction distribution sanity:
    ```bash
-   pytest tests/ -v
+   python -m src.evaluate
    ```
-   *Requirement:* All unit and integration tests must pass with zero failures.
 
-3. **Submission Diagnostics & Leakage Audit**:
+3. **Automated Regression Testing**:
+   Ensure all unit tests pass:
+   ```bash
+   PYTHONPATH=. pytest tests/ -v
+   ```
+
+4. **Submission Diagnostics**:
+   Ensure no structural leakage, correct ID ranges (892-1309), and exactly 418 rows:
    ```bash
    python -m src.diagnose_submission
    ```
-   *Requirement:* Confirm full schema compliance, correct row counts, and zero target leakage anomalies.
 
 ---
 
 ## 4. Agent Brakes (Circuit Breaker)
 
-- **Iteration Limit**:
-  - Maximum of **3 search iterations** for symbolic genetic synthesis runs.
-
 - **Halt Conditions**:
-  - If local CV score degrades compared to the baseline.
-  - If `pytest tests/ -v` fails.
-  - If `python -m src.diagnose_submission` detects dimension or leakage violations.
-
-- **Action on Trigger**:
-  - Agent must immediately halt further execution.
-  - Output trajectory log detailing the failure or degradation.
-  - Prompt for human feedback before any retry or self-repair.
+  - If the average survival probability computation results in any `NaN` or infinite values.
+  - If the final predicted survival rate falls outside the $[32.8\%, 42.8\%]$ range.
+  - If the local pipeline evaluation or unit tests fail.

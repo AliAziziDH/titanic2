@@ -1,0 +1,103 @@
+{
+  "experiment_directory": "submissions/exp_wcg_family_consensus_20260830_085101",
+  "timestamp": "20260830_085101",
+  "submission_file": "submissions/exp_wcg_family_consensus_20260830_085101/submission.csv",
+  "md5_checksum": "aa5d331855b49337064b9fd2bfe35afd",
+  "total_test_rows": 418,
+  "test_survivor_count": 156,
+  "test_survival_rate": "37.32%",
+  "guardrail_compliant": true,
+  "overrides_count": 10,
+  "overrides": [
+    {
+      "PassengerId": 899,
+      "Name": "Caldwell, Mr. Albert Francis",
+      "Sex": "male",
+      "Pclass": "2",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Ticket 248738: 100% of entire family (2 members) survived"
+    },
+    {
+      "PassengerId": 910,
+      "Name": "Ilmakangas, Miss. Ida Livija",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Surname Ilmakangas_3: 100% of WC peers perished (1 peers)"
+    },
+    {
+      "PassengerId": 1034,
+      "Name": "Ryerson, Mr. Arthur Larned",
+      "Sex": "male",
+      "Pclass": "1",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Ticket PC 17608: 100% of entire family (2 members) survived"
+    },
+    {
+      "PassengerId": 1109,
+      "Name": "Wick, Mr. George Dennick",
+      "Sex": "male",
+      "Pclass": "1",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Ticket 36928: 100% of entire family (2 members) survived"
+    },
+    {
+      "PassengerId": 1134,
+      "Name": "Spedden, Mr. Frederic Oakley",
+      "Sex": "male",
+      "Pclass": "1",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Ticket 16966: 100% of entire family (2 members) survived"
+    },
+    {
+      "PassengerId": 1200,
+      "Name": "Hays, Mr. Charles Melville",
+      "Sex": "male",
+      "Pclass": "1",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Ticket 12749: 100% of entire family (2 members) survived"
+    },
+    {
+      "PassengerId": 1205,
+      "Name": "Carr, Miss. Jeannie",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Surname Carr_3: 100% of WC peers survived (1 peers)"
+    },
+    {
+      "PassengerId": 1208,
+      "Name": "Spencer, Mr. William Augustus",
+      "Sex": "male",
+      "Pclass": "1",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Ticket PC 17569: 100% of entire family (2 members) survived"
+    },
+    {
+      "PassengerId": 1245,
+      "Name": "Herman, Mr. Samuel",
+      "Sex": "male",
+      "Pclass": "2",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Ticket 220845: 100% of entire family (2 members) survived"
+    },
+    {
+      "PassengerId": 1282,
+      "Name": "Payne, Mr. Vivian Ponsonby",
+      "Sex": "male",
+      "Pclass": "1",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Ticket 12749: 100% of entire family (2 members) survived"
+    }
+  ]
+}

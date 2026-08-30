@@ -102,7 +102,7 @@ def _check_model_preprocessing(test: pd.DataFrame) -> Dict[str, Any]:
         meta = joblib.load(model_path)
 
         if isinstance(meta, np.ndarray):
-            blend_order = ["XGBoost", "LightGBM", "CatBoost"]
+            blend_order = ["XGBoost", "LightGBM", "CatBoost", "MLP"]
             blend_paths = [Path(MODELS_DIR) / f"stacking_{n.lower()}.joblib" for n in blend_order]
             for path in blend_paths:
                 model = joblib.load(path)
@@ -111,7 +111,7 @@ def _check_model_preprocessing(test: pd.DataFrame) -> Dict[str, Any]:
             result["meta_input_shape"] = list(base.shape)
             result["predictability_check"] = len(np.dot(base, meta)) == len(test)
         else:
-            blend_order = ["XGBoost", "LightGBM", "CatBoost"]
+            blend_order = ["XGBoost", "LightGBM", "CatBoost", "MLP"]
             blend_paths = [Path(MODELS_DIR) / f"stacking_{n.lower()}.joblib" for n in blend_order]
             if not all(path.exists() for path in blend_paths):
                 blend_paths = base_paths

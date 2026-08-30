@@ -1,0 +1,229 @@
+{
+  "experiment_directory": "submissions/exp_wcg_override_20260830_085037",
+  "timestamp": "20260830_085037",
+  "submission_file": "submissions/exp_wcg_override_20260830_085037/submission.csv",
+  "md5_checksum": "c4b14a097ce40095017cde5d44517f24",
+  "total_test_rows": 418,
+  "test_survivor_count": 126,
+  "test_survival_rate": "30.14%",
+  "guardrail_compliant": false,
+  "overrides_count": 24,
+  "overrides": [
+    {
+      "PassengerId": 906,
+      "Name": "Chaffee, Mrs. Herbert Fuller (Carrie Constance Toogood)",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (W.E.P. 5734) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 907,
+      "Name": "del Carlo, Mrs. Sebastiano (Argenia Genovesi)",
+      "Sex": "female",
+      "Pclass": "2",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (SC/PARIS 2167) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 910,
+      "Name": "Ilmakangas, Miss. Ida Livija",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass2 Family (Ilmakangas_3_S) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 913,
+      "Name": "Olsen, Master. Artur Karl",
+      "Sex": "male",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass2 Family (Olsen_3_S) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 918,
+      "Name": "Ostby, Miss. Helene Ragnhild",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (113509) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 966,
+      "Name": "Geiger, Miss. Amalie",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (113503) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 984,
+      "Name": "Davidson, Mrs. Thornton (Orian Hays)",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (F.C. 12750) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1006,
+      "Name": "Straus, Mrs. Isidor (Rosalie Ida Blun)",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (PC 17483) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1011,
+      "Name": "Chapman, Mrs. John Henry (Sara Elizabeth Lawry)",
+      "Sex": "female",
+      "Pclass": "2",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (SC/AH 29037) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1048,
+      "Name": "Bird, Miss. Ellen",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (PC 17483) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1074,
+      "Name": "Marvin, Mrs. Daniel Warner (Mary Graham Carmichael Farquarson)",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (113773) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1084,
+      "Name": "van Billiard, Master. Walter John",
+      "Sex": "male",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (A/5. 851) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1092,
+      "Name": "Murphy, Miss. Nora",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (36568) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1110,
+      "Name": "Widener, Mrs. George Dunton (Eleanor Elkins)",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (113503) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1140,
+      "Name": "Hold, Mrs. Stephen (Annie Margaret Hill)",
+      "Sex": "female",
+      "Pclass": "2",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (26707) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1155,
+      "Name": "Klasen, Miss. Gertrud Emilia",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass2 Family (Klasen_3_S) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1165,
+      "Name": "Lennon, Miss. Mary",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (370371) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1167,
+      "Name": "Bryhl, Miss. Dagmar Jenny Ingeborg ",
+      "Sex": "female",
+      "Pclass": "2",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (236853) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1205,
+      "Name": "Carr, Miss. Jeannie",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 0,
+      "Overridden": 1,
+      "Reason": "Pass2 Family (Carr_3_Q) unanimous survival in train"
+    },
+    {
+      "PassengerId": 1231,
+      "Name": "Betros, Master. Seman",
+      "Sex": "male",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass2 Family (Betros_3_C) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1236,
+      "Name": "van Billiard, Master. James William",
+      "Sex": "male",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (A/5. 851) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1251,
+      "Name": "Lindell, Mrs. Edvard Bengtsson (Elin Gerda Persson)",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (349910) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1275,
+      "Name": "McNamee, Mrs. Neal (Eileen O'Leary)",
+      "Sex": "female",
+      "Pclass": "3",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass1 Ticket (376566) unanimous perishing in train"
+    },
+    {
+      "PassengerId": 1287,
+      "Name": "Smith, Mrs. Lucien Philip (Mary Eloise Hughes)",
+      "Sex": "female",
+      "Pclass": "1",
+      "Initial": 1,
+      "Overridden": 0,
+      "Reason": "Pass2 Family (Smith_1_S) unanimous perishing in train"
+    }
+  ]
+}

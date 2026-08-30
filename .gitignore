@@ -28,7 +28,20 @@ __pycache__/
 *.pyo
 .pytest_cache/
 .venv/
+.uv-cache/
 catboost_info/
+
+# OS / Editor
+.DS_Store
+**/.DS_Store
+.ipynb_checkpoints/
+
+# Secrets
+kaggle.json
+
+# Local tooling
+perplexity-skills/
+.agents/skills/local-brain-cloud-muscle/
 
 # Reports
 reports/figures/
