@@ -129,8 +129,8 @@ def _check_model_preprocessing(test: pd.DataFrame) -> Dict[str, Any]:
 
 def run_diagnostics() -> Dict[str, Any]:
     """Run all submission and leakage diagnostics and print findings."""
-    train = pd.read_csv(Path(DATA_PROCESSED_DIR) / "train_clean.csv")
-    test = pd.read_csv(Path(DATA_PROCESSED_DIR) / "test_clean.csv")
+    train = pd.read_csv(Path(DATA_PROCESSED_DIR) / "train_engineered.csv")
+    test = pd.read_csv(Path(DATA_PROCESSED_DIR) / "test_engineered.csv")
     submission = pd.read_csv(SUBMISSION_PATH) if SUBMISSION_PATH.exists() else None
     report = {
         "submission": _check_submission(test),

@@ -19,28 +19,18 @@ SUBMISSIONS_DIR = PROJECT_DIR / "submissions"
 
 
 def _load_modeling_data() -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Load modeling data, rebuilding it from local or Kaggle raw data when needed."""
-    train_path = Path(DATA_PROCESSED_DIR) / "train_clean.csv"
-    test_path = Path(DATA_PROCESSED_DIR) / "test_clean.csv"
-    if train_path.exists() and test_path.exists():
-        return pd.read_csv(train_path), pd.read_csv(test_path)
-    from src.features import engineer_features
-    from src.imputation import impute_missing_values, save_clean_data
-
-    input_dir = get_input_dir()
-    raw_train = pd.read_csv(input_dir / "train.csv")
-    raw_test = pd.read_csv(input_dir / "test.csv")
-    engineered_train = engineer_features(raw_train, reference_df=pd.concat([raw_train, raw_test], ignore_index=True))
-    engineered_test = engineer_features(raw_test, reference_df=pd.concat([raw_train, raw_test], ignore_index=True))
-    clean_train, clean_test = impute_missing_values(engineered_train, engineered_test)
-    save_clean_data(clean_train, clean_test)
-    return clean_train, clean_test
+    """Load modeling data directly from engineered features without global imputation."""
+    train_path = Path(DATA_PROCESSED_DIR) / "train_engineered.csv"
+    test_path = Path(DATA_PROCESSED_DIR) / "test_engineered.csv"
+    if not (train_path.exists() and test_path.exists()):
+        raise FileNotFoundError(f"Missing engineered data in {DATA_PROCESSED_DIR}")
+    return pd.read_csv(train_path), pd.read_csv(test_path)
 
 
 class WCGPostProcessor:
     """Deterministic post-processor based on Woman-Child-Group and Ticket/Family survival."""
 
-    def __init__(self, child_age_limit: int = 18) -> None:
+    def __init__(self, child_age_limit: int = 15) -> None:
         self.group_survival_rates = {}
         self.child_age_limit = child_age_limit
 
@@ -106,6 +96,11 @@ class WCGPostProcessor:
         for idx in range(len(df)):
             row = df.iloc[idx]
             is_wc = row['Is_WCG']
+
+            # Strict demographic guardrail: No adult males can be overridden
+            is_adult_male = (row['Sex'] == 'male') and (row['Age'] >= 15) and (row['Title'] != 'Master')
+            if is_adult_male:
+                continue
 
             # Pass 1: Strict Ticket Consensus
             p1_key = f"P1_{row['Pass1_Group']}"
@@ -249,7 +244,19 @@ def run_final_submission() -> Dict[str, Any]:
     if not (passenger_ids.min() == 892 and passenger_ids.max() == 1309):
         raise ValueError(f"CRITICAL ERROR: PassengerId range is {passenger_ids.min()}-{passenger_ids.max()}. Must be exactly 892-1309!")
 
-    features = [column for column in train.columns if column not in {TARGET_COLUMN, "PassengerId"}]
+    from src.config import get_input_dir
+    input_dir = get_input_dir()
+    raw_test = pd.read_csv(input_dir / "test.csv")
+    assert (test['PassengerId'] == raw_test['PassengerId']).all(), "FATAL: Test index mismatch!"
+
+    # Verify feature names and canonical ordering
+    feature_cols = [c for c in train.columns if c not in ['PassengerId', TARGET_COLUMN]]
+    test_feature_cols = [c for c in test.columns if c not in ['PassengerId', TARGET_COLUMN]]
+    assert feature_cols == test_feature_cols, (
+        f"Feature column mismatch! Train: {feature_cols} vs Test: {test_feature_cols}"
+    )
+
+    features = feature_cols
     X_test = test[features]
     passenger_ids = test["PassengerId"]
     probabilities: Dict[str, np.ndarray] = {}
@@ -297,7 +304,7 @@ def run_final_submission() -> Dict[str, Any]:
         "Config_B (0.45 Cat, 0.35 RF, 0.10 MLP, 0.10 XGB)": (0.45 * cat_prob) + (0.35 * rf_prob) + (0.10 * mlp_prob) + (0.10 * xgb_prob),
         "Config_C (0.40 Cat, 0.45 RF, 0.05 MLP, 0.10 XGB)": (0.40 * cat_prob) + (0.45 * rf_prob) + (0.05 * mlp_prob) + (0.10 * xgb_prob),
     }
-    boy_age_limits = [14, 15, 16, 17, 18]
+    boy_age_limits = [15]
 
     LOGGER.info("=" * 70)
     LOGGER.info(" 🔬 EXPERIMENT-08: WCG BOY AGE LIMIT & BLEND CONFIG GRID SEARCH 🔬")
@@ -306,7 +313,7 @@ def run_final_submission() -> Dict[str, Any]:
     LOGGER.info("-" * 85)
 
     best_config_name = None
-    best_age_limit = 18
+    best_age_limit = 15
     best_score = -1.0
     best_final_preds = None
 
