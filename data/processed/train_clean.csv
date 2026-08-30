@@ -1,0 +1,892 @@
+PassengerId,Survived,Pclass,Sex,Age,SibSp,Parch,Embarked,Title,Title_Encoded,Family_Name,Last_Name,Has_Cabin,Raw_Deck,Family_Size,Is_Alone,Family_Size_Category,Ticket_Prefix,Sex_Pclass,Title_Sex,Is_Mother,Age_Band,WCG_Member,Group_ID,Demographic_Prior,Ticket,Fare,Cabin
+1,0,3,male,22.0,1,0,S,Mr,0,Braund,Braund,0,,2,0,Small,A/,male_3,Mr_male,0,Adult,0,Braund_A/5 21171_7.25_S,0.13,A/5 21171,7.25,
+2,1,1,female,38.0,1,0,C,Mrs,2,Cumings,Cumings,1,C,2,0,Small,PC,female_1,Mrs_female,0,Adult,1,Cumings_PC 17599_71.2833_C,0.91,PC 17599,71.2833,C85
+3,1,3,female,26.0,0,0,S,Miss,1,Heikkinen,Heikkinen,0,,1,1,Alone,STON/O,female_3,Miss_female,0,Adult,1,Heikkinen_STON/O2. 3101282_7.925_S,0.49,STON/O2. 3101282,7.925,
+4,1,1,female,35.0,1,0,S,Mrs,2,Futrelle,Futrelle,1,C,2,0,Small,NUMERIC,female_1,Mrs_female,0,Adult,1,Futrelle_113803_53.1_S,0.91,113803,53.1,C123
+5,0,3,male,35.0,0,0,S,Mr,0,Allen,Allen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Allen_373450_8.05_S,0.13,373450,8.05,
+6,0,3,male,26.5778591694823,0,0,Q,Mr,0,Moran,Moran,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Moran_330877_8.4583_Q,0.13,330877,8.4583,
+7,0,1,male,54.0,0,0,S,Mr,0,McCarthy,McCarthy,1,E,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,McCarthy_17463_51.8625_S,0.37,17463,51.8625,E46
+8,0,3,male,2.0,3,1,S,Master,3,Palsson,Palsson,0,,5,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Palsson_349909_21.075_S,0.49,349909,21.075,
+9,1,3,female,27.0,0,2,S,Mrs,2,Johnson,Johnson,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Johnson_347742_11.1333_S,0.49,347742,11.1333,
+10,1,2,female,14.0,1,0,C,Mrs,2,Nasser,Nasser,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Teen,1,Nasser_237736_30.0708_C,0.91,237736,30.0708,
+11,1,3,female,4.0,1,1,S,Miss,1,Sandstrom,Sandstrom,1,G,3,0,Small,PP,female_3,Miss_female,0,Child,1,Sandstrom_PP 9549_16.7_S,0.49,PP 9549,16.7,G6
+12,1,1,female,58.0,0,0,S,Miss,1,Bonnell,Bonnell,1,C,1,1,Alone,NUMERIC,female_1,Miss_female,0,Senior,1,Bonnell_113783_26.55_S,0.91,113783,26.55,C103
+13,0,3,male,20.0,0,0,S,Mr,0,Saundercock,Saundercock,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Saundercock_A/5. 2151_8.05_S,0.13,A/5. 2151,8.05,
+14,0,3,male,39.0,1,5,S,Mr,0,Andersson,Andersson,0,,7,0,Large,NUMERIC,male_3,Mr_male,0,Adult,0,Andersson_347082_31.275_S,0.13,347082,31.275,
+15,0,3,female,14.0,0,0,S,Miss,1,Vestrom,Vestrom,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Vestrom_350406_7.8542_S,0.49,350406,7.8542,
+16,1,2,female,55.0,0,0,S,Mrs,2,Hewlett,Hewlett,0,,1,1,Alone,NUMERIC,female_2,Mrs_female,0,Senior,1,Hewlett_248706_16.0_S,0.91,248706,16.0,
+17,0,3,male,2.0,4,1,Q,Master,3,Rice,Rice,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Rice_382652_29.125_Q,0.49,382652,29.125,
+18,1,2,male,31.628777897969698,0,0,S,Mr,0,Williams,Williams,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Missing,0,Williams_244373_13.0_S,0.15,244373,13.0,
+19,0,3,female,31.0,1,0,S,Mrs,2,Vander Planke,Vander Planke,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Adult,1,Vander Planke_345763_18.0_S,0.49,345763,18.0,
+20,1,3,female,36.510675324675326,0,0,C,Mrs,2,Masselmani,Masselmani,0,,1,1,Alone,NUMERIC,female_3,Mrs_female,0,Missing,1,Masselmani_2649_7.225_C,0.49,2649,7.225,
+21,0,2,male,35.0,0,0,S,Mr,0,Fynney,Fynney,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Fynney_239865_26.0_S,0.15,239865,26.0,
+22,1,2,male,34.0,0,0,S,Mr,0,Beesley,Beesley,1,D,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Beesley_248698_13.0_S,0.15,248698,13.0,D56
+23,1,3,female,15.0,0,0,Q,Miss,1,McGowan,McGowan,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,McGowan_330923_8.0292_Q,0.49,330923,8.0292,
+24,1,1,male,28.0,0,0,S,Mr,0,Sloper,Sloper,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Sloper_113788_35.5_S,0.37,113788,35.5,A6
+25,0,3,female,8.0,3,1,S,Miss,1,Palsson,Palsson,0,,5,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Palsson_349909_21.075_S,0.49,349909,21.075,
+26,1,3,female,38.0,1,5,S,Mrs,2,Asplund,Asplund,0,,7,0,Large,NUMERIC,female_3,Mrs_female,1,Adult,1,Asplund_347077_31.3875_S,0.49,347077,31.3875,
+27,0,3,male,29.838779070805835,0,0,C,Mr,0,Emir,Emir,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Emir_2631_7.225_C,0.13,2631,7.225,
+28,0,1,male,19.0,3,2,S,Mr,0,Fortune,Fortune,1,C,6,0,Large,NUMERIC,male_1,Mr_male,0,Adult,0,Fortune_19950_263.0_S,0.37,19950,263.0,C23 C25 C27
+29,1,3,female,22.571789468547774,0,0,Q,Miss,1,O'Dwyer,O'Dwyer,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,O'Dwyer_330959_7.8792_Q,0.49,330959,7.8792,
+30,0,3,male,28.255220155534552,0,0,S,Mr,0,Todoroff,Todoroff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Todoroff_349216_7.8958_S,0.13,349216,7.8958,
+31,0,1,male,40.0,0,0,C,Rare,4,Uruchurtu,Uruchurtu,0,,1,1,Alone,PC,male_1,Rare_male,0,Adult,0,Uruchurtu_PC 17601_27.7208_C,0.37,PC 17601,27.7208,
+32,1,1,female,26.696750498910074,1,0,C,Mrs,2,Spencer,Spencer,1,B,2,0,Small,PC,female_1,Mrs_female,0,Missing,1,Spencer_PC 17569_146.5208_C,0.91,PC 17569,146.5208,B78
+33,1,3,female,24.653493665322376,0,0,Q,Miss,1,Glynn,Glynn,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Glynn_335677_7.75_Q,0.49,335677,7.75,
+34,0,2,male,66.0,0,0,S,Mr,0,Wheadon,Wheadon,0,,1,1,Alone,CA,male_2,Mr_male,0,Senior,0,Wheadon_C.A. 24579_10.5_S,0.15,C.A. 24579,10.5,
+35,0,1,male,28.0,1,0,C,Mr,0,Meyer,Meyer,0,,2,0,Small,PC,male_1,Mr_male,0,Adult,0,Meyer_PC 17604_82.1708_C,0.37,PC 17604,82.1708,
+36,0,1,male,42.0,1,0,S,Mr,0,Holverson,Holverson,0,,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Holverson_113789_52.0_S,0.37,113789,52.0,
+37,1,3,male,28.08437635583076,0,0,C,Mr,0,Mamee,Mamee,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Mamee_2677_7.2292_C,0.13,2677,7.2292,
+38,0,3,male,21.0,0,0,S,Mr,0,Cann,Cann,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Cann_A./5. 2152_8.05_S,0.13,A./5. 2152,8.05,
+39,0,3,female,18.0,2,0,S,Miss,1,Vander Planke,Vander Planke,0,,3,0,Small,NUMERIC,female_3,Miss_female,0,Teen,1,Vander Planke_345764_18.0_S,0.49,345764,18.0,
+40,1,3,female,14.0,1,0,C,Miss,1,Nicola-Yarred,Nicola-Yarred,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Teen,1,Nicola-Yarred_2651_11.2417_C,0.49,2651,11.2417,
+41,0,3,female,40.0,1,0,S,Mrs,2,Ahlin,Ahlin,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Adult,1,Ahlin_7546_9.475_S,0.49,7546,9.475,
+42,0,2,female,27.0,1,0,S,Mrs,2,Turpin,Turpin,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Turpin_11668_21.0_S,0.91,11668,21.0,
+43,0,3,male,28.255220155534552,0,0,C,Mr,0,Kraeff,Kraeff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Kraeff_349253_7.8958_C,0.13,349253,7.8958,
+44,1,2,female,3.0,1,2,C,Miss,1,Laroche,Laroche,0,,4,0,Small,SC/PARIS,female_2,Miss_female,0,Child,1,Laroche_SC/Paris 2123_41.5792_C,0.91,SC/Paris 2123,41.5792,
+45,1,3,female,19.0,0,0,Q,Miss,1,Devaney,Devaney,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Devaney_330958_7.8792_Q,0.49,330958,7.8792,
+46,0,3,male,29.72874460481854,0,0,S,Mr,0,Rogers,Rogers,0,,1,1,Alone,SC/A,male_3,Mr_male,0,Missing,0,Rogers_S.C./A.4. 23567_8.05_S,0.13,S.C./A.4. 23567,8.05,
+47,0,3,male,29.251586306972143,1,0,Q,Mr,0,Lennon,Lennon,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,Lennon_370371_15.5_Q,0.13,370371,15.5,
+48,1,3,female,24.653493665322376,0,0,Q,Miss,1,O'Driscoll,O'Driscoll,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,O'Driscoll_14311_7.75_Q,0.49,14311,7.75,
+49,0,3,male,24.84427183545537,2,0,C,Mr,0,Samaan,Samaan,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,Samaan_2662_21.6792_C,0.13,2662,21.6792,
+50,0,3,female,18.0,1,0,S,Mrs,2,Arnold-Franchi,Arnold-Franchi,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Teen,1,Arnold-Franchi_349237_17.8_S,0.49,349237,17.8,
+51,0,3,male,7.0,4,1,S,Master,3,Panula,Panula,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Panula_3101295_39.6875_S,0.49,3101295,39.6875,
+52,0,3,male,21.0,0,0,S,Mr,0,Nosworthy,Nosworthy,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Nosworthy_A/4. 39886_7.8_S,0.13,A/4. 39886,7.8,
+53,1,1,female,49.0,1,0,C,Mrs,2,Harper,Harper,1,D,2,0,Small,PC,female_1,Mrs_female,0,Adult,1,Harper_PC 17572_76.7292_C,0.91,PC 17572,76.7292,D33
+54,1,2,female,29.0,1,0,S,Mrs,2,Faunthorpe,Faunthorpe,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Faunthorpe_2926_26.0_S,0.91,2926,26.0,
+55,0,1,male,65.0,0,1,C,Mr,0,Ostby,Ostby,1,B,2,0,Small,NUMERIC,male_1,Mr_male,0,Senior,0,Ostby_113509_61.9792_C,0.37,113509,61.9792,B30
+56,1,1,male,41.78309857483918,0,0,S,Mr,0,Woolner,Woolner,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Woolner_19947_35.5_S,0.37,19947,35.5,C52
+57,1,2,female,21.0,0,0,S,Miss,1,Rugg,Rugg,0,,1,1,Alone,CA,female_2,Miss_female,0,Adult,1,Rugg_C.A. 31026_10.5_S,0.91,C.A. 31026,10.5,
+58,0,3,male,28.5,0,0,C,Mr,0,Novel,Novel,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Novel_2697_7.2292_C,0.13,2697,7.2292,
+59,1,2,female,5.0,1,2,S,Miss,1,West,West,0,,4,0,Small,CA,female_2,Miss_female,0,Child,1,West_C.A. 34651_27.75_S,0.91,C.A. 34651,27.75,
+60,0,3,male,11.0,5,2,S,Master,3,Goodwin,Goodwin,0,,8,0,Large,CA,male_3,Master_male,0,Child,1,Goodwin_CA 2144_46.9_S,0.49,CA 2144,46.9,
+61,0,3,male,22.0,0,0,C,Mr,0,Sirayanian,Sirayanian,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Sirayanian_2669_7.2292_C,0.13,2669,7.2292,
+62,1,1,female,38.0,0,0,S,Miss,1,Icard,Icard,1,B,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Icard_113572_80.0_,0.91,113572,80.0,B28
+63,0,1,male,45.0,1,0,S,Mr,0,Harris,Harris,1,C,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Harris_36973_83.475_S,0.37,36973,83.475,C83
+64,0,3,male,4.0,3,2,S,Master,3,Skoog,Skoog,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Skoog_347088_27.9_S,0.49,347088,27.9,
+65,0,1,male,39.738921101899635,0,0,C,Mr,0,Stewart,Stewart,0,,1,1,Alone,PC,male_1,Mr_male,0,Missing,0,Stewart_PC 17605_27.7208_C,0.37,PC 17605,27.7208,
+66,1,3,male,5.325046331521626,1,1,C,Master,3,Moubarek,Moubarek,0,,3,0,Small,NUMERIC,male_3,Master_male,0,Missing,1,Moubarek_2661_15.2458_C,0.49,2661,15.2458,
+67,1,2,female,29.0,0,0,S,Mrs,2,Nye,Nye,1,F,1,1,Alone,CA,female_2,Mrs_female,0,Adult,1,Nye_C.A. 29395_10.5_S,0.91,C.A. 29395,10.5,F33
+68,0,3,male,19.0,0,0,S,Mr,0,Crease,Crease,0,,1,1,Alone,SP,male_3,Mr_male,0,Adult,0,Crease_S.P. 3464_8.1583_S,0.13,S.P. 3464,8.1583,
+69,1,3,female,17.0,4,2,S,Miss,1,Andersson,Andersson,0,,7,0,Large,NUMERIC,female_3,Miss_female,0,Teen,1,Andersson_3101281_7.925_S,0.49,3101281,7.925,
+70,0,3,male,26.0,2,0,S,Mr,0,Kink,Kink,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Kink_315151_8.6625_S,0.13,315151,8.6625,
+71,0,2,male,32.0,0,0,S,Mr,0,Jenkin,Jenkin,0,,1,1,Alone,CA,male_2,Mr_male,0,Adult,0,Jenkin_C.A. 33111_10.5_S,0.15,C.A. 33111,10.5,
+72,0,3,female,16.0,5,2,S,Miss,1,Goodwin,Goodwin,0,,8,0,Large,CA,female_3,Miss_female,0,Teen,1,Goodwin_CA 2144_46.9_S,0.49,CA 2144,46.9,
+73,0,2,male,21.0,0,0,S,Mr,0,Hood,Hood,0,,1,1,Alone,SOC,male_2,Mr_male,0,Adult,0,Hood_S.O.C. 14879_73.5_S,0.15,S.O.C. 14879,73.5,
+74,0,3,male,26.0,1,0,C,Mr,0,Chronopoulos,Chronopoulos,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Chronopoulos_2680_14.4542_C,0.13,2680,14.4542,
+75,1,3,male,32.0,0,0,S,Mr,0,Bing,Bing,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Bing_1601_56.4958_S,0.13,1601,56.4958,
+76,0,3,male,25.0,0,0,S,Mr,0,Moen,Moen,1,F,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Moen_348123_7.65_S,0.13,348123,7.65,F G73
+77,0,3,male,28.255220155534552,0,0,S,Mr,0,Staneff,Staneff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Staneff_349208_7.8958_S,0.13,349208,7.8958,
+78,0,3,male,29.72874460481854,0,0,S,Mr,0,Moutal,Moutal,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Moutal_374746_8.05_S,0.13,374746,8.05,
+79,1,2,male,0.83,0,2,S,Master,3,Caldwell,Caldwell,0,,3,0,Small,NUMERIC,male_2,Master_male,0,Child,1,Caldwell_248738_29.0_S,0.91,248738,29.0,
+80,1,3,female,30.0,0,0,S,Miss,1,Dowdell,Dowdell,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Dowdell_364516_12.475_S,0.49,364516,12.475,
+81,0,3,male,22.0,0,0,S,Mr,0,Waelens,Waelens,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Waelens_345767_9.0_S,0.13,345767,9.0,
+82,1,3,male,29.0,0,0,S,Mr,0,Sheerlinck,Sheerlinck,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Sheerlinck_345779_9.5_S,0.13,345779,9.5,
+83,1,3,female,22.448793389334597,0,0,Q,Miss,1,McDermott,McDermott,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,McDermott_330932_7.7875_Q,0.49,330932,7.7875,
+84,0,1,male,28.0,0,0,S,Mr,0,Carrau,Carrau,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Carrau_113059_47.1_S,0.37,113059,47.1,
+85,1,2,female,17.0,0,0,S,Miss,1,Ilett,Ilett,0,,1,1,Alone,SO/C,female_2,Miss_female,0,Teen,1,Ilett_SO/C 14885_10.5_S,0.91,SO/C 14885,10.5,
+86,1,3,female,33.0,3,0,S,Mrs,2,Backstrom,Backstrom,0,,4,0,Small,NUMERIC,female_3,Mrs_female,0,Adult,1,Backstrom_3101278_15.85_S,0.49,3101278,15.85,
+87,0,3,male,16.0,1,3,S,Mr,0,Ford,Ford,0,,5,0,Large,W/C,male_3,Mr_male,0,Teen,1,Ford_W./C. 6608_34.375_S,0.13,W./C. 6608,34.375,
+88,0,3,male,29.72874460481854,0,0,S,Mr,0,Slocovski,Slocovski,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Missing,0,Slocovski_SOTON/OQ 392086_8.05_S,0.13,SOTON/OQ 392086,8.05,
+89,1,1,female,23.0,3,2,S,Miss,1,Fortune,Fortune,1,C,6,0,Large,NUMERIC,female_1,Miss_female,0,Adult,1,Fortune_19950_263.0_S,0.91,19950,263.0,C23 C25 C27
+90,0,3,male,24.0,0,0,S,Mr,0,Celotti,Celotti,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Celotti_343275_8.05_S,0.13,343275,8.05,
+91,0,3,male,29.0,0,0,S,Mr,0,Christmann,Christmann,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Christmann_343276_8.05_S,0.13,343276,8.05,
+92,0,3,male,20.0,0,0,S,Mr,0,Andreasson,Andreasson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Andreasson_347466_7.8542_S,0.13,347466,7.8542,
+93,0,1,male,46.0,1,0,S,Mr,0,Chaffee,Chaffee,1,E,2,0,Small,WEP,male_1,Mr_male,0,Adult,0,Chaffee_W.E.P. 5734_61.175_S,0.37,W.E.P. 5734,61.175,E31
+94,0,3,male,26.0,1,2,S,Mr,0,Dean,Dean,0,,4,0,Small,CA,male_3,Mr_male,0,Adult,0,Dean_C.A. 2315_20.575_S,0.13,C.A. 2315,20.575,
+95,0,3,male,59.0,0,0,S,Mr,0,Coxon,Coxon,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Senior,0,Coxon_364500_7.25_S,0.13,364500,7.25,
+96,0,3,male,29.72874460481854,0,0,S,Mr,0,Shorney,Shorney,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Shorney_374910_8.05_S,0.13,374910,8.05,
+97,0,1,male,71.0,0,0,C,Mr,0,Goldschmidt,Goldschmidt,1,A,1,1,Alone,PC,male_1,Mr_male,0,Senior,0,Goldschmidt_PC 17754_34.6542_C,0.37,PC 17754,34.6542,A5
+98,1,1,male,23.0,0,1,C,Mr,0,Greenfield,Greenfield,1,D,2,0,Small,PC,male_1,Mr_male,0,Adult,0,Greenfield_PC 17759_63.3583_C,0.37,PC 17759,63.3583,D10 D12
+99,1,2,female,34.0,0,1,S,Mrs,2,Doling,Doling,0,,2,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Doling_231919_23.0_S,0.91,231919,23.0,
+100,0,2,male,34.0,1,0,S,Mr,0,Kantor,Kantor,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Kantor_244367_26.0_S,0.15,244367,26.0,
+101,0,3,female,28.0,0,0,S,Miss,1,Petranec,Petranec,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Petranec_349245_7.8958_S,0.49,349245,7.8958,
+102,0,3,male,28.255220155534552,0,0,S,Mr,0,Petroff,Petroff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Petroff_349215_7.8958_S,0.13,349215,7.8958,
+103,0,1,male,21.0,0,1,S,Mr,0,White,White,1,D,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,White_35281_77.2875_S,0.37,35281,77.2875,D26
+104,0,3,male,33.0,0,0,S,Mr,0,Johansson,Johansson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Johansson_7540_8.6542_S,0.13,7540,8.6542,
+105,0,3,male,37.0,2,0,S,Mr,0,Gustafsson,Gustafsson,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Gustafsson_3101276_7.925_S,0.13,3101276,7.925,
+106,0,3,male,28.0,0,0,S,Mr,0,Mionoff,Mionoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Mionoff_349207_7.8958_S,0.13,349207,7.8958,
+107,1,3,female,21.0,0,0,S,Miss,1,Salkjelsvik,Salkjelsvik,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Salkjelsvik_343120_7.65_S,0.49,343120,7.65,
+108,1,3,male,29.81072247870129,0,0,S,Mr,0,Moss,Moss,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Moss_312991_7.775_S,0.13,312991,7.775,
+109,0,3,male,38.0,0,0,S,Mr,0,Rekic,Rekic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Rekic_349249_7.8958_S,0.13,349249,7.8958,
+110,1,3,female,18.32600120399037,1,0,Q,Miss,1,Moran,Moran,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Missing,1,Moran_371110_24.15_Q,0.49,371110,24.15,
+111,0,1,male,47.0,0,0,S,Mr,0,Porter,Porter,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Porter_110465_52.0_S,0.37,110465,52.0,C110
+112,0,3,female,14.5,1,0,C,Miss,1,Zabour,Zabour,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Teen,1,Zabour_2665_14.4542_C,0.49,2665,14.4542,
+113,0,3,male,22.0,0,0,S,Mr,0,Barton,Barton,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Barton_324669_8.05_S,0.13,324669,8.05,
+114,0,3,female,20.0,1,0,S,Miss,1,Jussila,Jussila,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Adult,1,Jussila_4136_9.825_S,0.49,4136,9.825,
+115,0,3,female,17.0,0,0,C,Miss,1,Attalah,Attalah,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Attalah_2627_14.4583_C,0.49,2627,14.4583,
+116,0,3,male,21.0,0,0,S,Mr,0,Pekoniemi,Pekoniemi,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Pekoniemi_STON/O 2. 3101294_7.925_S,0.13,STON/O 2. 3101294,7.925,
+117,0,3,male,70.5,0,0,Q,Mr,0,Connors,Connors,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Senior,0,Connors_370369_7.75_Q,0.13,370369,7.75,
+118,0,2,male,29.0,1,0,S,Mr,0,Turpin,Turpin,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Turpin_11668_21.0_S,0.15,11668,21.0,
+119,0,1,male,24.0,0,1,C,Mr,0,Baxter,Baxter,1,B,2,0,Small,PC,male_1,Mr_male,0,Adult,0,Baxter_PC 17558_247.5208_C,0.37,PC 17558,247.5208,B58 B60
+120,0,3,female,2.0,4,2,S,Miss,1,Andersson,Andersson,0,,7,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Andersson_347082_31.275_S,0.49,347082,31.275,
+121,0,2,male,21.0,2,0,S,Mr,0,Hickman,Hickman,0,,3,0,Small,SOC,male_2,Mr_male,0,Adult,0,Hickman_S.O.C. 14879_73.5_S,0.15,S.O.C. 14879,73.5,
+122,0,3,male,29.72874460481854,0,0,S,Mr,0,Moore,Moore,0,,1,1,Alone,A,male_3,Mr_male,0,Missing,0,Moore_A4. 54510_8.05_S,0.13,A4. 54510,8.05,
+123,0,2,male,32.5,1,0,C,Mr,0,Nasser,Nasser,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Nasser_237736_30.0708_C,0.15,237736,30.0708,
+124,1,2,female,32.5,0,0,S,Miss,1,Webber,Webber,1,E,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Webber_27267_13.0_S,0.91,27267,13.0,E101
+125,0,1,male,54.0,0,1,S,Mr,0,White,White,1,D,2,0,Small,NUMERIC,male_1,Mr_male,0,Senior,0,White_35281_77.2875_S,0.37,35281,77.2875,D26
+126,1,3,male,12.0,1,0,C,Master,3,Nicola-Yarred,Nicola-Yarred,0,,2,0,Small,NUMERIC,male_3,Master_male,0,Child,1,Nicola-Yarred_2651_11.2417_C,0.49,2651,11.2417,
+127,0,3,male,37.823919966904946,0,0,Q,Mr,0,McMahon,McMahon,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,McMahon_370372_7.75_Q,0.13,370372,7.75,
+128,1,3,male,24.0,0,0,S,Mr,0,Madsen,Madsen,0,,1,1,Alone,C,male_3,Mr_male,0,Adult,0,Madsen_C 17369_7.1417_S,0.13,C 17369,7.1417,
+129,1,3,female,6.0856931097747555,1,1,C,Miss,1,Peter,Peter,1,F,3,0,Small,NUMERIC,female_3,Miss_female,0,Missing,1,Peter_2668_22.3583_C,0.49,2668,22.3583,F E69
+130,0,3,male,45.0,0,0,S,Mr,0,Ekstrom,Ekstrom,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Ekstrom_347061_6.975_S,0.13,347061,6.975,
+131,0,3,male,33.0,0,0,C,Mr,0,Drazenoic,Drazenoic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Drazenoic_349241_7.8958_C,0.13,349241,7.8958,
+132,0,3,male,20.0,0,0,S,Mr,0,Coelho,Coelho,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Coelho_SOTON/O.Q. 3101307_7.05_S,0.13,SOTON/O.Q. 3101307,7.05,
+133,0,3,female,47.0,1,0,S,Mrs,2,Robins,Robins,0,,2,0,Small,A/,female_3,Mrs_female,0,Adult,1,Robins_A/5. 3337_14.5_S,0.49,A/5. 3337,14.5,
+134,1,2,female,29.0,1,0,S,Mrs,2,Weisz,Weisz,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Weisz_228414_26.0_S,0.91,228414,26.0,
+135,0,2,male,25.0,0,0,S,Mr,0,Sobey,Sobey,0,,1,1,Alone,CA,male_2,Mr_male,0,Adult,0,Sobey_C.A. 29178_13.0_S,0.15,C.A. 29178,13.0,
+136,0,2,male,23.0,0,0,C,Mr,0,Richard,Richard,0,,1,1,Alone,SC/PARIS,male_2,Mr_male,0,Adult,0,Richard_SC/PARIS 2133_15.0458_C,0.15,SC/PARIS 2133,15.0458,
+137,1,1,female,19.0,0,2,S,Miss,1,Newsom,Newsom,1,D,3,0,Small,NUMERIC,female_1,Miss_female,0,Adult,1,Newsom_11752_26.2833_S,0.91,11752,26.2833,D47
+138,0,1,male,37.0,1,0,S,Mr,0,Futrelle,Futrelle,1,C,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Futrelle_113803_53.1_S,0.37,113803,53.1,C123
+139,0,3,male,16.0,0,0,S,Mr,0,Osen,Osen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Osen_7534_9.2167_S,0.13,7534,9.2167,
+140,0,1,male,24.0,0,0,C,Mr,0,Giglio,Giglio,1,B,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Giglio_PC 17593_79.2_C,0.37,PC 17593,79.2,B86
+141,0,3,female,28.958802037874406,0,2,C,Mrs,2,Boulos,Boulos,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Missing,1,Boulos_2678_15.2458_C,0.49,2678,15.2458,
+142,1,3,female,22.0,0,0,S,Miss,1,Nysten,Nysten,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Nysten_347081_7.75_S,0.49,347081,7.75,
+143,1,3,female,24.0,1,0,S,Mrs,2,Hakkarainen,Hakkarainen,0,,2,0,Small,STON/O,female_3,Mrs_female,0,Adult,1,Hakkarainen_STON/O2. 3101279_15.85_S,0.49,STON/O2. 3101279,15.85,
+144,0,3,male,19.0,0,0,Q,Mr,0,Burke,Burke,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Burke_365222_6.75_Q,0.13,365222,6.75,
+145,0,2,male,18.0,0,0,S,Mr,0,Andrew,Andrew,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Teen,1,Andrew_231945_11.5_S,0.15,231945,11.5,
+146,0,2,male,19.0,1,1,S,Mr,0,Nicholls,Nicholls,0,,3,0,Small,CA,male_2,Mr_male,0,Adult,0,Nicholls_C.A. 33112_36.75_S,0.15,C.A. 33112,36.75,
+147,1,3,male,27.0,0,0,S,Mr,0,Andersson,Andersson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Andersson_350043_7.7958_S,0.13,350043,7.7958,
+148,0,3,female,9.0,2,2,S,Miss,1,Ford,Ford,0,,5,0,Large,W/C,female_3,Miss_female,0,Child,1,Ford_W./C. 6608_34.375_S,0.49,W./C. 6608,34.375,
+149,0,2,male,36.5,0,2,S,Mr,0,Navratil,Navratil,1,F,3,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Navratil_230080_26.0_S,0.15,230080,26.0,F2
+150,0,2,male,42.0,0,0,S,Rare,4,Byles,Byles,0,,1,1,Alone,NUMERIC,male_2,Rare_male,0,Adult,0,Byles_244310_13.0_S,0.15,244310,13.0,
+151,0,2,male,51.0,0,0,S,Rare,4,Bateman,Bateman,0,,1,1,Alone,SOP,male_2,Rare_male,0,Senior,0,Bateman_S.O.P. 1166_12.525_S,0.15,S.O.P. 1166,12.525,
+152,1,1,female,22.0,1,0,S,Mrs,2,Pears,Pears,1,C,2,0,Small,NUMERIC,female_1,Mrs_female,0,Adult,1,Pears_113776_66.6_S,0.91,113776,66.6,C2
+153,0,3,male,55.5,0,0,S,Mr,0,Meo,Meo,0,,1,1,Alone,A,male_3,Mr_male,0,Senior,0,Meo_A.5. 11206_8.05_S,0.13,A.5. 11206,8.05,
+154,0,3,male,40.5,0,2,S,Mr,0,van Billiard,van Billiard,0,,3,0,Small,A/,male_3,Mr_male,0,Adult,0,van Billiard_A/5. 851_14.5_S,0.13,A/5. 851,14.5,
+155,0,3,male,29.018418834485473,0,0,S,Mr,0,Olsen,Olsen,0,,1,1,Alone,FA,male_3,Mr_male,0,Missing,0,Olsen_Fa 265302_7.3125_S,0.13,Fa 265302,7.3125,
+156,0,1,male,51.0,0,1,C,Mr,0,Williams,Williams,0,,2,0,Small,PC,male_1,Mr_male,0,Senior,0,Williams_PC 17597_61.3792_C,0.37,PC 17597,61.3792,
+157,1,3,female,16.0,0,0,Q,Miss,1,Gilnagh,Gilnagh,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Gilnagh_35851_7.7333_Q,0.49,35851,7.7333,
+158,0,3,male,30.0,0,0,S,Mr,0,Corn,Corn,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Corn_SOTON/OQ 392090_8.05_S,0.13,SOTON/OQ 392090,8.05,
+159,0,3,male,26.426336694520224,0,0,S,Mr,0,Smiljanic,Smiljanic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Smiljanic_315037_8.6625_S,0.13,315037,8.6625,
+160,0,3,male,8.837259803921569,8,2,S,Master,3,Sage,Sage,0,,11,0,Large,CA,male_3,Master_male,0,Missing,1,Sage_CA. 2343_69.55_S,0.49,CA. 2343,69.55,
+161,0,3,male,44.0,0,1,S,Mr,0,Cribb,Cribb,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Cribb_371362_16.1_S,0.13,371362,16.1,
+162,1,2,female,40.0,0,0,S,Mrs,2,Watt,Watt,0,,1,1,Alone,CA,female_2,Mrs_female,0,Adult,1,Watt_C.A. 33595_15.75_S,0.91,C.A. 33595,15.75,
+163,0,3,male,26.0,0,0,S,Mr,0,Bengtsson,Bengtsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Bengtsson_347068_7.775_S,0.13,347068,7.775,
+164,0,3,male,17.0,0,0,S,Mr,0,Calic,Calic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Calic_315093_8.6625_S,0.13,315093,8.6625,
+165,0,3,male,1.0,4,1,S,Master,3,Panula,Panula,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Panula_3101295_39.6875_S,0.49,3101295,39.6875,
+166,1,3,male,9.0,0,2,S,Master,3,Goldsmith,Goldsmith,0,,3,0,Small,NUMERIC,male_3,Master_male,0,Child,1,Goldsmith_363291_20.525_S,0.49,363291,20.525,
+167,1,1,female,39.60447435897436,0,1,S,Mrs,2,Chibnall,Chibnall,1,E,2,0,Small,NUMERIC,female_1,Mrs_female,1,Missing,1,Chibnall_113505_55.0_S,0.91,113505,55.0,E33
+168,0,3,female,45.0,1,4,S,Mrs,2,Skoog,Skoog,0,,6,0,Large,NUMERIC,female_3,Mrs_female,1,Adult,1,Skoog_347088_27.9_S,0.49,347088,27.9,
+169,0,1,male,52.00094748367574,0,0,S,Mr,0,Baumann,Baumann,0,,1,1,Alone,PC,male_1,Mr_male,0,Missing,0,Baumann_PC 17318_25.925_S,0.37,PC 17318,25.925,
+170,0,3,male,28.0,0,0,S,Mr,0,Ling,Ling,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Ling_1601_56.4958_S,0.13,1601,56.4958,
+171,0,1,male,61.0,0,0,S,Mr,0,Van der hoef,Van der hoef,1,B,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Van der hoef_111240_33.5_S,0.37,111240,33.5,B19
+172,0,3,male,4.0,4,1,Q,Master,3,Rice,Rice,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Rice_382652_29.125_Q,0.49,382652,29.125,
+173,1,3,female,1.0,1,1,S,Miss,1,Johnson,Johnson,0,,3,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Johnson_347742_11.1333_S,0.49,347742,11.1333,
+174,0,3,male,21.0,0,0,S,Mr,0,Sivola,Sivola,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Sivola_STON/O 2. 3101280_7.925_S,0.13,STON/O 2. 3101280,7.925,
+175,0,1,male,56.0,0,0,C,Mr,0,Smith,Smith,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Smith_17764_30.6958_C,0.37,17764,30.6958,A7
+176,0,3,male,18.0,1,1,S,Mr,0,Klasen,Klasen,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Teen,1,Klasen_350404_7.8542_S,0.13,350404,7.8542,
+177,0,3,male,4.755883009077409,3,1,S,Master,3,Lefebre,Lefebre,0,,5,0,Large,NUMERIC,male_3,Master_male,0,Missing,1,Lefebre_4133_25.4667_S,0.49,4133,25.4667,
+178,0,1,female,50.0,0,0,C,Miss,1,Isham,Isham,1,C,1,1,Alone,PC,female_1,Miss_female,0,Senior,1,Isham_PC 17595_28.7125_C,0.91,PC 17595,28.7125,C49
+179,0,2,male,30.0,0,0,S,Mr,0,Hale,Hale,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Hale_250653_13.0_S,0.15,250653,13.0,
+180,0,3,male,36.0,0,0,S,Mr,0,Leonard,Leonard,0,,1,1,Alone,LINE,male_3,Mr_male,0,Adult,0,Leonard_LINE_0.0_S,0.13,LINE,0.0,
+181,0,3,female,14.627928571428573,8,2,S,Miss,1,Sage,Sage,0,,11,0,Large,CA,female_3,Miss_female,0,Missing,1,Sage_CA. 2343_69.55_S,0.49,CA. 2343,69.55,
+182,0,2,male,34.322465920205985,0,0,C,Mr,0,Pernot,Pernot,0,,1,1,Alone,SC/PARIS,male_2,Mr_male,0,Missing,0,Pernot_SC/PARIS 2131_15.05_C,0.15,SC/PARIS 2131,15.05,
+183,0,3,male,9.0,4,2,S,Master,3,Asplund,Asplund,0,,7,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Asplund_347077_31.3875_S,0.49,347077,31.3875,
+184,1,2,male,1.0,2,1,S,Master,3,Becker,Becker,1,F,4,0,Small,NUMERIC,male_2,Master_male,0,Child,1,Becker_230136_39.0_S,0.91,230136,39.0,F4
+185,1,3,female,4.0,0,2,S,Miss,1,Kink-Heilmann,Kink-Heilmann,0,,3,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Kink-Heilmann_315153_22.025_S,0.49,315153,22.025,
+186,0,1,male,53.886263323285185,0,0,S,Mr,0,Rood,Rood,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Rood_113767_50.0_S,0.37,113767,50.0,A32
+187,1,3,female,28.47345632678669,1,0,Q,Mrs,2,O'Brien,O'Brien,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Missing,1,O'Brien_370365_15.5_Q,0.49,370365,15.5,
+188,1,1,male,45.0,0,0,S,Mr,0,Romaine,Romaine,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Romaine_111428_26.55_S,0.37,111428,26.55,
+189,0,3,male,40.0,1,1,Q,Mr,0,Bourke,Bourke,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Bourke_364849_15.5_Q,0.13,364849,15.5,
+190,0,3,male,36.0,0,0,S,Mr,0,Turcin,Turcin,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Turcin_349247_7.8958_S,0.13,349247,7.8958,
+191,1,2,female,32.0,0,0,S,Mrs,2,Pinsky,Pinsky,0,,1,1,Alone,NUMERIC,female_2,Mrs_female,0,Adult,1,Pinsky_234604_13.0_S,0.91,234604,13.0,
+192,0,2,male,19.0,0,0,S,Mr,0,Carbines,Carbines,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Carbines_28424_13.0_S,0.15,28424,13.0,
+193,1,3,female,19.0,1,0,S,Miss,1,Andersen-Jensen,Andersen-Jensen,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Adult,1,Andersen-Jensen_350046_7.8542_S,0.49,350046,7.8542,
+194,1,2,male,3.0,1,1,S,Master,3,Navratil,Navratil,1,F,3,0,Small,NUMERIC,male_2,Master_male,0,Child,1,Navratil_230080_26.0_S,0.91,230080,26.0,F2
+195,1,1,female,44.0,0,0,C,Mrs,2,Brown,Brown,1,B,1,1,Alone,PC,female_1,Mrs_female,0,Adult,1,Brown_PC 17610_27.7208_C,0.91,PC 17610,27.7208,B4
+196,1,1,female,58.0,0,0,C,Miss,1,Lurette,Lurette,1,B,1,1,Alone,PC,female_1,Miss_female,0,Senior,1,Lurette_PC 17569_146.5208_C,0.91,PC 17569,146.5208,B80
+197,0,3,male,37.823919966904946,0,0,Q,Mr,0,Mernagh,Mernagh,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Mernagh_368703_7.75_Q,0.13,368703,7.75,
+198,0,3,male,42.0,0,1,S,Mr,0,Olsen,Olsen,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Olsen_4579_8.4042_S,0.13,4579,8.4042,
+199,1,3,female,24.653493665322376,0,0,Q,Miss,1,Madigan,Madigan,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Madigan_370370_7.75_Q,0.49,370370,7.75,
+200,0,2,female,24.0,0,0,S,Miss,1,Yrois,Yrois,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Yrois_248747_13.0_S,0.91,248747,13.0,
+201,0,3,male,28.0,0,0,S,Mr,0,Vande Walle,Vande Walle,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Vande Walle_345770_9.5_S,0.13,345770,9.5,
+202,0,3,male,14.520238095238096,8,2,S,Mr,0,Sage,Sage,0,,11,0,Large,CA,male_3,Mr_male,0,Missing,0,Sage_CA. 2343_69.55_S,0.13,CA. 2343,69.55,
+203,0,3,male,34.0,0,0,S,Mr,0,Johanson,Johanson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Johanson_3101264_6.4958_S,0.13,3101264,6.4958,
+204,0,3,male,45.5,0,0,C,Mr,0,Youseff,Youseff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Youseff_2628_7.225_C,0.13,2628,7.225,
+205,1,3,male,18.0,0,0,S,Mr,0,Cohen,Cohen,0,,1,1,Alone,A/,male_3,Mr_male,0,Teen,1,Cohen_A/5 3540_8.05_S,0.13,A/5 3540,8.05,
+206,0,3,female,2.0,0,1,S,Miss,1,Strom,Strom,1,G,2,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Strom_347054_10.4625_S,0.49,347054,10.4625,G6
+207,0,3,male,32.0,1,0,S,Mr,0,Backstrom,Backstrom,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Backstrom_3101278_15.85_S,0.13,3101278,15.85,
+208,1,3,male,26.0,0,0,C,Mr,0,Albimona,Albimona,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Albimona_2699_18.7875_C,0.13,2699,18.7875,
+209,1,3,female,16.0,0,0,Q,Miss,1,Carr,Carr,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Carr_367231_7.75_Q,0.49,367231,7.75,
+210,1,1,male,40.0,0,0,C,Mr,0,Blank,Blank,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Blank_112277_31.0_C,0.37,112277,31.0,A31
+211,0,3,male,24.0,0,0,S,Mr,0,Ali,Ali,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Ali_SOTON/O.Q. 3101311_7.05_S,0.13,SOTON/O.Q. 3101311,7.05,
+212,1,2,female,35.0,0,0,S,Miss,1,Cameron,Cameron,0,,1,1,Alone,FCC,female_2,Miss_female,0,Adult,1,Cameron_F.C.C. 13528_21.0_S,0.91,F.C.C. 13528,21.0,
+213,0,3,male,22.0,0,0,S,Mr,0,Perkin,Perkin,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Perkin_A/5 21174_7.25_S,0.13,A/5 21174,7.25,
+214,0,2,male,30.0,0,0,S,Mr,0,Givard,Givard,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Givard_250646_13.0_S,0.15,250646,13.0,
+215,0,3,male,32.14161036121765,1,0,Q,Mr,0,Kiernan,Kiernan,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,Kiernan_367229_7.75_Q,0.13,367229,7.75,
+216,1,1,female,31.0,1,0,C,Miss,1,Newell,Newell,1,D,2,0,Small,NUMERIC,female_1,Miss_female,0,Adult,1,Newell_35273_113.275_C,0.91,35273,113.275,D36
+217,1,3,female,27.0,0,0,S,Miss,1,Honkanen,Honkanen,0,,1,1,Alone,STON/O,female_3,Miss_female,0,Adult,1,Honkanen_STON/O2. 3101283_7.925_S,0.49,STON/O2. 3101283,7.925,
+218,0,2,male,42.0,1,0,S,Mr,0,Jacobsohn,Jacobsohn,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Jacobsohn_243847_27.0_S,0.15,243847,27.0,
+219,1,1,female,32.0,0,0,C,Miss,1,Bazzani,Bazzani,1,D,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Bazzani_11813_76.2917_C,0.91,11813,76.2917,D15
+220,0,2,male,30.0,0,0,S,Mr,0,Harris,Harris,0,,1,1,Alone,W/C,male_2,Mr_male,0,Adult,0,Harris_W/C 14208_10.5_S,0.15,W/C 14208,10.5,
+221,1,3,male,16.0,0,0,S,Mr,0,Sunderland,Sunderland,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Teen,1,Sunderland_SOTON/OQ 392089_8.05_S,0.13,SOTON/OQ 392089,8.05,
+222,0,2,male,27.0,0,0,S,Mr,0,Bracken,Bracken,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Bracken_220367_13.0_S,0.15,220367,13.0,
+223,0,3,male,51.0,0,0,S,Mr,0,Green,Green,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Senior,0,Green_21440_8.05_S,0.13,21440,8.05,
+224,0,3,male,28.255220155534552,0,0,S,Mr,0,Nenkoff,Nenkoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Nenkoff_349234_7.8958_S,0.13,349234,7.8958,
+225,1,1,male,38.0,1,0,S,Mr,0,Hoyt,Hoyt,1,C,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Hoyt_19943_90.0_S,0.37,19943,90.0,C93
+226,0,3,male,22.0,0,0,S,Mr,0,Berglund,Berglund,0,,1,1,Alone,PP,male_3,Mr_male,0,Adult,0,Berglund_PP 4348_9.35_S,0.13,PP 4348,9.35,
+227,1,2,male,19.0,0,0,S,Mr,0,Mellors,Mellors,0,,1,1,Alone,SW/PP,male_2,Mr_male,0,Adult,0,Mellors_SW/PP 751_10.5_S,0.15,SW/PP 751,10.5,
+228,0,3,male,20.5,0,0,S,Mr,0,Lovell,Lovell,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Lovell_A/5 21173_7.25_S,0.13,A/5 21173,7.25,
+229,0,2,male,18.0,0,0,S,Mr,0,Fahlstrom,Fahlstrom,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Teen,1,Fahlstrom_236171_13.0_S,0.15,236171,13.0,
+230,0,3,female,5.489973105013178,3,1,S,Miss,1,Lefebre,Lefebre,0,,5,0,Large,NUMERIC,female_3,Miss_female,0,Missing,1,Lefebre_4133_25.4667_S,0.49,4133,25.4667,
+231,1,1,female,35.0,1,0,S,Mrs,2,Harris,Harris,1,C,2,0,Small,NUMERIC,female_1,Mrs_female,0,Adult,1,Harris_36973_83.475_S,0.91,36973,83.475,C83
+232,0,3,male,29.0,0,0,S,Mr,0,Larsson,Larsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Larsson_347067_7.775_S,0.13,347067,7.775,
+233,0,2,male,59.0,0,0,S,Mr,0,Sjostedt,Sjostedt,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Senior,0,Sjostedt_237442_13.5_S,0.15,237442,13.5,
+234,1,3,female,5.0,4,2,S,Miss,1,Asplund,Asplund,0,,7,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Asplund_347077_31.3875_S,0.49,347077,31.3875,
+235,0,2,male,24.0,0,0,S,Mr,0,Leyson,Leyson,0,,1,1,Alone,CA,male_2,Mr_male,0,Adult,0,Leyson_C.A. 29566_10.5_S,0.15,C.A. 29566,10.5,
+236,0,3,female,21.083838077828226,0,0,S,Miss,1,Harknett,Harknett,0,,1,1,Alone,W/C,female_3,Miss_female,0,Missing,1,Harknett_W./C. 6609_7.55_S,0.49,W./C. 6609,7.55,
+237,0,2,male,44.0,1,0,S,Mr,0,Hold,Hold,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Hold_26707_26.0_S,0.15,26707,26.0,
+238,1,2,female,8.0,0,2,S,Miss,1,Collyer,Collyer,0,,3,0,Small,CA,female_2,Miss_female,0,Child,1,Collyer_C.A. 31921_26.25_S,0.91,C.A. 31921,26.25,
+239,0,2,male,19.0,0,0,S,Mr,0,Pengelly,Pengelly,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Pengelly_28665_10.5_S,0.15,28665,10.5,
+240,0,2,male,33.0,0,0,S,Mr,0,Hunt,Hunt,0,,1,1,Alone,SCO/W,male_2,Mr_male,0,Adult,0,Hunt_SCO/W 1585_12.275_S,0.15,SCO/W 1585,12.275,
+241,0,3,female,16.1431551333943,1,0,C,Miss,1,Zabour,Zabour,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Missing,1,Zabour_2665_14.4542_C,0.49,2665,14.4542,
+242,1,3,female,17.77898197322114,1,0,Q,Miss,1,Murphy,Murphy,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Missing,1,Murphy_367230_15.5_Q,0.49,367230,15.5,
+243,0,2,male,29.0,0,0,S,Mr,0,Coleridge,Coleridge,0,,1,1,Alone,W/C,male_2,Mr_male,0,Adult,0,Coleridge_W./C. 14263_10.5_S,0.15,W./C. 14263,10.5,
+244,0,3,male,22.0,0,0,S,Mr,0,Maenpaa,Maenpaa,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Maenpaa_STON/O 2. 3101275_7.125_S,0.13,STON/O 2. 3101275,7.125,
+245,0,3,male,30.0,0,0,C,Mr,0,Attalah,Attalah,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Attalah_2694_7.225_C,0.13,2694,7.225,
+246,0,1,male,44.0,2,0,Q,Rare,4,Minahan,Minahan,1,C,3,0,Small,NUMERIC,male_1,Rare_male,0,Adult,0,Minahan_19928_90.0_Q,0.37,19928,90.0,C78
+247,0,3,female,25.0,0,0,S,Miss,1,Lindahl,Lindahl,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Lindahl_347071_7.775_S,0.49,347071,7.775,
+248,1,2,female,24.0,0,2,S,Mrs,2,Hamalainen,Hamalainen,0,,3,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Hamalainen_250649_14.5_S,0.91,250649,14.5,
+249,1,1,male,37.0,1,1,S,Mr,0,Beckwith,Beckwith,1,D,3,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Beckwith_11751_52.5542_S,0.37,11751,52.5542,D35
+250,0,2,male,54.0,1,0,S,Rare,4,Carter,Carter,0,,2,0,Small,NUMERIC,male_2,Rare_male,0,Senior,0,Carter_244252_26.0_S,0.15,244252,26.0,
+251,0,3,male,29.018418834485473,0,0,S,Mr,0,Reed,Reed,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Reed_362316_7.25_S,0.13,362316,7.25,
+252,0,3,female,29.0,1,1,S,Mrs,2,Strom,Strom,1,G,3,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Strom_347054_10.4625_S,0.49,347054,10.4625,G6
+253,0,1,male,62.0,0,0,S,Mr,0,Stead,Stead,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Stead_113514_26.55_S,0.37,113514,26.55,C87
+254,0,3,male,30.0,1,0,S,Mr,0,Lobb,Lobb,0,,2,0,Small,A/,male_3,Mr_male,0,Adult,0,Lobb_A/5. 3336_16.1_S,0.13,A/5. 3336,16.1,
+255,0,3,female,41.0,0,2,S,Mrs,2,Rosblom,Rosblom,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Rosblom_370129_20.2125_S,0.49,370129,20.2125,
+256,1,3,female,29.0,0,2,C,Mrs,2,Touma,Touma,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Touma_2650_15.2458_C,0.49,2650,15.2458,
+257,1,1,female,43.224264890674455,0,0,C,Mrs,2,Thorne,Thorne,0,,1,1,Alone,PC,female_1,Mrs_female,0,Missing,1,Thorne_PC 17585_79.2_C,0.91,PC 17585,79.2,
+258,1,1,female,30.0,0,0,S,Miss,1,Cherry,Cherry,1,B,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Cherry_110152_86.5_S,0.91,110152,86.5,B77
+259,1,1,female,35.0,0,0,C,Miss,1,Ward,Ward,0,,1,1,Alone,PC,female_1,Miss_female,0,Adult,1,Ward_PC 17755_512.3292_C,0.91,PC 17755,512.3292,
+260,1,2,female,50.0,0,1,S,Mrs,2,Parrish,Parrish,0,,2,0,Small,NUMERIC,female_2,Mrs_female,1,Senior,1,Parrish_230433_26.0_S,0.91,230433,26.0,
+261,0,3,male,37.823919966904946,0,0,Q,Mr,0,Smith,Smith,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Smith_384461_7.75_Q,0.13,384461,7.75,
+262,1,3,male,3.0,4,2,S,Master,3,Asplund,Asplund,0,,7,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Asplund_347077_31.3875_S,0.49,347077,31.3875,
+263,0,1,male,52.0,1,1,S,Mr,0,Taussig,Taussig,1,E,3,0,Small,NUMERIC,male_1,Mr_male,0,Senior,0,Taussig_110413_79.65_S,0.37,110413,79.65,E67
+264,0,1,male,40.0,0,0,S,Mr,0,Harrison,Harrison,1,B,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Harrison_112059_0.0_S,0.37,112059,0.0,B94
+265,0,3,female,24.653493665322376,0,0,Q,Miss,1,Henry,Henry,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Henry_382649_7.75_Q,0.49,382649,7.75,
+266,0,2,male,36.0,0,0,S,Mr,0,Reeves,Reeves,0,,1,1,Alone,CA,male_2,Mr_male,0,Adult,0,Reeves_C.A. 17248_10.5_S,0.15,C.A. 17248,10.5,
+267,0,3,male,16.0,4,1,S,Mr,0,Panula,Panula,0,,6,0,Large,NUMERIC,male_3,Mr_male,0,Teen,1,Panula_3101295_39.6875_S,0.13,3101295,39.6875,
+268,1,3,male,25.0,1,0,S,Mr,0,Persson,Persson,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Persson_347083_7.775_S,0.13,347083,7.775,
+269,1,1,female,58.0,0,1,S,Mrs,2,Graham,Graham,1,C,2,0,Small,PC,female_1,Mrs_female,1,Senior,1,Graham_PC 17582_153.4625_S,0.91,PC 17582,153.4625,C125
+270,1,1,female,35.0,0,0,S,Miss,1,Bissette,Bissette,1,C,1,1,Alone,PC,female_1,Miss_female,0,Adult,1,Bissette_PC 17760_135.6333_S,0.91,PC 17760,135.6333,C99
+271,0,1,male,45.46355852455301,0,0,S,Mr,0,Cairns,Cairns,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Cairns_113798_31.0_S,0.37,113798,31.0,
+272,1,3,male,25.0,0,0,S,Mr,0,Tornquist,Tornquist,0,,1,1,Alone,LINE,male_3,Mr_male,0,Adult,0,Tornquist_LINE_0.0_S,0.13,LINE,0.0,
+273,1,2,female,41.0,0,1,S,Mrs,2,Mellinger,Mellinger,0,,2,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Mellinger_250644_19.5_S,0.91,250644,19.5,
+274,0,1,male,37.0,0,1,C,Mr,0,Natsch,Natsch,1,C,2,0,Small,PC,male_1,Mr_male,0,Adult,0,Natsch_PC 17596_29.7_C,0.37,PC 17596,29.7,C118
+275,1,3,female,24.653493665322376,0,0,Q,Miss,1,Healy,Healy,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Healy_370375_7.75_Q,0.49,370375,7.75,
+276,1,1,female,63.0,1,0,S,Miss,1,Andrews,Andrews,1,D,2,0,Small,NUMERIC,female_1,Miss_female,0,Senior,1,Andrews_13502_77.9583_S,0.91,13502,77.9583,D7
+277,0,3,female,45.0,0,0,S,Miss,1,Lindblom,Lindblom,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Lindblom_347073_7.75_S,0.49,347073,7.75,
+278,0,2,male,34.67977081169204,0,0,S,Mr,0,Parkes,Parkes,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Missing,0,Parkes_239853_0.0_S,0.15,239853,0.0,
+279,0,3,male,7.0,4,1,Q,Master,3,Rice,Rice,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Rice_382652_29.125_Q,0.49,382652,29.125,
+280,1,3,female,35.0,1,1,S,Mrs,2,Abbott,Abbott,0,,3,0,Small,CA,female_3,Mrs_female,1,Adult,1,Abbott_C.A. 2673_20.25_S,0.49,C.A. 2673,20.25,
+281,0,3,male,65.0,0,0,Q,Mr,0,Duane,Duane,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Senior,0,Duane_336439_7.75_Q,0.13,336439,7.75,
+282,0,3,male,28.0,0,0,S,Mr,0,Olsson,Olsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Olsson_347464_7.8542_S,0.13,347464,7.8542,
+283,0,3,male,16.0,0,0,S,Mr,0,de Pelsmaeker,de Pelsmaeker,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,de Pelsmaeker_345778_9.5_S,0.13,345778,9.5,
+284,1,3,male,19.0,0,0,S,Mr,0,Dorking,Dorking,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Dorking_A/5. 10482_8.05_S,0.13,A/5. 10482,8.05,
+285,0,1,male,54.46478081700907,0,0,S,Mr,0,Smith,Smith,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Smith_113056_26.0_S,0.37,113056,26.0,A19
+286,0,3,male,33.0,0,0,C,Mr,0,Stankovic,Stankovic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Stankovic_349239_8.6625_C,0.13,349239,8.6625,
+287,1,3,male,30.0,0,0,S,Mr,0,de Mulder,de Mulder,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,de Mulder_345774_9.5_S,0.13,345774,9.5,
+288,0,3,male,22.0,0,0,S,Mr,0,Naidenoff,Naidenoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Naidenoff_349206_7.8958_S,0.13,349206,7.8958,
+289,1,2,male,42.0,0,0,S,Mr,0,Hosono,Hosono,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Hosono_237798_13.0_S,0.15,237798,13.0,
+290,1,3,female,22.0,0,0,Q,Miss,1,Connolly,Connolly,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Connolly_370373_7.75_Q,0.49,370373,7.75,
+291,1,1,female,26.0,0,0,S,Miss,1,Barber,Barber,0,,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Barber_19877_78.85_S,0.91,19877,78.85,
+292,1,1,female,19.0,1,0,C,Mrs,2,Bishop,Bishop,1,B,2,0,Small,NUMERIC,female_1,Mrs_female,0,Adult,1,Bishop_11967_91.0792_C,0.91,11967,91.0792,B49
+293,0,2,male,36.0,0,0,C,Mr,0,Levy,Levy,1,D,1,1,Alone,SC/PARIS,male_2,Mr_male,0,Adult,0,Levy_SC/Paris 2163_12.875_C,0.15,SC/Paris 2163,12.875,D
+294,0,3,female,24.0,0,0,S,Miss,1,Haas,Haas,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Haas_349236_8.85_S,0.49,349236,8.85,
+295,0,3,male,24.0,0,0,S,Mr,0,Mineff,Mineff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Mineff_349233_7.8958_S,0.13,349233,7.8958,
+296,0,1,male,39.738921101899635,0,0,C,Mr,0,Lewy,Lewy,0,,1,1,Alone,PC,male_1,Mr_male,0,Missing,0,Lewy_PC 17612_27.7208_C,0.37,PC 17612,27.7208,
+297,0,3,male,23.5,0,0,C,Mr,0,Hanna,Hanna,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Hanna_2693_7.2292_C,0.13,2693,7.2292,
+298,0,1,female,2.0,1,2,S,Miss,1,Allison,Allison,1,C,4,0,Small,NUMERIC,female_1,Miss_female,0,Child,1,Allison_113781_151.55_S,0.91,113781,151.55,C22 C26
+299,1,1,male,42.33938393169734,0,0,S,Mr,0,Saalfeld,Saalfeld,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Saalfeld_19988_30.5_S,0.37,19988,30.5,C106
+300,1,1,female,50.0,0,1,C,Mrs,2,Baxter,Baxter,1,B,2,0,Small,PC,female_1,Mrs_female,1,Senior,1,Baxter_PC 17558_247.5208_C,0.91,PC 17558,247.5208,B58 B60
+301,1,3,female,24.653493665322376,0,0,Q,Miss,1,Kelly,Kelly,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Kelly_9234_7.75_Q,0.49,9234,7.75,
+302,1,3,male,24.718557549741085,2,0,Q,Mr,0,McCoy,McCoy,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,McCoy_367226_23.25_Q,0.13,367226,23.25,
+303,0,3,male,19.0,0,0,S,Mr,0,Johnson,Johnson,0,,1,1,Alone,LINE,male_3,Mr_male,0,Adult,0,Johnson_LINE_0.0_S,0.13,LINE,0.0,
+304,1,2,female,29.327918053783648,0,0,Q,Miss,1,Keane,Keane,1,E,1,1,Alone,NUMERIC,female_2,Miss_female,0,Missing,1,Keane_226593_12.35_Q,0.91,226593,12.35,E101
+305,0,3,male,29.72874460481854,0,0,S,Mr,0,Williams,Williams,0,,1,1,Alone,A/,male_3,Mr_male,0,Missing,0,Williams_A/5 2466_8.05_S,0.13,A/5 2466,8.05,
+306,1,1,male,0.92,1,2,S,Master,3,Allison,Allison,1,C,4,0,Small,NUMERIC,male_1,Master_male,0,Child,1,Allison_113781_151.55_S,0.91,113781,151.55,C22 C26
+307,1,1,female,30.181649856690246,0,0,C,Miss,1,Fleming,Fleming,0,,1,1,Alone,NUMERIC,female_1,Miss_female,0,Missing,1,Fleming_17421_110.8833_C,0.91,17421,110.8833,
+308,1,1,female,17.0,1,0,C,Mrs,2,Penasco y Castellana,Penasco y Castellana,1,C,2,0,Small,PC,female_1,Mrs_female,0,Teen,1,Penasco y Castellana_PC 17758_108.9_C,0.91,PC 17758,108.9,C65
+309,0,2,male,30.0,1,0,C,Mr,0,Abelson,Abelson,0,,2,0,Small,P/PP,male_2,Mr_male,0,Adult,0,Abelson_P/PP 3381_24.0_C,0.15,P/PP 3381,24.0,
+310,1,1,female,30.0,0,0,C,Miss,1,Francatelli,Francatelli,1,E,1,1,Alone,PC,female_1,Miss_female,0,Adult,1,Francatelli_PC 17485_56.9292_C,0.91,PC 17485,56.9292,E36
+311,1,1,female,24.0,0,0,C,Miss,1,Hays,Hays,1,C,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Hays_11767_83.1583_C,0.91,11767,83.1583,C54
+312,1,1,female,18.0,2,2,C,Miss,1,Ryerson,Ryerson,1,B,5,0,Large,PC,female_1,Miss_female,0,Teen,1,Ryerson_PC 17608_262.375_C,0.91,PC 17608,262.375,B57 B59 B63 B66
+313,0,2,female,26.0,1,1,S,Mrs,2,Lahtinen,Lahtinen,0,,3,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Lahtinen_250651_26.0_S,0.91,250651,26.0,
+314,0,3,male,28.0,0,0,S,Mr,0,Hendekovic,Hendekovic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Hendekovic_349243_7.8958_S,0.13,349243,7.8958,
+315,0,2,male,43.0,1,1,S,Mr,0,Hart,Hart,0,,3,0,Small,FCC,male_2,Mr_male,0,Adult,0,Hart_F.C.C. 13529_26.25_S,0.15,F.C.C. 13529,26.25,
+316,1,3,female,26.0,0,0,S,Miss,1,Nilsson,Nilsson,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Nilsson_347470_7.8542_S,0.49,347470,7.8542,
+317,1,2,female,24.0,1,0,S,Mrs,2,Kantor,Kantor,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Kantor_244367_26.0_S,0.91,244367,26.0,
+318,0,2,male,54.0,0,0,S,Rare,4,Moraweck,Moraweck,0,,1,1,Alone,NUMERIC,male_2,Rare_male,0,Senior,0,Moraweck_29011_14.0_S,0.15,29011,14.0,
+319,1,1,female,31.0,0,2,S,Miss,1,Wick,Wick,1,C,3,0,Small,NUMERIC,female_1,Miss_female,0,Adult,1,Wick_36928_164.8667_S,0.91,36928,164.8667,C7
+320,1,1,female,40.0,1,1,C,Mrs,2,Spedden,Spedden,1,E,3,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Spedden_16966_134.5_C,0.91,16966,134.5,E34
+321,0,3,male,22.0,0,0,S,Mr,0,Dennis,Dennis,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Dennis_A/5 21172_7.25_S,0.13,A/5 21172,7.25,
+322,0,3,male,27.0,0,0,S,Mr,0,Danoff,Danoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Danoff_349219_7.8958_S,0.13,349219,7.8958,
+323,1,2,female,30.0,0,0,Q,Miss,1,Slayter,Slayter,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Slayter_234818_12.35_Q,0.91,234818,12.35,
+324,1,2,female,22.0,1,1,S,Mrs,2,Caldwell,Caldwell,0,,3,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Caldwell_248738_29.0_S,0.91,248738,29.0,
+325,0,3,male,14.520238095238096,8,2,S,Mr,0,Sage,Sage,0,,11,0,Large,CA,male_3,Mr_male,0,Missing,0,Sage_CA. 2343_69.55_S,0.13,CA. 2343,69.55,
+326,1,1,female,36.0,0,0,C,Miss,1,Young,Young,1,C,1,1,Alone,PC,female_1,Miss_female,0,Adult,1,Young_PC 17760_135.6333_C,0.91,PC 17760,135.6333,C32
+327,0,3,male,61.0,0,0,S,Mr,0,Nysveen,Nysveen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Senior,0,Nysveen_345364_6.2375_S,0.13,345364,6.2375,
+328,1,2,female,36.0,0,0,S,Mrs,2,Ball,Ball,1,D,1,1,Alone,NUMERIC,female_2,Mrs_female,0,Adult,1,Ball_28551_13.0_S,0.91,28551,13.0,D
+329,1,3,female,31.0,1,1,S,Mrs,2,Goldsmith,Goldsmith,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Goldsmith_363291_20.525_S,0.49,363291,20.525,
+330,1,1,female,16.0,0,1,C,Miss,1,Hippach,Hippach,1,B,2,0,Small,NUMERIC,female_1,Miss_female,0,Teen,1,Hippach_111361_57.9792_C,0.91,111361,57.9792,B18
+331,1,3,female,18.572740583075333,2,0,Q,Miss,1,McCoy,McCoy,0,,3,0,Small,NUMERIC,female_3,Miss_female,0,Missing,1,McCoy_367226_23.25_Q,0.49,367226,23.25,
+332,0,1,male,45.5,0,0,S,Mr,0,Partner,Partner,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Partner_113043_28.5_S,0.37,113043,28.5,C124
+333,0,1,male,38.0,0,1,S,Mr,0,Graham,Graham,1,C,2,0,Small,PC,male_1,Mr_male,0,Adult,0,Graham_PC 17582_153.4625_S,0.37,PC 17582,153.4625,C91
+334,0,3,male,16.0,2,0,S,Mr,0,Vander Planke,Vander Planke,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Teen,1,Vander Planke_345764_18.0_S,0.13,345764,18.0,
+335,1,1,female,24.902256451291027,1,0,S,Mrs,2,Frauenthal,Frauenthal,0,,2,0,Small,PC,female_1,Mrs_female,0,Missing,1,Frauenthal_PC 17611_133.65_S,0.91,PC 17611,133.65,
+336,0,3,male,28.255220155534552,0,0,S,Mr,0,Denkoff,Denkoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Denkoff_349225_7.8958_S,0.13,349225,7.8958,
+337,0,1,male,29.0,1,0,S,Mr,0,Pears,Pears,1,C,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Pears_113776_66.6_S,0.37,113776,66.6,C2
+338,1,1,female,41.0,0,0,C,Miss,1,Burns,Burns,1,E,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Burns_16966_134.5_C,0.91,16966,134.5,E40
+339,1,3,male,45.0,0,0,S,Mr,0,Dahl,Dahl,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Dahl_7598_8.05_S,0.13,7598,8.05,
+340,0,1,male,45.0,0,0,S,Mr,0,Blackwell,Blackwell,1,T,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Blackwell_113784_35.5_S,0.37,113784,35.5,T
+341,1,2,male,2.0,1,1,S,Master,3,Navratil,Navratil,1,F,3,0,Small,NUMERIC,male_2,Master_male,0,Child,1,Navratil_230080_26.0_S,0.91,230080,26.0,F2
+342,1,1,female,24.0,3,2,S,Miss,1,Fortune,Fortune,1,C,6,0,Large,NUMERIC,female_1,Miss_female,0,Adult,1,Fortune_19950_263.0_S,0.91,19950,263.0,C23 C25 C27
+343,0,2,male,28.0,0,0,S,Mr,0,Collander,Collander,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Collander_248740_13.0_S,0.15,248740,13.0,
+344,0,2,male,25.0,0,0,S,Mr,0,Sedgwick,Sedgwick,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Sedgwick_244361_13.0_S,0.15,244361,13.0,
+345,0,2,male,36.0,0,0,S,Mr,0,Fox,Fox,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Fox_229236_13.0_S,0.15,229236,13.0,
+346,1,2,female,24.0,0,0,S,Miss,1,Brown,Brown,1,F,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Brown_248733_13.0_S,0.91,248733,13.0,F33
+347,1,2,female,40.0,0,0,S,Miss,1,Smith,Smith,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Smith_31418_13.0_S,0.91,31418,13.0,
+348,1,3,female,27.6303670410724,1,0,S,Mrs,2,Davison,Davison,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Missing,1,Davison_386525_16.1_S,0.49,386525,16.1,
+349,1,3,male,3.0,1,1,S,Master,3,Coutts,Coutts,0,,3,0,Small,CA,male_3,Master_male,0,Child,1,Coutts_C.A. 37671_15.9_S,0.49,C.A. 37671,15.9,
+350,0,3,male,42.0,0,0,S,Mr,0,Dimic,Dimic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Dimic_315088_8.6625_S,0.13,315088,8.6625,
+351,0,3,male,23.0,0,0,S,Mr,0,Odahl,Odahl,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Odahl_7267_9.225_S,0.13,7267,9.225,
+352,0,1,male,56.53076096800156,0,0,S,Mr,0,Williams-Lambert,Williams-Lambert,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Williams-Lambert_113510_35.0_S,0.37,113510,35.0,C128
+353,0,3,male,15.0,1,1,C,Mr,0,Elias,Elias,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Teen,1,Elias_2695_7.2292_C,0.13,2695,7.2292,
+354,0,3,male,25.0,1,0,S,Mr,0,Arnold-Franchi,Arnold-Franchi,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Arnold-Franchi_349237_17.8_S,0.13,349237,17.8,
+355,0,3,male,29.838779070805835,0,0,C,Mr,0,Yousif,Yousif,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Yousif_2647_7.225_C,0.13,2647,7.225,
+356,0,3,male,28.0,0,0,S,Mr,0,Vanden Steen,Vanden Steen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Vanden Steen_345783_9.5_S,0.13,345783,9.5,
+357,1,1,female,22.0,0,1,S,Miss,1,Bowerman,Bowerman,1,E,2,0,Small,NUMERIC,female_1,Miss_female,0,Adult,1,Bowerman_113505_55.0_S,0.91,113505,55.0,E33
+358,0,2,female,38.0,0,0,S,Miss,1,Funk,Funk,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Funk_237671_13.0_S,0.91,237671,13.0,
+359,1,3,female,22.571789468547774,0,0,Q,Miss,1,McGovern,McGovern,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,McGovern_330931_7.8792_Q,0.49,330931,7.8792,
+360,1,3,female,22.571789468547774,0,0,Q,Miss,1,Mockler,Mockler,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Mockler_330980_7.8792_Q,0.49,330980,7.8792,
+361,0,3,male,40.0,1,4,S,Mr,0,Skoog,Skoog,0,,6,0,Large,NUMERIC,male_3,Mr_male,0,Adult,0,Skoog_347088_27.9_S,0.13,347088,27.9,
+362,0,2,male,29.0,1,0,C,Mr,0,del Carlo,del Carlo,0,,2,0,Small,SC/PARIS,male_2,Mr_male,0,Adult,0,del Carlo_SC/PARIS 2167_27.7208_C,0.15,SC/PARIS 2167,27.7208,
+363,0,3,female,45.0,0,1,C,Mrs,2,Barbara,Barbara,0,,2,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Barbara_2691_14.4542_C,0.49,2691,14.4542,
+364,0,3,male,35.0,0,0,S,Mr,0,Asim,Asim,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Asim_SOTON/O.Q. 3101310_7.05_S,0.13,SOTON/O.Q. 3101310,7.05,
+365,0,3,male,29.251586306972143,1,0,Q,Mr,0,O'Brien,O'Brien,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,O'Brien_370365_15.5_Q,0.13,370365,15.5,
+366,0,3,male,30.0,0,0,S,Mr,0,Adahl,Adahl,0,,1,1,Alone,C,male_3,Mr_male,0,Adult,0,Adahl_C 7076_7.25_S,0.13,C 7076,7.25,
+367,1,1,female,60.0,1,0,C,Mrs,2,Warren,Warren,1,D,2,0,Small,NUMERIC,female_1,Mrs_female,0,Senior,1,Warren_110813_75.25_C,0.91,110813,75.25,D37
+368,1,3,female,36.43067532467533,0,0,C,Mrs,2,Moussa,Moussa,0,,1,1,Alone,NUMERIC,female_3,Mrs_female,0,Missing,1,Moussa_2626_7.2292_C,0.49,2626,7.2292,
+369,1,3,female,24.653493665322376,0,0,Q,Miss,1,Jermyn,Jermyn,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Jermyn_14313_7.75_Q,0.49,14313,7.75,
+370,1,1,female,24.0,0,0,C,Rare,4,Aubart,Aubart,1,B,1,1,Alone,PC,female_1,Rare_female,0,Adult,1,Aubart_PC 17477_69.3_C,0.91,PC 17477,69.3,B35
+371,1,1,male,25.0,1,0,C,Mr,0,Harder,Harder,1,E,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Harder_11765_55.4417_C,0.37,11765,55.4417,E50
+372,0,3,male,18.0,1,0,S,Mr,0,Wiklund,Wiklund,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Teen,1,Wiklund_3101267_6.4958_S,0.13,3101267,6.4958,
+373,0,3,male,19.0,0,0,S,Mr,0,Beavan,Beavan,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Beavan_323951_8.05_S,0.13,323951,8.05,
+374,0,1,male,22.0,0,0,C,Mr,0,Ringhini,Ringhini,0,,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Ringhini_PC 17760_135.6333_C,0.37,PC 17760,135.6333,
+375,0,3,female,3.0,3,1,S,Miss,1,Palsson,Palsson,0,,5,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Palsson_349909_21.075_S,0.49,349909,21.075,
+376,1,1,female,37.76507922335761,1,0,C,Mrs,2,Meyer,Meyer,0,,2,0,Small,PC,female_1,Mrs_female,0,Missing,1,Meyer_PC 17604_82.1708_C,0.91,PC 17604,82.1708,
+377,1,3,female,22.0,0,0,S,Miss,1,Landergren,Landergren,0,,1,1,Alone,C,female_3,Miss_female,0,Adult,1,Landergren_C 7077_7.25_S,0.49,C 7077,7.25,
+378,0,1,male,27.0,0,2,C,Mr,0,Widener,Widener,1,C,3,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Widener_113503_211.5_C,0.37,113503,211.5,C82
+379,0,3,male,20.0,0,0,C,Mr,0,Betros,Betros,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Betros_2648_4.0125_C,0.13,2648,4.0125,
+380,0,3,male,19.0,0,0,S,Mr,0,Gustafsson,Gustafsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Gustafsson_347069_7.775_S,0.13,347069,7.775,
+381,1,1,female,42.0,0,0,C,Miss,1,Bidois,Bidois,0,,1,1,Alone,PC,female_1,Miss_female,0,Adult,1,Bidois_PC 17757_227.525_C,0.91,PC 17757,227.525,
+382,1,3,female,1.0,0,2,C,Miss,1,Nakid,Nakid,0,,3,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Nakid_2653_15.7417_C,0.49,2653,15.7417,
+383,0,3,male,32.0,0,0,S,Mr,0,Tikkanen,Tikkanen,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Tikkanen_STON/O 2. 3101293_7.925_S,0.13,STON/O 2. 3101293,7.925,
+384,1,1,female,35.0,1,0,S,Mrs,2,Holverson,Holverson,0,,2,0,Small,NUMERIC,female_1,Mrs_female,0,Adult,1,Holverson_113789_52.0_S,0.91,113789,52.0,
+385,0,3,male,28.255220155534552,0,0,S,Mr,0,Plotcharsky,Plotcharsky,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Plotcharsky_349227_7.8958_S,0.13,349227,7.8958,
+386,0,2,male,18.0,0,0,S,Mr,0,Davies,Davies,0,,1,1,Alone,SOC,male_2,Mr_male,0,Teen,1,Davies_S.O.C. 14879_73.5_S,0.15,S.O.C. 14879,73.5,
+387,0,3,male,1.0,5,2,S,Master,3,Goodwin,Goodwin,0,,8,0,Large,CA,male_3,Master_male,0,Child,1,Goodwin_CA 2144_46.9_S,0.49,CA 2144,46.9,
+388,1,2,female,36.0,0,0,S,Miss,1,Buss,Buss,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Buss_27849_13.0_S,0.91,27849,13.0,
+389,0,3,male,28.949123655420276,0,0,Q,Mr,0,Sadlier,Sadlier,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Sadlier_367655_7.7292_Q,0.13,367655,7.7292,
+390,1,2,female,17.0,0,0,C,Miss,1,Lehmann,Lehmann,0,,1,1,Alone,SC,female_2,Miss_female,0,Teen,1,Lehmann_SC 1748_12.0_C,0.91,SC 1748,12.0,
+391,1,1,male,36.0,1,2,S,Mr,0,Carter,Carter,1,B,4,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Carter_113760_120.0_S,0.37,113760,120.0,B96 B98
+392,1,3,male,21.0,0,0,S,Mr,0,Jansson,Jansson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Jansson_350034_7.7958_S,0.13,350034,7.7958,
+393,0,3,male,28.0,2,0,S,Mr,0,Gustafsson,Gustafsson,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Gustafsson_3101277_7.925_S,0.13,3101277,7.925,
+394,1,1,female,23.0,1,0,C,Miss,1,Newell,Newell,1,D,2,0,Small,NUMERIC,female_1,Miss_female,0,Adult,1,Newell_35273_113.275_C,0.91,35273,113.275,D36
+395,1,3,female,24.0,0,2,S,Mrs,2,Sandstrom,Sandstrom,1,G,3,0,Small,PP,female_3,Mrs_female,1,Adult,1,Sandstrom_PP 9549_16.7_S,0.49,PP 9549,16.7,G6
+396,0,3,male,22.0,0,0,S,Mr,0,Johansson,Johansson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Johansson_350052_7.7958_S,0.13,350052,7.7958,
+397,0,3,female,31.0,0,0,S,Miss,1,Olsson,Olsson,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Olsson_350407_7.8542_S,0.49,350407,7.8542,
+398,0,2,male,46.0,0,0,S,Mr,0,McKane,McKane,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,McKane_28403_26.0_S,0.15,28403,26.0,
+399,0,2,male,23.0,0,0,S,Rare,4,Pain,Pain,0,,1,1,Alone,NUMERIC,male_2,Rare_male,0,Adult,0,Pain_244278_10.5_S,0.15,244278,10.5,
+400,1,2,female,28.0,0,0,S,Mrs,2,Trout,Trout,0,,1,1,Alone,NUMERIC,female_2,Mrs_female,0,Adult,1,Trout_240929_12.65_S,0.91,240929,12.65,
+401,1,3,male,39.0,0,0,S,Mr,0,Niskanen,Niskanen,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Niskanen_STON/O 2. 3101289_7.925_S,0.13,STON/O 2. 3101289,7.925,
+402,0,3,male,26.0,0,0,S,Mr,0,Adams,Adams,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Adams_341826_8.05_S,0.13,341826,8.05,
+403,0,3,female,21.0,1,0,S,Miss,1,Jussila,Jussila,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Adult,1,Jussila_4137_9.825_S,0.49,4137,9.825,
+404,0,3,male,28.0,1,0,S,Mr,0,Hakkarainen,Hakkarainen,0,,2,0,Small,STON/O,male_3,Mr_male,0,Adult,0,Hakkarainen_STON/O2. 3101279_15.85_S,0.13,STON/O2. 3101279,15.85,
+405,0,3,female,20.0,0,0,S,Miss,1,Oreskovic,Oreskovic,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Oreskovic_315096_8.6625_S,0.49,315096,8.6625,
+406,0,2,male,34.0,1,0,S,Mr,0,Gale,Gale,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Gale_28664_21.0_S,0.15,28664,21.0,
+407,0,3,male,51.0,0,0,S,Mr,0,Widegren,Widegren,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Senior,0,Widegren_347064_7.75_S,0.13,347064,7.75,
+408,1,2,male,3.0,1,1,S,Master,3,Richards,Richards,0,,3,0,Small,NUMERIC,male_2,Master_male,0,Child,1,Richards_29106_18.75_S,0.91,29106,18.75,
+409,0,3,male,21.0,0,0,S,Mr,0,Birkeland,Birkeland,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Birkeland_312992_7.775_S,0.13,312992,7.775,
+410,0,3,female,5.489973105013178,3,1,S,Miss,1,Lefebre,Lefebre,0,,5,0,Large,NUMERIC,female_3,Miss_female,0,Missing,1,Lefebre_4133_25.4667_S,0.49,4133,25.4667,
+411,0,3,male,28.255220155534552,0,0,S,Mr,0,Sdycoff,Sdycoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Sdycoff_349222_7.8958_S,0.13,349222,7.8958,
+412,0,3,male,29.042610145370553,0,0,Q,Mr,0,Hart,Hart,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Hart_394140_6.8583_Q,0.13,394140,6.8583,
+413,1,1,female,33.0,1,0,Q,Miss,1,Minahan,Minahan,1,C,2,0,Small,NUMERIC,female_1,Miss_female,0,Adult,1,Minahan_19928_90.0_Q,0.91,19928,90.0,C78
+414,0,2,male,34.67977081169204,0,0,S,Mr,0,Cunningham,Cunningham,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Missing,0,Cunningham_239853_0.0_S,0.15,239853,0.0,
+415,1,3,male,44.0,0,0,S,Mr,0,Sundman,Sundman,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Sundman_STON/O 2. 3101269_7.925_S,0.13,STON/O 2. 3101269,7.925,
+416,0,3,female,38.79610522273426,0,0,S,Mrs,2,Meek,Meek,0,,1,1,Alone,NUMERIC,female_3,Mrs_female,0,Missing,1,Meek_343095_8.05_S,0.49,343095,8.05,
+417,1,2,female,34.0,1,1,S,Mrs,2,Drew,Drew,0,,3,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Drew_28220_32.5_S,0.91,28220,32.5,
+418,1,2,female,18.0,0,2,S,Miss,1,Silven,Silven,0,,3,0,Small,NUMERIC,female_2,Miss_female,0,Teen,1,Silven_250652_13.0_S,0.91,250652,13.0,
+419,0,2,male,30.0,0,0,S,Mr,0,Matthews,Matthews,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Matthews_28228_13.0_S,0.15,28228,13.0,
+420,0,3,female,10.0,0,2,S,Miss,1,Van Impe,Van Impe,0,,3,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Van Impe_345773_24.15_S,0.49,345773,24.15,
+421,0,3,male,28.255220155534552,0,0,C,Mr,0,Gheorgheff,Gheorgheff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Gheorgheff_349254_7.8958_C,0.13,349254,7.8958,
+422,0,3,male,21.0,0,0,Q,Mr,0,Charters,Charters,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Charters_A/5. 13032_7.7333_Q,0.13,A/5. 13032,7.7333,
+423,0,3,male,29.0,0,0,S,Mr,0,Zimmerman,Zimmerman,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Zimmerman_315082_7.875_S,0.13,315082,7.875,
+424,0,3,female,28.0,1,1,S,Mrs,2,Danbom,Danbom,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Danbom_347080_14.4_S,0.49,347080,14.4,
+425,0,3,male,18.0,1,1,S,Mr,0,Rosblom,Rosblom,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Teen,1,Rosblom_370129_20.2125_S,0.13,370129,20.2125,
+426,0,3,male,29.018418834485473,0,0,S,Mr,0,Wiseman,Wiseman,0,,1,1,Alone,A/,male_3,Mr_male,0,Missing,0,Wiseman_A/4. 34244_7.25_S,0.13,A/4. 34244,7.25,
+427,1,2,female,28.0,1,0,S,Mrs,2,Clarke,Clarke,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Clarke_2003_26.0_S,0.91,2003,26.0,
+428,1,2,female,19.0,0,0,S,Miss,1,Phillips,Phillips,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Phillips_250655_26.0_S,0.91,250655,26.0,
+429,0,3,male,37.823919966904946,0,0,Q,Mr,0,Flynn,Flynn,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Flynn_364851_7.75_Q,0.13,364851,7.75,
+430,1,3,male,32.0,0,0,S,Mr,0,Pickard,Pickard,1,E,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Pickard_SOTON/O.Q. 392078_8.05_S,0.13,SOTON/O.Q. 392078,8.05,E10
+431,1,1,male,28.0,0,0,S,Mr,0,Bjornstrom-Steffansson,Bjornstrom-Steffansson,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Bjornstrom-Steffansson_110564_26.55_S,0.37,110564,26.55,C52
+432,1,3,female,27.6303670410724,1,0,S,Mrs,2,Thorneycroft,Thorneycroft,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Missing,1,Thorneycroft_376564_16.1_S,0.49,376564,16.1,
+433,1,2,female,42.0,1,0,S,Mrs,2,Louch,Louch,0,,2,0,Small,SC/AH,female_2,Mrs_female,0,Adult,1,Louch_SC/AH 3085_26.0_S,0.91,SC/AH 3085,26.0,
+434,0,3,male,17.0,0,0,S,Mr,0,Kallio,Kallio,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Teen,1,Kallio_STON/O 2. 3101274_7.125_S,0.13,STON/O 2. 3101274,7.125,
+435,0,1,male,50.0,1,0,S,Mr,0,Silvey,Silvey,1,E,2,0,Small,NUMERIC,male_1,Mr_male,0,Senior,0,Silvey_13507_55.9_S,0.37,13507,55.9,E44
+436,1,1,female,14.0,1,2,S,Miss,1,Carter,Carter,1,B,4,0,Small,NUMERIC,female_1,Miss_female,0,Teen,1,Carter_113760_120.0_S,0.91,113760,120.0,B96 B98
+437,0,3,female,21.0,2,2,S,Miss,1,Ford,Ford,0,,5,0,Large,W/C,female_3,Miss_female,0,Adult,1,Ford_W./C. 6608_34.375_S,0.49,W./C. 6608,34.375,
+438,1,2,female,24.0,2,3,S,Mrs,2,Richards,Richards,0,,6,0,Large,NUMERIC,female_2,Mrs_female,1,Adult,1,Richards_29106_18.75_S,0.91,29106,18.75,
+439,0,1,male,64.0,1,4,S,Mr,0,Fortune,Fortune,1,C,6,0,Large,NUMERIC,male_1,Mr_male,0,Senior,0,Fortune_19950_263.0_S,0.37,19950,263.0,C23 C25 C27
+440,0,2,male,31.0,0,0,S,Mr,0,Kvillner,Kvillner,0,,1,1,Alone,CA,male_2,Mr_male,0,Adult,0,Kvillner_C.A. 18723_10.5_S,0.15,C.A. 18723,10.5,
+441,1,2,female,45.0,1,1,S,Mrs,2,Hart,Hart,0,,3,0,Small,FCC,female_2,Mrs_female,1,Adult,1,Hart_F.C.C. 13529_26.25_S,0.91,F.C.C. 13529,26.25,
+442,0,3,male,20.0,0,0,S,Mr,0,Hampe,Hampe,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Hampe_345769_9.5_S,0.13,345769,9.5,
+443,0,3,male,25.0,1,0,S,Mr,0,Petterson,Petterson,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Petterson_347076_7.775_S,0.13,347076,7.775,
+444,1,2,female,28.0,0,0,S,Rare,4,Reynaldo,Reynaldo,0,,1,1,Alone,NUMERIC,female_2,Rare_female,0,Adult,1,Reynaldo_230434_13.0_S,0.91,230434,13.0,
+445,1,3,male,27.10032324197168,0,0,S,Mr,0,Johannesen-Bratthammer,Johannesen-Bratthammer,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Johannesen-Bratthammer_65306_8.1125_S,0.13,65306,8.1125,
+446,1,1,male,4.0,0,2,S,Master,3,Dodge,Dodge,1,A,3,0,Small,NUMERIC,male_1,Master_male,0,Child,1,Dodge_33638_81.8583_S,0.91,33638,81.8583,A34
+447,1,2,female,13.0,0,1,S,Miss,1,Mellinger,Mellinger,0,,2,0,Small,NUMERIC,female_2,Miss_female,0,Teen,1,Mellinger_250644_19.5_S,0.91,250644,19.5,
+448,1,1,male,34.0,0,0,S,Mr,0,Seward,Seward,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Seward_113794_26.55_S,0.37,113794,26.55,
+449,1,3,female,5.0,2,1,C,Miss,1,Baclini,Baclini,0,,4,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Baclini_2666_19.2583_C,0.49,2666,19.2583,
+450,1,1,male,52.0,0,0,S,Rare,4,Peuchen,Peuchen,1,C,1,1,Alone,NUMERIC,male_1,Rare_male,0,Senior,0,Peuchen_113786_30.5_S,0.37,113786,30.5,C104
+451,0,2,male,36.0,1,2,S,Mr,0,West,West,0,,4,0,Small,CA,male_2,Mr_male,0,Adult,0,West_C.A. 34651_27.75_S,0.15,C.A. 34651,27.75,
+452,0,3,male,24.820864450374575,1,0,S,Mr,0,Hagland,Hagland,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,Hagland_65303_19.9667_S,0.13,65303,19.9667,
+453,0,1,male,30.0,0,0,C,Mr,0,Foreman,Foreman,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Foreman_113051_27.75_C,0.37,113051,27.75,C111
+454,1,1,male,49.0,1,0,C,Mr,0,Goldenberg,Goldenberg,1,C,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Goldenberg_17453_89.1042_C,0.37,17453,89.1042,C92
+455,0,3,male,29.72874460481854,0,0,S,Mr,0,Peduzzi,Peduzzi,0,,1,1,Alone,A/,male_3,Mr_male,0,Missing,0,Peduzzi_A/5 2817_8.05_S,0.13,A/5 2817,8.05,
+456,1,3,male,29.0,0,0,C,Mr,0,Jalsevac,Jalsevac,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Jalsevac_349240_7.8958_C,0.13,349240,7.8958,
+457,0,1,male,65.0,0,0,S,Mr,0,Millet,Millet,1,E,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Millet_13509_26.55_S,0.37,13509,26.55,E38
+458,1,1,female,40.05310347164294,1,0,S,Mrs,2,Kenyon,Kenyon,1,D,2,0,Small,NUMERIC,female_1,Mrs_female,0,Missing,1,Kenyon_17464_51.8625_S,0.91,17464,51.8625,D21
+459,1,2,female,50.0,0,0,S,Miss,1,Toomey,Toomey,0,,1,1,Alone,FCC,female_2,Miss_female,0,Senior,1,Toomey_F.C.C. 13531_10.5_S,0.91,F.C.C. 13531,10.5,
+460,0,3,male,37.823919966904946,0,0,Q,Mr,0,O'Connor,O'Connor,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,O'Connor_371060_7.75_Q,0.13,371060,7.75,
+461,1,1,male,48.0,0,0,S,Mr,0,Anderson,Anderson,1,E,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Anderson_19952_26.55_S,0.37,19952,26.55,E12
+462,0,3,male,34.0,0,0,S,Mr,0,Morley,Morley,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Morley_364506_8.05_S,0.13,364506,8.05,
+463,0,1,male,47.0,0,0,S,Mr,0,Gee,Gee,1,E,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Gee_111320_38.5_S,0.37,111320,38.5,E63
+464,0,2,male,48.0,0,0,S,Mr,0,Milling,Milling,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Milling_234360_13.0_S,0.15,234360,13.0,
+465,0,3,male,29.72874460481854,0,0,S,Mr,0,Maisner,Maisner,0,,1,1,Alone,A/S,male_3,Mr_male,0,Missing,0,Maisner_A/S 2816_8.05_S,0.13,A/S 2816,8.05,
+466,0,3,male,38.0,0,0,S,Mr,0,Goncalves,Goncalves,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Goncalves_SOTON/O.Q. 3101306_7.05_S,0.13,SOTON/O.Q. 3101306,7.05,
+467,0,2,male,34.67977081169204,0,0,S,Mr,0,Campbell,Campbell,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Missing,0,Campbell_239853_0.0_S,0.15,239853,0.0,
+468,0,1,male,56.0,0,0,S,Mr,0,Smart,Smart,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Smart_113792_26.55_S,0.37,113792,26.55,
+469,0,3,male,28.949123655420276,0,0,Q,Mr,0,Scanlan,Scanlan,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Scanlan_36209_7.725_Q,0.13,36209,7.725,
+470,1,3,female,0.75,2,1,C,Miss,1,Baclini,Baclini,0,,4,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Baclini_2666_19.2583_C,0.49,2666,19.2583,
+471,0,3,male,29.018418834485473,0,0,S,Mr,0,Keefe,Keefe,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Keefe_323592_7.25_S,0.13,323592,7.25,
+472,0,3,male,38.0,0,0,S,Mr,0,Cacic,Cacic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Cacic_315089_8.6625_S,0.13,315089,8.6625,
+473,1,2,female,33.0,1,2,S,Mrs,2,West,West,0,,4,0,Small,CA,female_2,Mrs_female,1,Adult,1,West_C.A. 34651_27.75_S,0.91,C.A. 34651,27.75,
+474,1,2,female,23.0,0,0,C,Mrs,2,Jerwan,Jerwan,1,D,1,1,Alone,SC/AH,female_2,Mrs_female,0,Adult,1,Jerwan_SC/AH Basle 541_13.7917_C,0.91,SC/AH Basle 541,13.7917,D
+475,0,3,female,22.0,0,0,S,Miss,1,Strandberg,Strandberg,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Strandberg_7553_9.8375_S,0.49,7553,9.8375,
+476,0,1,male,43.145086095610296,0,0,S,Mr,0,Clifford,Clifford,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Clifford_110465_52.0_S,0.37,110465,52.0,A14
+477,0,2,male,34.0,1,0,S,Mr,0,Renouf,Renouf,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Renouf_31027_21.0_S,0.15,31027,21.0,
+478,0,3,male,29.0,1,0,S,Mr,0,Braund,Braund,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Braund_3460_7.0458_S,0.13,3460,7.0458,
+479,0,3,male,22.0,0,0,S,Mr,0,Karlsson,Karlsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Karlsson_350060_7.5208_S,0.13,350060,7.5208,
+480,1,3,female,2.0,0,1,S,Miss,1,Hirvonen,Hirvonen,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Hirvonen_3101298_12.2875_S,0.49,3101298,12.2875,
+481,0,3,male,9.0,5,2,S,Master,3,Goodwin,Goodwin,0,,8,0,Large,CA,male_3,Master_male,0,Child,1,Goodwin_CA 2144_46.9_S,0.49,CA 2144,46.9,
+482,0,2,male,34.67977081169204,0,0,S,Mr,0,Frost,Frost,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Missing,0,Frost_239854_0.0_S,0.15,239854,0.0,
+483,0,3,male,50.0,0,0,S,Mr,0,Rouse,Rouse,0,,1,1,Alone,A/,male_3,Mr_male,0,Senior,0,Rouse_A/5 3594_8.05_S,0.13,A/5 3594,8.05,
+484,1,3,female,63.0,0,0,S,Mrs,2,Turkula,Turkula,0,,1,1,Alone,NUMERIC,female_3,Mrs_female,0,Senior,1,Turkula_4134_9.5875_S,0.49,4134,9.5875,
+485,1,1,male,25.0,1,0,C,Mr,0,Bishop,Bishop,1,B,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Bishop_11967_91.0792_C,0.37,11967,91.0792,B49
+486,0,3,female,5.489973105013178,3,1,S,Miss,1,Lefebre,Lefebre,0,,5,0,Large,NUMERIC,female_3,Miss_female,0,Missing,1,Lefebre_4133_25.4667_S,0.49,4133,25.4667,
+487,1,1,female,35.0,1,0,S,Mrs,2,Hoyt,Hoyt,1,C,2,0,Small,NUMERIC,female_1,Mrs_female,0,Adult,1,Hoyt_19943_90.0_S,0.91,19943,90.0,C93
+488,0,1,male,58.0,0,0,C,Mr,0,Kent,Kent,1,B,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Kent_11771_29.7_C,0.37,11771,29.7,B37
+489,0,3,male,30.0,0,0,S,Mr,0,Somerton,Somerton,0,,1,1,Alone,A,male_3,Mr_male,0,Adult,0,Somerton_A.5. 18509_8.05_S,0.13,A.5. 18509,8.05,
+490,1,3,male,9.0,1,1,S,Master,3,Coutts,Coutts,0,,3,0,Small,CA,male_3,Master_male,0,Child,1,Coutts_C.A. 37671_15.9_S,0.49,C.A. 37671,15.9,
+491,0,3,male,24.820864450374575,1,0,S,Mr,0,Hagland,Hagland,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,Hagland_65304_19.9667_S,0.13,65304,19.9667,
+492,0,3,male,21.0,0,0,S,Mr,0,Windelov,Windelov,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Windelov_SOTON/OQ 3101317_7.25_S,0.13,SOTON/OQ 3101317,7.25,
+493,0,1,male,55.0,0,0,S,Mr,0,Molson,Molson,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Molson_113787_30.5_S,0.37,113787,30.5,C30
+494,0,1,male,71.0,0,0,C,Mr,0,Artagaveytia,Artagaveytia,0,,1,1,Alone,PC,male_1,Mr_male,0,Senior,0,Artagaveytia_PC 17609_49.5042_C,0.37,PC 17609,49.5042,
+495,0,3,male,21.0,0,0,S,Mr,0,Stanley,Stanley,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Stanley_A/4 45380_8.05_S,0.13,A/4 45380,8.05,
+496,0,3,male,25.179449889738304,0,0,C,Mr,0,Yousseff,Yousseff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Yousseff_2627_14.4583_C,0.13,2627,14.4583,
+497,1,1,female,54.0,1,0,C,Miss,1,Eustis,Eustis,1,D,2,0,Small,NUMERIC,female_1,Miss_female,0,Senior,1,Eustis_36947_78.2667_C,0.91,36947,78.2667,D20
+498,0,3,male,25.891795009627522,0,0,S,Mr,0,Shellard,Shellard,0,,1,1,Alone,CA,male_3,Mr_male,0,Missing,0,Shellard_C.A. 6212_15.1_S,0.13,C.A. 6212,15.1,
+499,0,1,female,25.0,1,2,S,Mrs,2,Allison,Allison,1,C,4,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Allison_113781_151.55_S,0.91,113781,151.55,C22 C26
+500,0,3,male,24.0,0,0,S,Mr,0,Svensson,Svensson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Svensson_350035_7.7958_S,0.13,350035,7.7958,
+501,0,3,male,17.0,0,0,S,Mr,0,Calic,Calic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Calic_315086_8.6625_S,0.13,315086,8.6625,
+502,0,3,female,21.0,0,0,Q,Miss,1,Canavan,Canavan,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Canavan_364846_7.75_Q,0.49,364846,7.75,
+503,0,3,female,21.189769896010045,0,0,Q,Miss,1,O'Sullivan,O'Sullivan,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,O'Sullivan_330909_7.6292_Q,0.49,330909,7.6292,
+504,0,3,female,37.0,0,0,S,Miss,1,Laitinen,Laitinen,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Laitinen_4135_9.5875_S,0.49,4135,9.5875,
+505,1,1,female,16.0,0,0,S,Miss,1,Maioni,Maioni,1,B,1,1,Alone,NUMERIC,female_1,Miss_female,0,Teen,1,Maioni_110152_86.5_S,0.91,110152,86.5,B79
+506,0,1,male,18.0,1,0,C,Mr,0,Penasco y Castellana,Penasco y Castellana,1,C,2,0,Small,PC,male_1,Mr_male,0,Teen,1,Penasco y Castellana_PC 17758_108.9_C,0.37,PC 17758,108.9,C65
+507,1,2,female,33.0,0,2,S,Mrs,2,Quick,Quick,0,,3,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Quick_26360_26.0_S,0.91,26360,26.0,
+508,1,1,male,48.023488291885,0,0,S,Mr,0,Bradley,Bradley,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Bradley_111427_26.55_S,0.37,111427,26.55,
+509,0,3,male,28.0,0,0,S,Mr,0,Olsen,Olsen,0,,1,1,Alone,C,male_3,Mr_male,0,Adult,0,Olsen_C 4001_22.525_S,0.13,C 4001,22.525,
+510,1,3,male,26.0,0,0,S,Mr,0,Lang,Lang,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Lang_1601_56.4958_S,0.13,1601,56.4958,
+511,1,3,male,29.0,0,0,Q,Mr,0,Daly,Daly,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Daly_382651_7.75_Q,0.13,382651,7.75,
+512,0,3,male,29.72874460481854,0,0,S,Mr,0,Webber,Webber,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Missing,0,Webber_SOTON/OQ 3101316_8.05_S,0.13,SOTON/OQ 3101316,8.05,
+513,1,1,male,36.0,0,0,S,Mr,0,McGough,McGough,1,E,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,McGough_PC 17473_26.2875_S,0.37,PC 17473,26.2875,E25
+514,1,1,female,54.0,1,0,C,Mrs,2,Rothschild,Rothschild,0,,2,0,Small,PC,female_1,Mrs_female,0,Senior,1,Rothschild_PC 17603_59.4_C,0.91,PC 17603,59.4,
+515,0,3,male,24.0,0,0,S,Mr,0,Coleff,Coleff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Coleff_349209_7.4958_S,0.13,349209,7.4958,
+516,0,1,male,47.0,0,0,S,Mr,0,Walker,Walker,1,D,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Walker_36967_34.0208_S,0.37,36967,34.0208,D46
+517,1,2,female,34.0,0,0,S,Mrs,2,Lemore,Lemore,1,F,1,1,Alone,CA,female_2,Mrs_female,0,Adult,1,Lemore_C.A. 34260_10.5_S,0.91,C.A. 34260,10.5,F33
+518,0,3,male,30.42919787241471,0,0,Q,Mr,0,Ryan,Ryan,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Ryan_371110_24.15_Q,0.13,371110,24.15,
+519,1,2,female,36.0,1,0,S,Mrs,2,Angle,Angle,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Angle_226875_26.0_S,0.91,226875,26.0,
+520,0,3,male,32.0,0,0,S,Mr,0,Pavlovic,Pavlovic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Pavlovic_349242_7.8958_S,0.13,349242,7.8958,
+521,1,1,female,30.0,0,0,S,Miss,1,Perreault,Perreault,1,B,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Perreault_12749_93.5_S,0.91,12749,93.5,B73
+522,0,3,male,22.0,0,0,S,Mr,0,Vovk,Vovk,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Vovk_349252_7.8958_S,0.13,349252,7.8958,
+523,0,3,male,29.838779070805835,0,0,C,Mr,0,Lahoud,Lahoud,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Lahoud_2624_7.225_C,0.13,2624,7.225,
+524,1,1,female,44.0,0,1,C,Mrs,2,Hippach,Hippach,1,B,2,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Hippach_111361_57.9792_C,0.91,111361,57.9792,B18
+525,0,3,male,28.08437635583076,0,0,C,Mr,0,Kassem,Kassem,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Kassem_2700_7.2292_C,0.13,2700,7.2292,
+526,0,3,male,40.5,0,0,Q,Mr,0,Farrell,Farrell,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Farrell_367232_7.75_Q,0.13,367232,7.75,
+527,1,2,female,50.0,0,0,S,Miss,1,Ridsdale,Ridsdale,0,,1,1,Alone,W/C,female_2,Miss_female,0,Senior,1,Ridsdale_W./C. 14258_10.5_S,0.91,W./C. 14258,10.5,
+528,0,1,male,32.91820096351018,0,0,S,Mr,0,Farthing,Farthing,1,C,1,1,Alone,PC,male_1,Mr_male,0,Missing,0,Farthing_PC 17483_221.7792_S,0.37,PC 17483,221.7792,C95
+529,0,3,male,39.0,0,0,S,Mr,0,Salonen,Salonen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Salonen_3101296_7.925_S,0.13,3101296,7.925,
+530,0,2,male,23.0,2,1,S,Mr,0,Hocking,Hocking,0,,4,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Hocking_29104_11.5_S,0.15,29104,11.5,
+531,1,2,female,2.0,1,1,S,Miss,1,Quick,Quick,0,,3,0,Small,NUMERIC,female_2,Miss_female,0,Child,1,Quick_26360_26.0_S,0.91,26360,26.0,
+532,0,3,male,28.08437635583076,0,0,C,Mr,0,Toufik,Toufik,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Toufik_2641_7.2292_C,0.13,2641,7.2292,
+533,0,3,male,17.0,1,1,C,Mr,0,Elias,Elias,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Teen,1,Elias_2690_7.2292_C,0.13,2690,7.2292,
+534,1,3,female,34.52349445636574,0,2,C,Mrs,2,Peter,Peter,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Missing,1,Peter_2668_22.3583_C,0.49,2668,22.3583,
+535,0,3,female,30.0,0,0,S,Miss,1,Cacic,Cacic,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Cacic_315084_8.6625_S,0.49,315084,8.6625,
+536,1,2,female,7.0,0,2,S,Miss,1,Hart,Hart,0,,3,0,Small,FCC,female_2,Miss_female,0,Child,1,Hart_F.C.C. 13529_26.25_S,0.91,F.C.C. 13529,26.25,
+537,0,1,male,45.0,0,0,S,Rare,4,Butt,Butt,1,B,1,1,Alone,NUMERIC,male_1,Rare_male,0,Adult,0,Butt_113050_26.55_S,0.37,113050,26.55,B38
+538,1,1,female,30.0,0,0,C,Miss,1,LeRoy,LeRoy,0,,1,1,Alone,PC,female_1,Miss_female,0,Adult,1,LeRoy_PC 17761_106.425_C,0.91,PC 17761,106.425,
+539,0,3,male,25.331381707920123,0,0,S,Mr,0,Risien,Risien,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Risien_364498_14.5_S,0.13,364498,14.5,
+540,1,1,female,22.0,0,2,C,Miss,1,Frolicher,Frolicher,1,B,3,0,Small,NUMERIC,female_1,Miss_female,0,Adult,1,Frolicher_13568_49.5_C,0.91,13568,49.5,B39
+541,1,1,female,36.0,0,2,S,Miss,1,Crosby,Crosby,1,B,3,0,Small,WE/P,female_1,Miss_female,0,Adult,1,Crosby_WE/P 5735_71.0_S,0.91,WE/P 5735,71.0,B22
+542,0,3,female,9.0,4,2,S,Miss,1,Andersson,Andersson,0,,7,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Andersson_347082_31.275_S,0.49,347082,31.275,
+543,0,3,female,11.0,4,2,S,Miss,1,Andersson,Andersson,0,,7,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Andersson_347082_31.275_S,0.49,347082,31.275,
+544,1,2,male,32.0,1,0,S,Mr,0,Beane,Beane,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Beane_2908_26.0_S,0.15,2908,26.0,
+545,0,1,male,50.0,1,0,C,Mr,0,Douglas,Douglas,1,C,2,0,Small,PC,male_1,Mr_male,0,Senior,0,Douglas_PC 17761_106.425_C,0.37,PC 17761,106.425,C86
+546,0,1,male,64.0,0,0,S,Mr,0,Nicholson,Nicholson,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Nicholson_693_26.0_S,0.37,693,26.0,
+547,1,2,female,19.0,1,0,S,Mrs,2,Beane,Beane,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Beane_2908_26.0_S,0.91,2908,26.0,
+548,1,2,male,38.55052606762138,0,0,C,Mr,0,Padro y Manent,Padro y Manent,0,,1,1,Alone,SC/PARIS,male_2,Mr_male,0,Missing,0,Padro y Manent_SC/PARIS 2146_13.8625_C,0.15,SC/PARIS 2146,13.8625,
+549,0,3,male,33.0,1,1,S,Mr,0,Goldsmith,Goldsmith,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Goldsmith_363291_20.525_S,0.13,363291,20.525,
+550,1,2,male,8.0,1,1,S,Master,3,Davies,Davies,0,,3,0,Small,CA,male_2,Master_male,0,Child,1,Davies_C.A. 33112_36.75_S,0.91,C.A. 33112,36.75,
+551,1,1,male,17.0,0,2,C,Mr,0,Thayer,Thayer,1,C,3,0,Small,NUMERIC,male_1,Mr_male,0,Teen,1,Thayer_17421_110.8833_C,0.37,17421,110.8833,C70
+552,0,2,male,27.0,0,0,S,Mr,0,Sharp,Sharp,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Sharp_244358_26.0_S,0.15,244358,26.0,
+553,0,3,male,27.766936110792663,0,0,Q,Mr,0,O'Brien,O'Brien,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,O'Brien_330979_7.8292_Q,0.13,330979,7.8292,
+554,1,3,male,22.0,0,0,C,Mr,0,Leeni,Leeni,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Leeni_2620_7.225_C,0.13,2620,7.225,
+555,1,3,female,22.0,0,0,S,Miss,1,Ohman,Ohman,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Ohman_347085_7.775_S,0.49,347085,7.775,
+556,0,1,male,62.0,0,0,S,Mr,0,Wright,Wright,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Wright_113807_26.55_S,0.37,113807,26.55,
+557,1,1,female,48.0,1,0,C,Rare,4,Duff Gordon,Duff Gordon,1,A,2,0,Small,NUMERIC,female_1,Rare_female,0,Adult,1,Duff Gordon_11755_39.6_C,0.91,11755,39.6,A16
+558,0,1,male,32.91820096351018,0,0,C,Mr,0,Robbins,Robbins,0,,1,1,Alone,PC,male_1,Mr_male,0,Missing,0,Robbins_PC 17757_227.525_C,0.37,PC 17757,227.525,
+559,1,1,female,39.0,1,1,S,Mrs,2,Taussig,Taussig,1,E,3,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Taussig_110413_79.65_S,0.91,110413,79.65,E67
+560,1,3,female,36.0,1,0,S,Mrs,2,de Messemaeker,de Messemaeker,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Adult,1,de Messemaeker_345572_17.4_S,0.49,345572,17.4,
+561,0,3,male,37.823919966904946,0,0,Q,Mr,0,Morrow,Morrow,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Morrow_372622_7.75_Q,0.13,372622,7.75,
+562,0,3,male,40.0,0,0,S,Mr,0,Sivic,Sivic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Sivic_349251_7.8958_S,0.13,349251,7.8958,
+563,0,2,male,28.0,0,0,S,Mr,0,Norman,Norman,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Norman_218629_13.5_S,0.15,218629,13.5,
+564,0,3,male,29.72874460481854,0,0,S,Mr,0,Simmons,Simmons,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Missing,0,Simmons_SOTON/OQ 392082_8.05_S,0.13,SOTON/OQ 392082,8.05,
+565,0,3,female,21.88844701275609,0,0,S,Miss,1,Meanwell,Meanwell,0,,1,1,Alone,SOTON/OQ,female_3,Miss_female,0,Missing,1,Meanwell_SOTON/O.Q. 392087_8.05_S,0.49,SOTON/O.Q. 392087,8.05,
+566,0,3,male,24.0,2,0,S,Mr,0,Davies,Davies,0,,3,0,Small,A/,male_3,Mr_male,0,Adult,0,Davies_A/4 48871_24.15_S,0.13,A/4 48871,24.15,
+567,0,3,male,19.0,0,0,S,Mr,0,Stoytcheff,Stoytcheff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Stoytcheff_349205_7.8958_S,0.13,349205,7.8958,
+568,0,3,female,29.0,0,4,S,Mrs,2,Palsson,Palsson,0,,5,0,Large,NUMERIC,female_3,Mrs_female,1,Adult,1,Palsson_349909_21.075_S,0.49,349909,21.075,
+569,0,3,male,28.08437635583076,0,0,C,Mr,0,Doharr,Doharr,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Doharr_2686_7.2292_C,0.13,2686,7.2292,
+570,1,3,male,32.0,0,0,S,Mr,0,Jonsson,Jonsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Jonsson_350417_7.8542_S,0.13,350417,7.8542,
+571,1,2,male,62.0,0,0,S,Mr,0,Harris,Harris,0,,1,1,Alone,SW/PP,male_2,Mr_male,0,Senior,0,Harris_S.W./PP 752_10.5_S,0.15,S.W./PP 752,10.5,
+572,1,1,female,53.0,2,0,S,Mrs,2,Appleton,Appleton,1,C,3,0,Small,NUMERIC,female_1,Mrs_female,0,Senior,1,Appleton_11769_51.4792_S,0.91,11769,51.4792,C101
+573,1,1,male,36.0,0,0,S,Mr,0,Flynn,Flynn,1,E,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Flynn_PC 17474_26.3875_S,0.37,PC 17474,26.3875,E25
+574,1,3,female,24.653493665322376,0,0,Q,Miss,1,Kelly,Kelly,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Kelly_14312_7.75_Q,0.49,14312,7.75,
+575,0,3,male,16.0,0,0,S,Mr,0,Rush,Rush,0,,1,1,Alone,A/,male_3,Mr_male,0,Teen,1,Rush_A/4. 20589_8.05_S,0.13,A/4. 20589,8.05,
+576,0,3,male,19.0,0,0,S,Mr,0,Patchett,Patchett,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Patchett_358585_14.5_S,0.13,358585,14.5,
+577,1,2,female,34.0,0,0,S,Miss,1,Garside,Garside,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Garside_243880_13.0_S,0.91,243880,13.0,
+578,1,1,female,39.0,1,0,S,Mrs,2,Silvey,Silvey,1,E,2,0,Small,NUMERIC,female_1,Mrs_female,0,Adult,1,Silvey_13507_55.9_S,0.91,13507,55.9,E44
+579,0,3,female,26.297747358034126,1,0,C,Mrs,2,Caram,Caram,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Missing,1,Caram_2689_14.4583_C,0.49,2689,14.4583,
+580,1,3,male,32.0,0,0,S,Mr,0,Jussila,Jussila,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Jussila_STON/O 2. 3101286_7.925_S,0.13,STON/O 2. 3101286,7.925,
+581,1,2,female,25.0,1,1,S,Miss,1,Christy,Christy,0,,3,0,Small,NUMERIC,female_2,Miss_female,0,Adult,1,Christy_237789_30.0_S,0.91,237789,30.0,
+582,1,1,female,39.0,1,1,C,Mrs,2,Thayer,Thayer,1,C,3,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Thayer_17421_110.8833_C,0.91,17421,110.8833,C68
+583,0,2,male,54.0,0,0,S,Mr,0,Downton,Downton,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Senior,0,Downton_28403_26.0_S,0.15,28403,26.0,
+584,0,1,male,36.0,0,0,C,Mr,0,Ross,Ross,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Ross_13049_40.125_C,0.37,13049,40.125,A10
+585,0,3,male,26.426336694520224,0,0,C,Mr,0,Paulner,Paulner,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Paulner_3411_8.7125_C,0.13,3411,8.7125,
+586,1,1,female,18.0,0,2,S,Miss,1,Taussig,Taussig,1,E,3,0,Small,NUMERIC,female_1,Miss_female,0,Teen,1,Taussig_110413_79.65_S,0.91,110413,79.65,E68
+587,0,2,male,47.0,0,0,S,Mr,0,Jarvis,Jarvis,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Jarvis_237565_15.0_S,0.15,237565,15.0,
+588,1,1,male,60.0,1,1,C,Mr,0,Frolicher-Stehli,Frolicher-Stehli,1,B,3,0,Small,NUMERIC,male_1,Mr_male,0,Senior,0,Frolicher-Stehli_13567_79.2_C,0.37,13567,79.2,B41
+589,0,3,male,22.0,0,0,S,Mr,0,Gilinski,Gilinski,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Gilinski_14973_8.05_S,0.13,14973,8.05,
+590,0,3,male,29.72874460481854,0,0,S,Mr,0,Murdlin,Murdlin,0,,1,1,Alone,A/,male_3,Mr_male,0,Missing,0,Murdlin_A./5. 3235_8.05_S,0.13,A./5. 3235,8.05,
+591,0,3,male,35.0,0,0,S,Mr,0,Rintamaki,Rintamaki,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Rintamaki_STON/O 2. 3101273_7.125_S,0.13,STON/O 2. 3101273,7.125,
+592,1,1,female,52.0,1,0,C,Mrs,2,Stephenson,Stephenson,1,D,2,0,Small,NUMERIC,female_1,Mrs_female,0,Senior,1,Stephenson_36947_78.2667_C,0.91,36947,78.2667,D20
+593,0,3,male,47.0,0,0,S,Mr,0,Elsbury,Elsbury,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Elsbury_A/5 3902_7.25_S,0.13,A/5 3902,7.25,
+594,0,3,female,7.835212337662336,0,2,Q,Miss,1,Bourke,Bourke,0,,3,0,Small,NUMERIC,female_3,Miss_female,0,Missing,1,Bourke_364848_7.75_Q,0.49,364848,7.75,
+595,0,2,male,37.0,1,0,S,Mr,0,Chapman,Chapman,0,,2,0,Small,SC/AH,male_2,Mr_male,0,Adult,0,Chapman_SC/AH 29037_26.0_S,0.15,SC/AH 29037,26.0,
+596,0,3,male,36.0,1,1,S,Mr,0,Van Impe,Van Impe,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Van Impe_345773_24.15_S,0.13,345773,24.15,
+597,1,2,female,23.180297043188347,0,0,S,Miss,1,Leitch,Leitch,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Missing,1,Leitch_248727_33.0_S,0.91,248727,33.0,
+598,0,3,male,49.0,0,0,S,Mr,0,Johnson,Johnson,0,,1,1,Alone,LINE,male_3,Mr_male,0,Adult,0,Johnson_LINE_0.0_S,0.13,LINE,0.0,
+599,0,3,male,29.838779070805835,0,0,C,Mr,0,Boulos,Boulos,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Boulos_2664_7.225_C,0.13,2664,7.225,
+600,1,1,male,49.0,1,0,C,Rare,4,Duff Gordon,Duff Gordon,1,A,2,0,Small,PC,male_1,Rare_male,0,Adult,0,Duff Gordon_PC 17485_56.9292_C,0.37,PC 17485,56.9292,A20
+601,1,2,female,24.0,2,1,S,Mrs,2,Jacobsohn,Jacobsohn,0,,4,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Jacobsohn_243847_27.0_S,0.91,243847,27.0,
+602,0,3,male,28.255220155534552,0,0,S,Mr,0,Slabenoff,Slabenoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Slabenoff_349214_7.8958_S,0.13,349214,7.8958,
+603,0,1,male,39.02505953055013,0,0,S,Mr,0,Harrington,Harrington,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Harrington_113796_42.4_S,0.37,113796,42.4,
+604,0,3,male,44.0,0,0,S,Mr,0,Torber,Torber,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Torber_364511_8.05_S,0.13,364511,8.05,
+605,1,1,male,35.0,0,0,C,Mr,0,Homer,Homer,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Homer_111426_26.55_C,0.37,111426,26.55,
+606,0,3,male,36.0,1,0,S,Mr,0,Lindell,Lindell,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Lindell_349910_15.55_S,0.13,349910,15.55,
+607,0,3,male,30.0,0,0,S,Mr,0,Karaic,Karaic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Karaic_349246_7.8958_S,0.13,349246,7.8958,
+608,1,1,male,27.0,0,0,S,Mr,0,Daniel,Daniel,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Daniel_113804_30.5_S,0.37,113804,30.5,
+609,1,2,female,22.0,1,2,C,Mrs,2,Laroche,Laroche,0,,4,0,Small,SC/PARIS,female_2,Mrs_female,1,Adult,1,Laroche_SC/Paris 2123_41.5792_C,0.91,SC/Paris 2123,41.5792,
+610,1,1,female,40.0,0,0,S,Miss,1,Shutes,Shutes,1,C,1,1,Alone,PC,female_1,Miss_female,0,Adult,1,Shutes_PC 17582_153.4625_S,0.91,PC 17582,153.4625,C125
+611,0,3,female,39.0,1,5,S,Mrs,2,Andersson,Andersson,0,,7,0,Large,NUMERIC,female_3,Mrs_female,1,Adult,1,Andersson_347082_31.275_S,0.49,347082,31.275,
+612,0,3,male,28.99396394002286,0,0,S,Mr,0,Jardin,Jardin,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Missing,0,Jardin_SOTON/O.Q. 3101305_7.05_S,0.13,SOTON/O.Q. 3101305,7.05,
+613,1,3,female,17.77898197322114,1,0,Q,Miss,1,Murphy,Murphy,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Missing,1,Murphy_367230_15.5_Q,0.49,367230,15.5,
+614,0,3,male,37.823919966904946,0,0,Q,Mr,0,Horgan,Horgan,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Horgan_370377_7.75_Q,0.13,370377,7.75,
+615,0,3,male,35.0,0,0,S,Mr,0,Brocklebank,Brocklebank,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Brocklebank_364512_8.05_S,0.13,364512,8.05,
+616,1,2,female,24.0,1,2,S,Miss,1,Herman,Herman,0,,4,0,Small,NUMERIC,female_2,Miss_female,0,Adult,1,Herman_220845_65.0_S,0.91,220845,65.0,
+617,0,3,male,34.0,1,1,S,Mr,0,Danbom,Danbom,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Danbom_347080_14.4_S,0.13,347080,14.4,
+618,0,3,female,26.0,1,0,S,Mrs,2,Lobb,Lobb,0,,2,0,Small,A/,female_3,Mrs_female,0,Adult,1,Lobb_A/5. 3336_16.1_S,0.49,A/5. 3336,16.1,
+619,1,2,female,4.0,2,1,S,Miss,1,Becker,Becker,1,F,4,0,Small,NUMERIC,female_2,Miss_female,0,Child,1,Becker_230136_39.0_S,0.91,230136,39.0,F4
+620,0,2,male,26.0,0,0,S,Mr,0,Gavey,Gavey,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Gavey_31028_10.5_S,0.15,31028,10.5,
+621,0,3,male,27.0,1,0,C,Mr,0,Yasbeck,Yasbeck,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Yasbeck_2659_14.4542_C,0.13,2659,14.4542,
+622,1,1,male,42.0,1,0,S,Mr,0,Kimball,Kimball,1,D,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Kimball_11753_52.5542_S,0.37,11753,52.5542,D19
+623,1,3,male,20.0,1,1,C,Mr,0,Nakid,Nakid,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Nakid_2653_15.7417_C,0.13,2653,15.7417,
+624,0,3,male,21.0,0,0,S,Mr,0,Hansen,Hansen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Hansen_350029_7.8542_S,0.13,350029,7.8542,
+625,0,3,male,21.0,0,0,S,Mr,0,Bowen,Bowen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Bowen_54636_16.1_S,0.13,54636,16.1,
+626,0,1,male,61.0,0,0,S,Mr,0,Sutton,Sutton,1,D,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Sutton_36963_32.3208_S,0.37,36963,32.3208,D50
+627,0,2,male,57.0,0,0,Q,Rare,4,Kirkland,Kirkland,0,,1,1,Alone,NUMERIC,male_2,Rare_male,0,Senior,0,Kirkland_219533_12.35_Q,0.15,219533,12.35,
+628,1,1,female,21.0,0,0,S,Miss,1,Longley,Longley,1,D,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Longley_13502_77.9583_S,0.91,13502,77.9583,D9
+629,0,3,male,26.0,0,0,S,Mr,0,Bostandyeff,Bostandyeff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Bostandyeff_349224_7.8958_S,0.13,349224,7.8958,
+630,0,3,male,28.949123655420276,0,0,Q,Mr,0,O'Connell,O'Connell,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,O'Connell_334912_7.7333_Q,0.13,334912,7.7333,
+631,1,1,male,80.0,0,0,S,Mr,0,Barkworth,Barkworth,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Barkworth_27042_30.0_S,0.37,27042,30.0,A23
+632,0,3,male,51.0,0,0,S,Mr,0,Lundahl,Lundahl,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Senior,0,Lundahl_347743_7.0542_S,0.13,347743,7.0542,
+633,1,1,male,32.0,0,0,C,Rare,4,Stahelin-Maeglin,Stahelin-Maeglin,1,B,1,1,Alone,NUMERIC,male_1,Rare_male,0,Adult,0,Stahelin-Maeglin_13214_30.5_C,0.37,13214,30.5,B50
+634,0,1,male,39.451592132505176,0,0,S,Mr,0,Parr,Parr,0,,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Parr_112052_0.0_S,0.37,112052,0.0,
+635,0,3,female,9.0,3,2,S,Miss,1,Skoog,Skoog,0,,6,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Skoog_347088_27.9_S,0.49,347088,27.9,
+636,1,2,female,28.0,0,0,S,Miss,1,Davis,Davis,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Davis_237668_13.0_S,0.91,237668,13.0,
+637,0,3,male,32.0,0,0,S,Mr,0,Leinonen,Leinonen,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Leinonen_STON/O 2. 3101292_7.925_S,0.13,STON/O 2. 3101292,7.925,
+638,0,2,male,31.0,1,1,S,Mr,0,Collyer,Collyer,0,,3,0,Small,CA,male_2,Mr_male,0,Adult,0,Collyer_C.A. 31921_26.25_S,0.15,C.A. 31921,26.25,
+639,0,3,female,41.0,0,5,S,Mrs,2,Panula,Panula,0,,6,0,Large,NUMERIC,female_3,Mrs_female,1,Adult,1,Panula_3101295_39.6875_S,0.49,3101295,39.6875,
+640,0,3,male,27.49214492890577,1,0,S,Mr,0,Thorneycroft,Thorneycroft,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,Thorneycroft_376564_16.1_S,0.13,376564,16.1,
+641,0,3,male,20.0,0,0,S,Mr,0,Jensen,Jensen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Jensen_350050_7.8542_S,0.13,350050,7.8542,
+642,1,1,female,24.0,0,0,C,Rare,4,Sagesser,Sagesser,1,B,1,1,Alone,PC,female_1,Rare_female,0,Adult,1,Sagesser_PC 17477_69.3_C,0.91,PC 17477,69.3,B35
+643,0,3,female,2.0,3,2,S,Miss,1,Skoog,Skoog,0,,6,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Skoog_347088_27.9_S,0.49,347088,27.9,
+644,1,3,male,28.910614762644688,0,0,S,Mr,0,Foo,Foo,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Foo_1601_56.4958_S,0.13,1601,56.4958,
+645,1,3,female,0.75,2,1,C,Miss,1,Baclini,Baclini,0,,4,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Baclini_2666_19.2583_C,0.49,2666,19.2583,
+646,1,1,male,48.0,1,0,C,Mr,0,Harper,Harper,1,D,2,0,Small,PC,male_1,Mr_male,0,Adult,0,Harper_PC 17572_76.7292_C,0.37,PC 17572,76.7292,D33
+647,0,3,male,19.0,0,0,S,Mr,0,Cor,Cor,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Cor_349231_7.8958_S,0.13,349231,7.8958,
+648,1,1,male,56.0,0,0,C,Rare,4,Simonius-Blumer,Simonius-Blumer,1,A,1,1,Alone,NUMERIC,male_1,Rare_male,0,Senior,0,Simonius-Blumer_13213_35.5_C,0.37,13213,35.5,A26
+649,0,3,male,30.870170079717628,0,0,S,Mr,0,Willey,Willey,0,,1,1,Alone,SO/PP,male_3,Mr_male,0,Missing,0,Willey_S.O./P.P. 751_7.55_S,0.13,S.O./P.P. 751,7.55,
+650,1,3,female,23.0,0,0,S,Miss,1,Stanley,Stanley,0,,1,1,Alone,CA,female_3,Miss_female,0,Adult,1,Stanley_CA. 2314_7.55_S,0.49,CA. 2314,7.55,
+651,0,3,male,28.255220155534552,0,0,S,Mr,0,Mitkoff,Mitkoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Mitkoff_349221_7.8958_S,0.13,349221,7.8958,
+652,1,2,female,18.0,0,1,S,Miss,1,Doling,Doling,0,,2,0,Small,NUMERIC,female_2,Miss_female,0,Teen,1,Doling_231919_23.0_S,0.91,231919,23.0,
+653,0,3,male,21.0,0,0,S,Mr,0,Kalvik,Kalvik,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Kalvik_8475_8.4333_S,0.13,8475,8.4333,
+654,1,3,female,22.626360218338917,0,0,Q,Miss,1,O'Leary,O'Leary,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,O'Leary_330919_7.8292_Q,0.49,330919,7.8292,
+655,0,3,female,18.0,0,0,Q,Miss,1,Hegarty,Hegarty,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Hegarty_365226_6.75_Q,0.49,365226,6.75,
+656,0,2,male,24.0,2,0,S,Mr,0,Hickman,Hickman,0,,3,0,Small,SOC,male_2,Mr_male,0,Adult,0,Hickman_S.O.C. 14879_73.5_S,0.15,S.O.C. 14879,73.5,
+657,0,3,male,28.255220155534552,0,0,S,Mr,0,Radeff,Radeff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Radeff_349223_7.8958_S,0.13,349223,7.8958,
+658,0,3,female,32.0,1,1,Q,Mrs,2,Bourke,Bourke,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Bourke_364849_15.5_Q,0.49,364849,15.5,
+659,0,2,male,23.0,0,0,S,Mr,0,Eitemiller,Eitemiller,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Eitemiller_29751_13.0_S,0.15,29751,13.0,
+660,0,1,male,58.0,0,2,C,Mr,0,Newell,Newell,1,D,3,0,Small,NUMERIC,male_1,Mr_male,0,Senior,0,Newell_35273_113.275_C,0.37,35273,113.275,D48
+661,1,1,male,50.0,2,0,S,Rare,4,Frauenthal,Frauenthal,0,,3,0,Small,PC,male_1,Rare_male,0,Senior,0,Frauenthal_PC 17611_133.65_S,0.37,PC 17611,133.65,
+662,0,3,male,40.0,0,0,C,Mr,0,Badt,Badt,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Badt_2623_7.225_C,0.13,2623,7.225,
+663,0,1,male,47.0,0,0,S,Mr,0,Colley,Colley,1,E,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Colley_5727_25.5875_S,0.37,5727,25.5875,E58
+664,0,3,male,36.0,0,0,S,Mr,0,Coleff,Coleff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Coleff_349210_7.4958_S,0.13,349210,7.4958,
+665,1,3,male,20.0,1,0,S,Mr,0,Lindqvist,Lindqvist,0,,2,0,Small,STON/O,male_3,Mr_male,0,Adult,0,Lindqvist_STON/O 2. 3101285_7.925_S,0.13,STON/O 2. 3101285,7.925,
+666,0,2,male,32.0,2,0,S,Mr,0,Hickman,Hickman,0,,3,0,Small,SOC,male_2,Mr_male,0,Adult,0,Hickman_S.O.C. 14879_73.5_S,0.15,S.O.C. 14879,73.5,
+667,0,2,male,25.0,0,0,S,Mr,0,Butler,Butler,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Butler_234686_13.0_S,0.15,234686,13.0,
+668,0,3,male,29.81072247870129,0,0,S,Mr,0,Rommetvedt,Rommetvedt,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Rommetvedt_312993_7.775_S,0.13,312993,7.775,
+669,0,3,male,43.0,0,0,S,Mr,0,Cook,Cook,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Cook_A/5 3536_8.05_S,0.13,A/5 3536,8.05,
+670,1,1,female,38.74450450557574,1,0,S,Mrs,2,Taylor,Taylor,1,C,2,0,Small,NUMERIC,female_1,Mrs_female,0,Missing,1,Taylor_19996_52.0_S,0.91,19996,52.0,C126
+671,1,2,female,40.0,1,1,S,Mrs,2,Brown,Brown,0,,3,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Brown_29750_39.0_S,0.91,29750,39.0,
+672,0,1,male,31.0,1,0,S,Mr,0,Davidson,Davidson,1,B,2,0,Small,FC,male_1,Mr_male,0,Adult,0,Davidson_F.C. 12750_52.0_S,0.37,F.C. 12750,52.0,B71
+673,0,2,male,70.0,0,0,S,Mr,0,Mitchell,Mitchell,0,,1,1,Alone,CA,male_2,Mr_male,0,Senior,0,Mitchell_C.A. 24580_10.5_S,0.15,C.A. 24580,10.5,
+674,1,2,male,31.0,0,0,S,Mr,0,Wilhelms,Wilhelms,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Wilhelms_244270_13.0_S,0.15,244270,13.0,
+675,0,2,male,34.67977081169204,0,0,S,Mr,0,Watson,Watson,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Missing,0,Watson_239856_0.0_S,0.15,239856,0.0,
+676,0,3,male,18.0,0,0,S,Mr,0,Edvardsson,Edvardsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Edvardsson_349912_7.775_S,0.13,349912,7.775,
+677,0,3,male,24.5,0,0,S,Mr,0,Sawyer,Sawyer,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Sawyer_342826_8.05_S,0.13,342826,8.05,
+678,1,3,female,18.0,0,0,S,Miss,1,Turja,Turja,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Turja_4138_9.8417_S,0.49,4138,9.8417,
+679,0,3,female,43.0,1,6,S,Mrs,2,Goodwin,Goodwin,0,,8,0,Large,CA,female_3,Mrs_female,1,Adult,1,Goodwin_CA 2144_46.9_S,0.49,CA 2144,46.9,
+680,1,1,male,36.0,0,1,C,Mr,0,Cardeza,Cardeza,1,B,2,0,Small,PC,male_1,Mr_male,0,Adult,0,Cardeza_PC 17755_512.3292_C,0.37,PC 17755,512.3292,B51 B53 B55
+681,0,3,female,21.88844701275609,0,0,Q,Miss,1,Peters,Peters,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Peters_330935_8.1375_Q,0.49,330935,8.1375,
+682,1,1,male,27.0,0,0,C,Mr,0,Hassab,Hassab,1,D,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Hassab_PC 17572_76.7292_C,0.37,PC 17572,76.7292,D49
+683,0,3,male,20.0,0,0,S,Mr,0,Olsvigen,Olsvigen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Olsvigen_6563_9.225_S,0.13,6563,9.225,
+684,0,3,male,14.0,5,2,S,Mr,0,Goodwin,Goodwin,0,,8,0,Large,CA,male_3,Mr_male,0,Teen,1,Goodwin_CA 2144_46.9_S,0.49,CA 2144,46.9,
+685,0,2,male,60.0,1,1,S,Mr,0,Brown,Brown,0,,3,0,Small,NUMERIC,male_2,Mr_male,0,Senior,0,Brown_29750_39.0_S,0.15,29750,39.0,
+686,0,2,male,25.0,1,2,C,Mr,0,Laroche,Laroche,0,,4,0,Small,SC/PARIS,male_2,Mr_male,0,Adult,0,Laroche_SC/Paris 2123_41.5792_C,0.15,SC/Paris 2123,41.5792,
+687,0,3,male,14.0,4,1,S,Mr,0,Panula,Panula,0,,6,0,Large,NUMERIC,male_3,Mr_male,0,Teen,1,Panula_3101295_39.6875_S,0.49,3101295,39.6875,
+688,0,3,male,19.0,0,0,S,Mr,0,Dakic,Dakic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Dakic_349228_10.1708_S,0.13,349228,10.1708,
+689,0,3,male,18.0,0,0,S,Mr,0,Fischer,Fischer,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Fischer_350036_7.7958_S,0.13,350036,7.7958,
+690,1,1,female,15.0,0,1,S,Miss,1,Madill,Madill,1,B,2,0,Small,NUMERIC,female_1,Miss_female,0,Teen,1,Madill_24160_211.3375_S,0.91,24160,211.3375,B5
+691,1,1,male,31.0,1,0,S,Mr,0,Dick,Dick,1,B,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Dick_17474_57.0_S,0.37,17474,57.0,B20
+692,1,3,female,4.0,0,1,C,Miss,1,Karun,Karun,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Karun_349256_13.4167_C,0.49,349256,13.4167,
+693,1,3,male,28.910614762644688,0,0,S,Mr,0,Lam,Lam,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Lam_1601_56.4958_S,0.13,1601,56.4958,
+694,0,3,male,25.0,0,0,C,Mr,0,Saad,Saad,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Saad_2672_7.225_C,0.13,2672,7.225,
+695,0,1,male,60.0,0,0,S,Rare,4,Weir,Weir,0,,1,1,Alone,NUMERIC,male_1,Rare_male,0,Senior,0,Weir_113800_26.55_S,0.37,113800,26.55,
+696,0,2,male,52.0,0,0,S,Mr,0,Chapman,Chapman,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Senior,0,Chapman_248731_13.5_S,0.15,248731,13.5,
+697,0,3,male,44.0,0,0,S,Mr,0,Kelly,Kelly,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Kelly_363592_8.05_S,0.13,363592,8.05,
+698,1,3,female,20.319141554322492,0,0,Q,Miss,1,Mullens,Mullens,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Mullens_35852_7.7333_Q,0.49,35852,7.7333,
+699,0,1,male,49.0,1,1,C,Mr,0,Thayer,Thayer,1,C,3,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Thayer_17421_110.8833_C,0.37,17421,110.8833,C68
+700,0,3,male,42.0,0,0,S,Mr,0,Humblen,Humblen,1,F,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Humblen_348121_7.65_S,0.13,348121,7.65,F G63
+701,1,1,female,18.0,1,0,C,Mrs,2,Astor,Astor,1,C,2,0,Small,PC,female_1,Mrs_female,0,Teen,1,Astor_PC 17757_227.525_C,0.91,PC 17757,227.525,C62 C64
+702,1,1,male,35.0,0,0,S,Mr,0,Silverthorne,Silverthorne,1,E,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Silverthorne_PC 17475_26.2875_S,0.37,PC 17475,26.2875,E24
+703,0,3,female,18.0,0,1,C,Miss,1,Barbara,Barbara,0,,2,0,Small,NUMERIC,female_3,Miss_female,0,Teen,1,Barbara_2691_14.4542_C,0.49,2691,14.4542,
+704,0,3,male,25.0,0,0,Q,Mr,0,Gallagher,Gallagher,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Gallagher_36864_7.7417_Q,0.13,36864,7.7417,
+705,0,3,male,26.0,1,0,S,Mr,0,Hansen,Hansen,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Hansen_350025_7.8542_S,0.13,350025,7.8542,
+706,0,2,male,39.0,0,0,S,Mr,0,Morley,Morley,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Morley_250655_26.0_S,0.15,250655,26.0,
+707,1,2,female,45.0,0,0,S,Mrs,2,Kelly,Kelly,0,,1,1,Alone,NUMERIC,female_2,Mrs_female,0,Adult,1,Kelly_223596_13.5_S,0.91,223596,13.5,
+708,1,1,male,42.0,0,0,S,Mr,0,Calderhead,Calderhead,1,E,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Calderhead_PC 17476_26.2875_S,0.37,PC 17476,26.2875,E24
+709,1,1,female,22.0,0,0,S,Miss,1,Cleaver,Cleaver,0,,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Cleaver_113781_151.55_S,0.91,113781,151.55,
+710,1,3,male,5.325046331521626,1,1,C,Master,3,Moubarek,Moubarek,0,,3,0,Small,NUMERIC,male_3,Master_male,0,Missing,1,Moubarek_2661_15.2458_C,0.49,2661,15.2458,
+711,1,1,female,24.0,0,0,C,Rare,4,Mayne,Mayne,1,C,1,1,Alone,PC,female_1,Rare_female,0,Adult,1,Mayne_PC 17482_49.5042_C,0.91,PC 17482,49.5042,C90
+712,0,1,male,48.023488291885,0,0,S,Mr,0,Klaber,Klaber,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Klaber_113028_26.55_S,0.37,113028,26.55,C124
+713,1,1,male,48.0,1,0,S,Mr,0,Taylor,Taylor,1,C,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Taylor_19996_52.0_S,0.37,19996,52.0,C126
+714,0,3,male,29.0,0,0,S,Mr,0,Larsson,Larsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Larsson_7545_9.4833_S,0.13,7545,9.4833,
+715,0,2,male,52.0,0,0,S,Mr,0,Greenberg,Greenberg,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Senior,0,Greenberg_250647_13.0_S,0.15,250647,13.0,
+716,0,3,male,19.0,0,0,S,Mr,0,Soholt,Soholt,1,F,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Soholt_348124_7.65_S,0.13,348124,7.65,F G73
+717,1,1,female,38.0,0,0,C,Miss,1,Endres,Endres,1,C,1,1,Alone,PC,female_1,Miss_female,0,Adult,1,Endres_PC 17757_227.525_C,0.91,PC 17757,227.525,C45
+718,1,2,female,27.0,0,0,S,Miss,1,Troutt,Troutt,1,E,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Troutt_34218_10.5_S,0.91,34218,10.5,E101
+719,0,3,male,26.596887071359824,0,0,Q,Mr,0,McEvoy,McEvoy,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,McEvoy_36568_15.5_Q,0.13,36568,15.5,
+720,0,3,male,33.0,0,0,S,Mr,0,Johnson,Johnson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Johnson_347062_7.775_S,0.13,347062,7.775,
+721,1,2,female,6.0,0,1,S,Miss,1,Harper,Harper,0,,2,0,Small,NUMERIC,female_2,Miss_female,0,Child,1,Harper_248727_33.0_S,0.91,248727,33.0,
+722,0,3,male,17.0,1,0,S,Mr,0,Jensen,Jensen,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Teen,1,Jensen_350048_7.0542_S,0.13,350048,7.0542,
+723,0,2,male,34.0,0,0,S,Mr,0,Gillespie,Gillespie,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Gillespie_12233_13.0_S,0.15,12233,13.0,
+724,0,2,male,50.0,0,0,S,Mr,0,Hodges,Hodges,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Senior,0,Hodges_250643_13.0_S,0.15,250643,13.0,
+725,1,1,male,27.0,1,0,S,Mr,0,Chambers,Chambers,1,E,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Chambers_113806_53.1_S,0.37,113806,53.1,E8
+726,0,3,male,20.0,0,0,S,Mr,0,Oreskovic,Oreskovic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Oreskovic_315094_8.6625_S,0.13,315094,8.6625,
+727,1,2,female,30.0,3,0,S,Mrs,2,Renouf,Renouf,0,,4,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Renouf_31027_21.0_S,0.91,31027,21.0,
+728,1,3,female,20.319141554322492,0,0,Q,Miss,1,Mannion,Mannion,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Missing,1,Mannion_36866_7.7375_Q,0.49,36866,7.7375,
+729,0,2,male,25.0,1,0,S,Mr,0,Bryhl,Bryhl,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Bryhl_236853_26.0_S,0.15,236853,26.0,
+730,0,3,female,25.0,1,0,S,Miss,1,Ilmakangas,Ilmakangas,0,,2,0,Small,STON/O,female_3,Miss_female,0,Adult,1,Ilmakangas_STON/O2. 3101271_7.925_S,0.49,STON/O2. 3101271,7.925,
+731,1,1,female,29.0,0,0,S,Miss,1,Allen,Allen,1,B,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Allen_24160_211.3375_S,0.91,24160,211.3375,B5
+732,0,3,male,11.0,0,0,C,Mr,0,Hassan,Hassan,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Child,1,Hassan_2699_18.7875_C,0.49,2699,18.7875,
+733,0,2,male,34.67977081169204,0,0,S,Mr,0,Knight,Knight,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Missing,0,Knight_239855_0.0_S,0.15,239855,0.0,
+734,0,2,male,23.0,0,0,S,Mr,0,Berriman,Berriman,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Berriman_28425_13.0_S,0.15,28425,13.0,
+735,0,2,male,23.0,0,0,S,Mr,0,Troupiansky,Troupiansky,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Troupiansky_233639_13.0_S,0.15,233639,13.0,
+736,0,3,male,28.5,0,0,S,Mr,0,Williams,Williams,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Williams_54636_16.1_S,0.13,54636,16.1,
+737,0,3,female,48.0,1,3,S,Mrs,2,Ford,Ford,0,,5,0,Large,W/C,female_3,Mrs_female,1,Adult,1,Ford_W./C. 6608_34.375_S,0.49,W./C. 6608,34.375,
+738,1,1,male,35.0,0,0,C,Mr,0,Lesurer,Lesurer,1,B,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Lesurer_PC 17755_512.3292_C,0.37,PC 17755,512.3292,B101
+739,0,3,male,28.255220155534552,0,0,S,Mr,0,Ivanoff,Ivanoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Ivanoff_349201_7.8958_S,0.13,349201,7.8958,
+740,0,3,male,28.255220155534552,0,0,S,Mr,0,Nankoff,Nankoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Nankoff_349218_7.8958_S,0.13,349218,7.8958,
+741,1,1,male,45.603147516238025,0,0,S,Mr,0,Hawksford,Hawksford,1,D,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Hawksford_16988_30.0_S,0.37,16988,30.0,D45
+742,0,1,male,36.0,1,0,S,Mr,0,Cavendish,Cavendish,1,C,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Cavendish_19877_78.85_S,0.37,19877,78.85,C46
+743,1,1,female,21.0,2,2,C,Miss,1,Ryerson,Ryerson,1,B,5,0,Large,PC,female_1,Miss_female,0,Adult,1,Ryerson_PC 17608_262.375_C,0.91,PC 17608,262.375,B57 B59 B63 B66
+744,0,3,male,24.0,1,0,S,Mr,0,McNamee,McNamee,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,McNamee_376566_16.1_S,0.13,376566,16.1,
+745,1,3,male,31.0,0,0,S,Mr,0,Stranden,Stranden,0,,1,1,Alone,STON/O,male_3,Mr_male,0,Adult,0,Stranden_STON/O 2. 3101288_7.925_S,0.13,STON/O 2. 3101288,7.925,
+746,0,1,male,70.0,1,1,S,Rare,4,Crosby,Crosby,1,B,3,0,Small,WE/P,male_1,Rare_male,0,Senior,0,Crosby_WE/P 5735_71.0_S,0.37,WE/P 5735,71.0,B22
+747,0,3,male,16.0,1,1,S,Mr,0,Abbott,Abbott,0,,3,0,Small,CA,male_3,Mr_male,0,Teen,1,Abbott_C.A. 2673_20.25_S,0.13,C.A. 2673,20.25,
+748,1,2,female,30.0,0,0,S,Miss,1,Sinkkonen,Sinkkonen,0,,1,1,Alone,NUMERIC,female_2,Miss_female,0,Adult,1,Sinkkonen_250648_13.0_S,0.91,250648,13.0,
+749,0,1,male,19.0,1,0,S,Mr,0,Marvin,Marvin,1,D,2,0,Small,NUMERIC,male_1,Mr_male,0,Adult,0,Marvin_113773_53.1_S,0.37,113773,53.1,D30
+750,0,3,male,31.0,0,0,Q,Mr,0,Connaghton,Connaghton,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Connaghton_335097_7.75_Q,0.13,335097,7.75,
+751,1,2,female,4.0,1,1,S,Miss,1,Wells,Wells,0,,3,0,Small,NUMERIC,female_2,Miss_female,0,Child,1,Wells_29103_23.0_S,0.91,29103,23.0,
+752,1,3,male,6.0,0,1,S,Master,3,Moor,Moor,1,E,2,0,Small,NUMERIC,male_3,Master_male,0,Child,1,Moor_392096_12.475_S,0.49,392096,12.475,E121
+753,0,3,male,33.0,0,0,S,Mr,0,Vande Velde,Vande Velde,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Vande Velde_345780_9.5_S,0.13,345780,9.5,
+754,0,3,male,23.0,0,0,S,Mr,0,Jonkoff,Jonkoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Jonkoff_349204_7.8958_S,0.13,349204,7.8958,
+755,1,2,female,48.0,1,2,S,Mrs,2,Herman,Herman,0,,4,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Herman_220845_65.0_S,0.91,220845,65.0,
+756,1,2,male,0.67,1,1,S,Master,3,Hamalainen,Hamalainen,0,,3,0,Small,NUMERIC,male_2,Master_male,0,Child,1,Hamalainen_250649_14.5_S,0.91,250649,14.5,
+757,0,3,male,28.0,0,0,S,Mr,0,Carlsson,Carlsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Carlsson_350042_7.7958_S,0.13,350042,7.7958,
+758,0,2,male,18.0,0,0,S,Mr,0,Bailey,Bailey,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Teen,1,Bailey_29108_11.5_S,0.15,29108,11.5,
+759,0,3,male,34.0,0,0,S,Mr,0,Theobald,Theobald,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Theobald_363294_8.05_S,0.13,363294,8.05,
+760,1,1,female,33.0,0,0,S,Rare,4,Rothes,Rothes,1,B,1,1,Alone,NUMERIC,female_1,Rare_female,0,Adult,1,Rothes_110152_86.5_S,0.91,110152,86.5,B77
+761,0,3,male,25.331381707920123,0,0,S,Mr,0,Garfirth,Garfirth,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Garfirth_358585_14.5_S,0.13,358585,14.5,
+762,0,3,male,41.0,0,0,S,Mr,0,Nirva,Nirva,0,,1,1,Alone,SOTON/O,male_3,Mr_male,0,Adult,0,Nirva_SOTON/O2 3101272_7.125_S,0.13,SOTON/O2 3101272,7.125,
+763,1,3,male,20.0,0,0,C,Mr,0,Barah,Barah,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Barah_2663_7.2292_C,0.13,2663,7.2292,
+764,1,1,female,36.0,1,2,S,Mrs,2,Carter,Carter,1,B,4,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Carter_113760_120.0_S,0.91,113760,120.0,B96 B98
+765,0,3,male,16.0,0,0,S,Mr,0,Eklund,Eklund,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Eklund_347074_7.775_S,0.13,347074,7.775,
+766,1,1,female,51.0,1,0,S,Mrs,2,Hogeboom,Hogeboom,1,D,2,0,Small,NUMERIC,female_1,Mrs_female,0,Senior,1,Hogeboom_13502_77.9583_S,0.91,13502,77.9583,D11
+767,0,1,male,44.0315533554387,0,0,C,Rare,4,Brewe,Brewe,0,,1,1,Alone,NUMERIC,male_1,Rare_male,0,Missing,0,Brewe_112379_39.6_C,0.37,112379,39.6,
+768,0,3,female,30.5,0,0,Q,Miss,1,Mangan,Mangan,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Mangan_364850_7.75_Q,0.49,364850,7.75,
+769,0,3,male,30.591121212205213,1,0,Q,Mr,0,Moran,Moran,0,,2,0,Small,NUMERIC,male_3,Mr_male,0,Missing,0,Moran_371110_24.15_Q,0.13,371110,24.15,
+770,0,3,male,32.0,0,0,S,Mr,0,Gronnestad,Gronnestad,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Gronnestad_8471_8.3625_S,0.13,8471,8.3625,
+771,0,3,male,24.0,0,0,S,Mr,0,Lievens,Lievens,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Lievens_345781_9.5_S,0.13,345781,9.5,
+772,0,3,male,48.0,0,0,S,Mr,0,Jensen,Jensen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Jensen_350047_7.8542_S,0.13,350047,7.8542,
+773,0,2,female,57.0,0,0,S,Mrs,2,Mack,Mack,1,E,1,1,Alone,SO/PP,female_2,Mrs_female,0,Senior,1,Mack_S.O./P.P. 3_10.5_S,0.91,S.O./P.P. 3,10.5,E77
+774,0,3,male,29.838779070805835,0,0,C,Mr,0,Elias,Elias,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Elias_2674_7.225_C,0.13,2674,7.225,
+775,1,2,female,54.0,1,3,S,Mrs,2,Hocking,Hocking,0,,5,0,Large,NUMERIC,female_2,Mrs_female,1,Senior,1,Hocking_29105_23.0_S,0.91,29105,23.0,
+776,0,3,male,18.0,0,0,S,Mr,0,Myhrman,Myhrman,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Myhrman_347078_7.75_S,0.13,347078,7.75,
+777,0,3,male,37.823919966904946,0,0,Q,Mr,0,Tobin,Tobin,1,F,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Tobin_383121_7.75_Q,0.13,383121,7.75,F38
+778,1,3,female,5.0,0,0,S,Miss,1,Emanuel,Emanuel,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Child,1,Emanuel_364516_12.475_S,0.49,364516,12.475,
+779,0,3,male,28.949123655420276,0,0,Q,Mr,0,Kilgannon,Kilgannon,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Kilgannon_36865_7.7375_Q,0.13,36865,7.7375,
+780,1,1,female,43.0,0,1,S,Mrs,2,Robert,Robert,1,B,2,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Robert_24160_211.3375_S,0.91,24160,211.3375,B3
+781,1,3,female,13.0,0,0,C,Miss,1,Ayoub,Ayoub,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Ayoub_2687_7.2292_C,0.49,2687,7.2292,
+782,1,1,female,17.0,1,0,S,Mrs,2,Dick,Dick,1,B,2,0,Small,NUMERIC,female_1,Mrs_female,0,Teen,1,Dick_17474_57.0_S,0.91,17474,57.0,B20
+783,0,1,male,29.0,0,0,S,Mr,0,Long,Long,1,D,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Long_113501_30.0_S,0.37,113501,30.0,D6
+784,0,3,male,32.07083634305152,1,2,S,Mr,0,Johnston,Johnston,0,,4,0,Small,W/C,male_3,Mr_male,0,Missing,0,Johnston_W./C. 6607_23.45_S,0.13,W./C. 6607,23.45,
+785,0,3,male,25.0,0,0,S,Mr,0,Ali,Ali,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Ali_SOTON/O.Q. 3101312_7.05_S,0.13,SOTON/O.Q. 3101312,7.05,
+786,0,3,male,25.0,0,0,S,Mr,0,Harmer,Harmer,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Harmer_374887_7.25_S,0.13,374887,7.25,
+787,1,3,female,18.0,0,0,S,Miss,1,Sjoblom,Sjoblom,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Sjoblom_3101265_7.4958_S,0.49,3101265,7.4958,
+788,0,3,male,8.0,4,1,Q,Master,3,Rice,Rice,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Rice_382652_29.125_Q,0.49,382652,29.125,
+789,1,3,male,1.0,1,2,S,Master,3,Dean,Dean,0,,4,0,Small,CA,male_3,Master_male,0,Child,1,Dean_C.A. 2315_20.575_S,0.49,C.A. 2315,20.575,
+790,0,1,male,46.0,0,0,C,Mr,0,Guggenheim,Guggenheim,1,B,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Guggenheim_PC 17593_79.2_C,0.37,PC 17593,79.2,B82 B84
+791,0,3,male,37.823919966904946,0,0,Q,Mr,0,Keane,Keane,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Keane_12460_7.75_Q,0.13,12460,7.75,
+792,0,2,male,16.0,0,0,S,Mr,0,Gaskell,Gaskell,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Teen,1,Gaskell_239865_26.0_S,0.15,239865,26.0,
+793,0,3,female,14.627928571428573,8,2,S,Miss,1,Sage,Sage,0,,11,0,Large,CA,female_3,Miss_female,0,Missing,1,Sage_CA. 2343_69.55_S,0.49,CA. 2343,69.55,
+794,0,1,male,48.7500704293149,0,0,C,Mr,0,Hoyt,Hoyt,0,,1,1,Alone,PC,male_1,Mr_male,0,Missing,0,Hoyt_PC 17600_30.6958_C,0.37,PC 17600,30.6958,
+795,0,3,male,25.0,0,0,S,Mr,0,Dantcheff,Dantcheff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Dantcheff_349203_7.8958_S,0.13,349203,7.8958,
+796,0,2,male,39.0,0,0,S,Mr,0,Otter,Otter,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Otter_28213_13.0_S,0.15,28213,13.0,
+797,1,1,female,49.0,0,0,S,Rare,4,Leader,Leader,1,D,1,1,Alone,NUMERIC,female_1,Rare_female,0,Adult,1,Leader_17465_25.9292_S,0.91,17465,25.9292,D17
+798,1,3,female,31.0,0,0,S,Mrs,2,Osman,Osman,0,,1,1,Alone,NUMERIC,female_3,Mrs_female,0,Adult,1,Osman_349244_8.6833_S,0.49,349244,8.6833,
+799,0,3,male,30.0,0,0,C,Mr,0,Ibrahim Shawah,Ibrahim Shawah,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Ibrahim Shawah_2685_7.2292_C,0.13,2685,7.2292,
+800,0,3,female,30.0,1,1,S,Mrs,2,Van Impe,Van Impe,0,,3,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Van Impe_345773_24.15_S,0.49,345773,24.15,
+801,0,2,male,34.0,0,0,S,Mr,0,Ponesell,Ponesell,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Ponesell_250647_13.0_S,0.15,250647,13.0,
+802,1,2,female,31.0,1,1,S,Mrs,2,Collyer,Collyer,0,,3,0,Small,CA,female_2,Mrs_female,1,Adult,1,Collyer_C.A. 31921_26.25_S,0.91,C.A. 31921,26.25,
+803,1,1,male,11.0,1,2,S,Master,3,Carter,Carter,1,B,4,0,Small,NUMERIC,male_1,Master_male,0,Child,1,Carter_113760_120.0_S,0.91,113760,120.0,B96 B98
+804,1,3,male,0.42,0,1,C,Master,3,Thomas,Thomas,0,,2,0,Small,NUMERIC,male_3,Master_male,0,Child,1,Thomas_2625_8.5167_C,0.49,2625,8.5167,
+805,1,3,male,27.0,0,0,S,Mr,0,Hedman,Hedman,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Hedman_347089_6.975_S,0.13,347089,6.975,
+806,0,3,male,31.0,0,0,S,Mr,0,Johansson,Johansson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Johansson_347063_7.775_S,0.13,347063,7.775,
+807,0,1,male,39.0,0,0,S,Mr,0,Andrews,Andrews,1,A,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Andrews_112050_0.0_S,0.37,112050,0.0,A36
+808,0,3,female,18.0,0,0,S,Miss,1,Pettersson,Pettersson,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Pettersson_347087_7.775_S,0.49,347087,7.775,
+809,0,2,male,39.0,0,0,S,Mr,0,Meyer,Meyer,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Meyer_248723_13.0_S,0.15,248723,13.0,
+810,1,1,female,33.0,1,0,S,Mrs,2,Chambers,Chambers,1,E,2,0,Small,NUMERIC,female_1,Mrs_female,0,Adult,1,Chambers_113806_53.1_S,0.91,113806,53.1,E8
+811,0,3,male,26.0,0,0,S,Mr,0,Alexander,Alexander,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Alexander_3474_7.8875_S,0.13,3474,7.8875,
+812,0,3,male,39.0,0,0,S,Mr,0,Lester,Lester,0,,1,1,Alone,A/,male_3,Mr_male,0,Adult,0,Lester_A/4 48871_24.15_S,0.13,A/4 48871,24.15,
+813,0,2,male,35.0,0,0,S,Mr,0,Slemen,Slemen,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Slemen_28206_10.5_S,0.15,28206,10.5,
+814,0,3,female,6.0,4,2,S,Miss,1,Andersson,Andersson,0,,7,0,Large,NUMERIC,female_3,Miss_female,0,Child,1,Andersson_347082_31.275_S,0.49,347082,31.275,
+815,0,3,male,30.5,0,0,S,Mr,0,Tomlin,Tomlin,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Tomlin_364499_8.05_S,0.13,364499,8.05,
+816,0,1,male,39.451592132505176,0,0,S,Mr,0,Fry,Fry,1,B,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Fry_112058_0.0_S,0.37,112058,0.0,B102
+817,0,3,female,23.0,0,0,S,Miss,1,Heininen,Heininen,0,,1,1,Alone,STON/O,female_3,Miss_female,0,Adult,1,Heininen_STON/O2. 3101290_7.925_S,0.49,STON/O2. 3101290,7.925,
+818,0,2,male,31.0,1,1,C,Mr,0,Mallet,Mallet,0,,3,0,Small,SC/PARIS,male_2,Mr_male,0,Adult,0,Mallet_S.C./PARIS 2079_37.0042_C,0.15,S.C./PARIS 2079,37.0042,
+819,0,3,male,43.0,0,0,S,Mr,0,Holm,Holm,0,,1,1,Alone,C,male_3,Mr_male,0,Adult,0,Holm_C 7075_6.45_S,0.13,C 7075,6.45,
+820,0,3,male,10.0,3,2,S,Master,3,Skoog,Skoog,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Skoog_347088_27.9_S,0.49,347088,27.9,
+821,1,1,female,52.0,1,1,S,Mrs,2,Hays,Hays,1,B,3,0,Small,NUMERIC,female_1,Mrs_female,1,Senior,1,Hays_12749_93.5_S,0.91,12749,93.5,B69
+822,1,3,male,27.0,0,0,S,Mr,0,Lulic,Lulic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Lulic_315098_8.6625_S,0.13,315098,8.6625,
+823,0,1,male,38.0,0,0,S,Rare,4,Reuchlin,Reuchlin,0,,1,1,Alone,NUMERIC,male_1,Rare_male,0,Adult,0,Reuchlin_19972_0.0_S,0.37,19972,0.0,
+824,1,3,female,27.0,0,1,S,Mrs,2,Moor,Moor,1,E,2,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Moor_392096_12.475_S,0.49,392096,12.475,E121
+825,0,3,male,2.0,4,1,S,Master,3,Panula,Panula,0,,6,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Panula_3101295_39.6875_S,0.49,3101295,39.6875,
+826,0,3,male,31.375290235621232,0,0,Q,Mr,0,Flynn,Flynn,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Flynn_368323_6.95_Q,0.13,368323,6.95,
+827,0,3,male,28.910614762644688,0,0,S,Mr,0,Lam,Lam,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Lam_1601_56.4958_S,0.13,1601,56.4958,
+828,1,2,male,1.0,0,2,C,Master,3,Mallet,Mallet,0,,3,0,Small,SC/PARIS,male_2,Master_male,0,Child,1,Mallet_S.C./PARIS 2079_37.0042_C,0.91,S.C./PARIS 2079,37.0042,
+829,1,3,male,37.823919966904946,0,0,Q,Mr,0,McCormack,McCormack,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,McCormack_367228_7.75_Q,0.13,367228,7.75,
+830,1,1,female,62.0,0,0,S,Mrs,2,Stone,Stone,1,B,1,1,Alone,NUMERIC,female_1,Mrs_female,0,Senior,1,Stone_113572_80.0_,0.91,113572,80.0,B28
+831,1,3,female,15.0,1,0,C,Mrs,2,Yasbeck,Yasbeck,0,,2,0,Small,NUMERIC,female_3,Mrs_female,0,Teen,1,Yasbeck_2659_14.4542_C,0.49,2659,14.4542,
+832,1,2,male,0.83,1,1,S,Master,3,Richards,Richards,0,,3,0,Small,NUMERIC,male_2,Master_male,0,Child,1,Richards_29106_18.75_S,0.91,29106,18.75,
+833,0,3,male,28.08437635583076,0,0,C,Mr,0,Saad,Saad,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Saad_2671_7.2292_C,0.13,2671,7.2292,
+834,0,3,male,23.0,0,0,S,Mr,0,Augustsson,Augustsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Augustsson_347468_7.8542_S,0.13,347468,7.8542,
+835,0,3,male,18.0,0,0,S,Mr,0,Allum,Allum,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Allum_2223_8.3_S,0.13,2223,8.3,
+836,1,1,female,39.0,1,1,C,Miss,1,Compton,Compton,1,E,3,0,Small,PC,female_1,Miss_female,0,Adult,1,Compton_PC 17756_83.1583_C,0.91,PC 17756,83.1583,E49
+837,0,3,male,21.0,0,0,S,Mr,0,Pasic,Pasic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Pasic_315097_8.6625_S,0.13,315097,8.6625,
+838,0,3,male,29.72874460481854,0,0,S,Mr,0,Sirota,Sirota,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Sirota_392092_8.05_S,0.13,392092,8.05,
+839,1,3,male,32.0,0,0,S,Mr,0,Chip,Chip,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Chip_1601_56.4958_S,0.13,1601,56.4958,
+840,1,1,male,49.48813459823815,0,0,C,Mr,0,Marechal,Marechal,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Missing,0,Marechal_11774_29.7_C,0.37,11774,29.7,C47
+841,0,3,male,20.0,0,0,S,Mr,0,Alhomaki,Alhomaki,0,,1,1,Alone,SOTON/O,male_3,Mr_male,0,Adult,0,Alhomaki_SOTON/O2 3101287_7.925_S,0.13,SOTON/O2 3101287,7.925,
+842,0,2,male,16.0,0,0,S,Mr,0,Mudd,Mudd,0,,1,1,Alone,SO/PP,male_2,Mr_male,0,Teen,1,Mudd_S.O./P.P. 3_10.5_S,0.15,S.O./P.P. 3,10.5,
+843,1,1,female,30.0,0,0,C,Miss,1,Serepeca,Serepeca,0,,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Serepeca_113798_31.0_C,0.91,113798,31.0,
+844,0,3,male,34.5,0,0,C,Mr,0,Lemberopolous,Lemberopolous,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Lemberopolous_2683_6.4375_C,0.13,2683,6.4375,
+845,0,3,male,17.0,0,0,S,Mr,0,Culumovic,Culumovic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Teen,1,Culumovic_315090_8.6625_S,0.13,315090,8.6625,
+846,0,3,male,42.0,0,0,S,Mr,0,Abbing,Abbing,0,,1,1,Alone,CA,male_3,Mr_male,0,Adult,0,Abbing_C.A. 5547_7.55_S,0.13,C.A. 5547,7.55,
+847,0,3,male,14.520238095238096,8,2,S,Mr,0,Sage,Sage,0,,11,0,Large,CA,male_3,Mr_male,0,Missing,0,Sage_CA. 2343_69.55_S,0.13,CA. 2343,69.55,
+848,0,3,male,35.0,0,0,C,Mr,0,Markoff,Markoff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Markoff_349213_7.8958_C,0.13,349213,7.8958,
+849,0,2,male,28.0,0,1,S,Rare,4,Harper,Harper,0,,2,0,Small,NUMERIC,male_2,Rare_male,0,Adult,0,Harper_248727_33.0_S,0.15,248727,33.0,
+850,1,1,female,33.70574680577519,1,0,C,Mrs,2,Goldenberg,Goldenberg,1,C,2,0,Small,NUMERIC,female_1,Mrs_female,0,Missing,1,Goldenberg_17453_89.1042_C,0.91,17453,89.1042,C92
+851,0,3,male,4.0,4,2,S,Master,3,Andersson,Andersson,0,,7,0,Large,NUMERIC,male_3,Master_male,0,Child,1,Andersson_347082_31.275_S,0.49,347082,31.275,
+852,0,3,male,74.0,0,0,S,Mr,0,Svensson,Svensson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Senior,0,Svensson_347060_7.775_S,0.13,347060,7.775,
+853,0,3,female,9.0,1,1,C,Miss,1,Boulos,Boulos,0,,3,0,Small,NUMERIC,female_3,Miss_female,0,Child,1,Boulos_2678_15.2458_C,0.49,2678,15.2458,
+854,1,1,female,16.0,0,1,S,Miss,1,Lines,Lines,1,D,2,0,Small,PC,female_1,Miss_female,0,Teen,1,Lines_PC 17592_39.4_S,0.91,PC 17592,39.4,D28
+855,0,2,female,44.0,1,0,S,Mrs,2,Carter,Carter,0,,2,0,Small,NUMERIC,female_2,Mrs_female,0,Adult,1,Carter_244252_26.0_S,0.91,244252,26.0,
+856,1,3,female,18.0,0,1,S,Mrs,2,Aks,Aks,0,,2,0,Small,NUMERIC,female_3,Mrs_female,1,Teen,1,Aks_392091_9.35_S,0.49,392091,9.35,
+857,1,1,female,45.0,1,1,S,Mrs,2,Wick,Wick,0,,3,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Wick_36928_164.8667_S,0.91,36928,164.8667,
+858,1,1,male,51.0,0,0,S,Mr,0,Daly,Daly,1,E,1,1,Alone,NUMERIC,male_1,Mr_male,0,Senior,0,Daly_113055_26.55_S,0.37,113055,26.55,E17
+859,1,3,female,24.0,0,3,C,Mrs,2,Baclini,Baclini,0,,4,0,Small,NUMERIC,female_3,Mrs_female,1,Adult,1,Baclini_2666_19.2583_C,0.49,2666,19.2583,
+860,0,3,male,28.08437635583076,0,0,C,Mr,0,Razi,Razi,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Razi_2629_7.2292_C,0.13,2629,7.2292,
+861,0,3,male,41.0,2,0,S,Mr,0,Hansen,Hansen,0,,3,0,Small,NUMERIC,male_3,Mr_male,0,Adult,0,Hansen_350026_14.1083_S,0.13,350026,14.1083,
+862,0,2,male,21.0,1,0,S,Mr,0,Giles,Giles,0,,2,0,Small,NUMERIC,male_2,Mr_male,0,Adult,0,Giles_28134_11.5_S,0.15,28134,11.5,
+863,1,1,female,48.0,0,0,S,Mrs,2,Swift,Swift,1,D,1,1,Alone,NUMERIC,female_1,Mrs_female,0,Adult,1,Swift_17466_25.9292_S,0.91,17466,25.9292,D17
+864,0,3,female,14.627928571428573,8,2,S,Miss,1,Sage,Sage,0,,11,0,Large,CA,female_3,Miss_female,0,Missing,1,Sage_CA. 2343_69.55_S,0.49,CA. 2343,69.55,
+865,0,2,male,24.0,0,0,S,Mr,0,Gill,Gill,0,,1,1,Alone,NUMERIC,male_2,Mr_male,0,Adult,0,Gill_233866_13.0_S,0.15,233866,13.0,
+866,1,2,female,42.0,0,0,S,Mrs,2,Bystrom,Bystrom,0,,1,1,Alone,NUMERIC,female_2,Mrs_female,0,Adult,1,Bystrom_236852_13.0_S,0.91,236852,13.0,
+867,1,2,female,27.0,1,0,C,Miss,1,Duran y More,Duran y More,0,,2,0,Small,SC/PARIS,female_2,Miss_female,0,Adult,1,Duran y More_SC/PARIS 2149_13.8583_C,0.91,SC/PARIS 2149,13.8583,
+868,0,1,male,31.0,0,0,S,Mr,0,Roebling,Roebling,1,A,1,1,Alone,PC,male_1,Mr_male,0,Adult,0,Roebling_PC 17590_50.4958_S,0.37,PC 17590,50.4958,A24
+869,0,3,male,25.572114789366516,0,0,S,Mr,0,van Melkebeke,van Melkebeke,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,van Melkebeke_345777_9.5_S,0.13,345777,9.5,
+870,1,3,male,4.0,1,1,S,Master,3,Johnson,Johnson,0,,3,0,Small,NUMERIC,male_3,Master_male,0,Child,1,Johnson_347742_11.1333_S,0.49,347742,11.1333,
+871,0,3,male,26.0,0,0,S,Mr,0,Balkic,Balkic,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Balkic_349248_7.8958_S,0.13,349248,7.8958,
+872,1,1,female,47.0,1,1,S,Mrs,2,Beckwith,Beckwith,1,D,3,0,Small,NUMERIC,female_1,Mrs_female,1,Adult,1,Beckwith_11751_52.5542_S,0.91,11751,52.5542,D35
+873,0,1,male,33.0,0,0,S,Mr,0,Carlsson,Carlsson,1,B,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Carlsson_695_5.0_S,0.37,695,5.0,B51 B53 B55
+874,0,3,male,47.0,0,0,S,Mr,0,Vander Cruyssen,Vander Cruyssen,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Vander Cruyssen_345765_9.0_S,0.13,345765,9.0,
+875,1,2,female,28.0,1,0,C,Mrs,2,Abelson,Abelson,0,,2,0,Small,P/PP,female_2,Mrs_female,0,Adult,1,Abelson_P/PP 3381_24.0_C,0.91,P/PP 3381,24.0,
+876,1,3,female,15.0,0,0,C,Miss,1,Najib,Najib,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Teen,1,Najib_2667_7.225_C,0.49,2667,7.225,
+877,0,3,male,20.0,0,0,S,Mr,0,Gustafsson,Gustafsson,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Gustafsson_7534_9.8458_S,0.13,7534,9.8458,
+878,0,3,male,19.0,0,0,S,Mr,0,Petroff,Petroff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Petroff_349212_7.8958_S,0.13,349212,7.8958,
+879,0,3,male,28.255220155534552,0,0,S,Mr,0,Laleff,Laleff,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Missing,0,Laleff_349217_7.8958_S,0.13,349217,7.8958,
+880,1,1,female,56.0,0,1,C,Mrs,2,Potter,Potter,1,C,2,0,Small,NUMERIC,female_1,Mrs_female,1,Senior,1,Potter_11767_83.1583_C,0.91,11767,83.1583,C50
+881,1,2,female,25.0,0,1,S,Mrs,2,Shelley,Shelley,0,,2,0,Small,NUMERIC,female_2,Mrs_female,1,Adult,1,Shelley_230433_26.0_S,0.91,230433,26.0,
+882,0,3,male,33.0,0,0,S,Mr,0,Markun,Markun,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Markun_349257_7.8958_S,0.13,349257,7.8958,
+883,0,3,female,22.0,0,0,S,Miss,1,Dahlberg,Dahlberg,0,,1,1,Alone,NUMERIC,female_3,Miss_female,0,Adult,1,Dahlberg_7552_10.5167_S,0.49,7552,10.5167,
+884,0,2,male,28.0,0,0,S,Mr,0,Banfield,Banfield,0,,1,1,Alone,CA/SOTON,male_2,Mr_male,0,Adult,0,Banfield_C.A./SOTON 34068_10.5_S,0.15,C.A./SOTON 34068,10.5,
+885,0,3,male,25.0,0,0,S,Mr,0,Sutehall,Sutehall,0,,1,1,Alone,SOTON/OQ,male_3,Mr_male,0,Adult,0,Sutehall_SOTON/OQ 392076_7.05_S,0.13,SOTON/OQ 392076,7.05,
+886,0,3,female,39.0,0,5,Q,Mrs,2,Rice,Rice,0,,6,0,Large,NUMERIC,female_3,Mrs_female,1,Adult,1,Rice_382652_29.125_Q,0.49,382652,29.125,
+887,0,2,male,27.0,0,0,S,Rare,4,Montvila,Montvila,0,,1,1,Alone,NUMERIC,male_2,Rare_male,0,Adult,0,Montvila_211536_13.0_S,0.15,211536,13.0,
+888,1,1,female,19.0,0,0,S,Miss,1,Graham,Graham,1,B,1,1,Alone,NUMERIC,female_1,Miss_female,0,Adult,1,Graham_112053_30.0_S,0.91,112053,30.0,B42
+889,0,3,female,7.196956769889152,1,2,S,Miss,1,Johnston,Johnston,0,,4,0,Small,W/C,female_3,Miss_female,0,Missing,1,Johnston_W./C. 6607_23.45_S,0.49,W./C. 6607,23.45,
+890,1,1,male,26.0,0,0,C,Mr,0,Behr,Behr,1,C,1,1,Alone,NUMERIC,male_1,Mr_male,0,Adult,0,Behr_111369_30.0_C,0.37,111369,30.0,C148
+891,0,3,male,32.0,0,0,Q,Mr,0,Dooley,Dooley,0,,1,1,Alone,NUMERIC,male_3,Mr_male,0,Adult,0,Dooley_370376_7.75_Q,0.13,370376,7.75,
