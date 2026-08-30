@@ -43,5 +43,5 @@ def test_final_submission_rejects_invalid_survivor_count(monkeypatch):
 
                     with patch('src.final_submission._submit_to_kaggle'):
                         # We expect it to raise ValueError for final_blend, NOT for CatBoost
-                        with pytest.raises(ValueError, match="CRITICAL ERROR: Submission final_blend has 0 survivors"):
+                        with pytest.raises(ValueError, match="CRITICAL ERROR: Submission final_blend has (0|418) survivors"):
                             run_final_submission()

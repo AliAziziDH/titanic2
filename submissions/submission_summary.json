@@ -1,40 +1,31 @@
 {
-  "generated_at": "2026-08-30T12:51:32.828652+00:00",
+  "generated_at": "2026-08-30T20:11:45.848576+00:00",
   "scores": {
     "CatBoost": {
-      "accuracy": 0.8252693909149876,
-      "roc_auc": 0.8843061916236439
+      "accuracy": 0.8248948590797817,
+      "roc_auc": 0.8843195606076012
     },
     "XGBoost": {
-      "accuracy": 0.8275144895696023,
-      "roc_auc": 0.8854963108643391
+      "accuracy": 0.8293871487456321,
+      "roc_auc": 0.8858061189809354
     },
     "LightGBM": {
       "accuracy": 0.82901889398029,
       "roc_auc": 0.8815463955825649
     },
     "RandomForest": {
-      "accuracy": 0.820419308266901,
-      "roc_auc": 0.8807122273913494
+      "accuracy": 0.820044776431695,
+      "roc_auc": 0.8807033467313505
     },
     "MLP": {
       "accuracy": 0.7949992676751826,
-      "roc_auc": 0.8530565278776171
-    },
-    "Stacking": {
-      "accuracy": 0.8237934904601572,
-      "roc_auc": 0.8869821791881038
+      "roc_auc": 0.8531541938069542
     }
   },
   "submissions": {
-    "CatBoost": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_catboost.csv",
-    "XGBoost": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_xgboost.csv",
-    "LightGBM": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_lightgbm.csv",
-    "RandomForest": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_randomforest.csv",
-    "Stacking": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_stacking.csv",
-    "WeightedEnsemble": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_weighted_ensemble.csv",
-    "MajorityVote": "/Users/out/01_Workspaces/projects/titanic/submissions/submission_majority_vote.csv"
+    "Final_Blend": "/app/submissions/submission_final_blend_20260830_201145.csv",
+    "WeightedEnsemble": "/app/submissions/submission_weighted_ensemble_20260830_201145.csv",
+    "MajorityVote": "/app/submissions/submission_majority_vote_20260830_201145.csv"
   },
-  "rows": 418,
-  "optimal_threshold": 0.42541806020066886
+  "rows": 418
 }
