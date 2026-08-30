@@ -3,6 +3,7 @@ import pytest
 import numpy as np
 import pandas as pd
 from unittest.mock import patch, MagicMock
+from pathlib import Path
 
 from src.final_submission import run_final_submission
 
@@ -32,12 +33,15 @@ def test_final_submission_rejects_invalid_survivor_count(monkeypatch):
     with patch('src.final_submission._load_individual_models') as mock_indiv:
         mock_indiv.return_value = {"CatBoost": [mock_model]}
         
-        with patch('src.final_submission.WCGPostProcessor') as mock_proc:
-            instance = mock_proc.return_value
-            # return 0 survivors for final blend
-            instance.transform.return_value = np.zeros(418)
-            
-            with patch('src.final_submission._submit_to_kaggle'):
-                # We expect it to raise ValueError for final_blend, NOT for CatBoost
-                with pytest.raises(ValueError, match="CRITICAL ERROR: Submission final_blend has 0 survivors"):
-                    run_final_submission()
+        with patch('src.final_submission._load_modeling_data') as mock_load:
+            mock_load.return_value = (test_df, test_df)
+            with patch('src.final_submission.pd.read_csv', return_value=test_df):
+                with patch('src.final_submission.WCGPostProcessor') as mock_proc:
+                    instance = mock_proc.return_value
+                    # return 0 survivors for final blend
+                    instance.transform.return_value = np.zeros(418)
+
+                    with patch('src.final_submission._submit_to_kaggle'):
+                        # We expect it to raise ValueError for final_blend, NOT for CatBoost
+                        with pytest.raises(ValueError, match="CRITICAL ERROR: Submission final_blend has 0 survivors"):
+                            run_final_submission()
