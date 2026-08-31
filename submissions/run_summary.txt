@@ -1,0 +1,7 @@
+Diagnostics for: submission_final_blend_20260830_201145.csv
+Row count: 418
+PassengerId range: 892 - 1309
+Null check: 0 NaNs
+Survived value counts: 0s: 261, 1s: 157
+Survival Rate: 37.56%
+MD5 Checksum: 06ac024d6a3cada456da4a35ba3d3aaf
