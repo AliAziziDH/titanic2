@@ -13,3 +13,5 @@ tqdm==4.67.3
 # Optional GPU/MLP dependency; preinstalled in the Kaggle environment.
 torch>=2.2.0
 pytest
+matplotlib
+seaborn
